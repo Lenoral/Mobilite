@@ -29,19 +29,26 @@ def affichage_gares_europe():
     plt.show()
     return()
 
+
 def affichage_gares_pays(code_pays):
+    "Affiche les gares du pays souhaité. Pour l'Europe, entre le code pays EU"
+    if code_pays in ("EU","UE"):
+        
+        affichage_gares_europe()
     
-    gares_pays= gares[gares["country"]==code_pays]
+    else:
 
-    gares_pays_latitude =gares_pays["latitude"]
-    gares_pays_longitude = gares_pays["longitude"]
+        gares_pays = gares[gares["country"] == code_pays]
 
-    plt.scatter(gares_pays_longitude,gares_pays_latitude, color="orange")
-    plt.show()
+        gares_pays_latitude = gares_pays["latitude"]
+        gares_pays_longitude = gares_pays["longitude"]
+
+        plt.scatter(gares_pays_longitude, gares_pays_latitude, color="orange")
+        plt.show()
     return()
 
 #Affichage des gares d'un pays particulier
 
-code_pays="GB" #France =FR, Allemagne = DE, grande Bretagne = GB, etc.
+code_pays="UE" #France =FR, Allemagne = DE, grande Bretagne = GB, etc.
 
-affichage_gares_pays(code_pays) 
+affichage_gares_pays(code_pays)
