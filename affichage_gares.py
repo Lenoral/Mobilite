@@ -28,3 +28,16 @@ def affichage_gares_europe():
     plt.scatter(gares_longitude,gares_latitude, color="green")
     plt.show()
     return()
+
+def affichage_gares_pays(code_pays):
+    
+    gares_pays= gares[gares["country"]==code_pays]
+
+    gares_pays_latitude =gares_pays["latitude"]
+    gares_pays_longitude = gares_pays["longitude"]
+
+    plt.scatter(gares_pays_longitude,gares_pays_latitude, color="orange")
+    plt.show()
+    return()
+
+affichage_gares_pays("GB")
