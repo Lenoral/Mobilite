@@ -26,6 +26,10 @@ def affichage_gares_europe():
     gares_longitude = gares["longitude"]
 
     plt.scatter(gares_longitude,gares_latitude, color="green")
+    plt.title("Emplacements des gares en Europe")
+    plt.xlabel("Longitude (°)")
+    plt.ylabel("Latitude (°)")
+    plt.grid()
     plt.show()
     return()
 
@@ -44,11 +48,16 @@ def affichage_gares_pays(code_pays):
         gares_pays_longitude = gares_pays["longitude"]
 
         plt.scatter(gares_pays_longitude, gares_pays_latitude, color="orange")
+        plt.title("Emplacement des gares du pays " + code_pays)
+        plt.xlabel("Longitude (°)")
+        plt.ylabel("Latitude (°)")
+        plt.grid()
+        plt.show()
         plt.show()
     return()
 
 #Affichage des gares d'un pays particulier
 
-code_pays="UE" #France =FR, Allemagne = DE, grande Bretagne = GB, etc.
+code_pays="FR" #France =FR, Allemagne = DE, grande Bretagne = GB, etc.
 
 affichage_gares_pays(code_pays)
