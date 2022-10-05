@@ -40,4 +40,8 @@ def affichage_gares_pays(code_pays):
     plt.show()
     return()
 
-affichage_gares_pays("GB")
+#Affichage des gares d'un pays particulier
+
+code_pays="GB" #France =FR, Allemagne = DE, grande Bretagne = GB, etc.
+
+affichage_gares_pays(code_pays) 
