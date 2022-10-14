@@ -36,6 +36,7 @@ def affichage_gares_europe():
 
 def affichage_gares_pays(code_pays):
     "Affiche les gares du pays souhaité. Pour l'Europe, entre le code pays EU"
+    nom_ville="Noisy-Champs"
     if code_pays in ("EU","UE"):
         
         affichage_gares_europe()
@@ -43,11 +44,16 @@ def affichage_gares_pays(code_pays):
     else:
 
         gares_pays = gares[gares["country"] == code_pays]
-
+        gares_nom = gares[gares["name_norm"] == nom_ville]
+        
+        gares_nom_latitude =gares_nom["latitude"]
+        gares_nom_longitude = gares_nom["longitude"]
+        
         gares_pays_latitude = gares_pays["latitude"]
         gares_pays_longitude = gares_pays["longitude"]
-
+    
         plt.scatter(gares_pays_longitude, gares_pays_latitude, color="orange")
+        plt.scatter(gares_nom_longitude,gares_nom_latitude, color="blue")
         plt.title("Emplacement des gares du pays " + code_pays)
         plt.xlabel("Longitude (°)")
         plt.ylabel("Latitude (°)")
