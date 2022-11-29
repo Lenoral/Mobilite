@@ -1,3 +1,7 @@
+#######################################
+#
+#Requete à l'API Tequila flight pour extraire/mettre à jour la base de donnée des aeroports 
+
 # Useful packages
 import os
 import numpy as np
@@ -15,6 +19,7 @@ import time
 import calcul_distances as cdist
 
 def affichage_vol_api():
+    '''Requête à l'API Tequila flight pour avoir la data de tous les aeroports en Europe (lat entre 35 et 80, lon entre -13 et 80'''
     nombre_res =1000
     r=requests.get('https://api.tequila.kiwi.com/locations/box?low_lat=35&low_lon=-13&high_lat=80&high_lon=80&locale=en-US&location_types=airport&limit='+ str(nombre_res) + '&sort=name&active_only=true',headers= {'apikey': 'heKrsP3At973_NDG5Rdo5Hxev6myEuDa', 'accept': 'application/json'})
     
@@ -38,12 +43,12 @@ def affichage_vol_api():
 
 airports = affichage_vol_api()
 
+#Enregistrement des données dans le fichier Data
+
 airports.to_csv("./Data/ensemble_airports.csv")
 
 
-#Affichage aeroports
-
-import folium
+#Affichage des aeroports disponiblessur la carte
 
 def affichage_aiport_map():
     '''Affiche les aeroports de la bdd'''
@@ -68,10 +73,7 @@ def affichage_aiport_map():
             
     nom_fichier = 'Carte_airports' +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
-
-    print('Finito')
+    print('Carte des aeroports disponible générée')
     
-    fmap
     return(fmap)
         
-affichage_aiport_map()

@@ -1,17 +1,20 @@
+################################
+#
+#Fonctions d'aide aux calculs de distances
 #Homotéthie
 
 from math import *
 
 def ecart_dist(d_or,d_dest):
-    '''Renvoie l'ecart longitude/latitude entre le départ et la destination'''
+    '''Renvoie l'ecart longitude/latitude entre le départ et la destination''' #Inutile
     if ((float(d_or)*float(d_dest))<0):
-        print('1')
         return(d_dest-d_or)
     else:
         return(d_dest-d_or)
     
 
 def rad(x):
+    '''Convertion en radian'''
     return(x*pi/180)
 
 def get_angle(lon_or, lat_or, lon_dest, lat_dest):
@@ -22,7 +25,7 @@ def get_angle(lon_or, lat_or, lon_dest, lat_dest):
     return(theta)
 
 def get_dist_km(lon_or, lat_or, lon_dest, lat_dest):
-    '''Renvoie la distance en km entre deux points donnés'''
+    '''Renvoie la distance en km entre deux points donnés''' #Méthode 1
     delta_lat = lat_dest-lat_or
     delta_lon = lon_dest-lon_or
     x=(delta_lon)*cos(0.5*(lat_dest+lat_or))
@@ -33,6 +36,7 @@ def get_dist_km(lon_or, lat_or, lon_dest, lat_dest):
 
 
 def get_dist_km_2(lon_or, lat_or, lon_dest, lat_dest):
+    '''Renvoie la distance en km entre deux points donnés''' #Méthode 2 => A CHOISIR
     a=sin(rad(0.5*(lat_dest-lat_or)))**2+cos(rad(lat_or))*cos(rad(lat_dest))*sin(rad(0.5*(lon_dest-lon_or)))**2
     c=2*atan(sqrt(a)/sqrt(1-a))
     dist=6371*c

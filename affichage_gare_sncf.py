@@ -138,8 +138,10 @@ def affichage_destination_map(nom_recherche):
     
     #Recherche des coordonnées de la gare choisie pour etre l'origine des trajets    
        
-    gares_initiale_latitude = recherche_gare(nom_recherche)['lat'].iloc[0]
-    gares_initiale_longitude = recherche_gare(nom_recherche)['lon'].iloc[0]
+    gare_initiale=recherche_gare(nom_recherche)
+    
+    gares_initiale_latitude = gare_initiale['lat'].iloc[0]
+    gares_initiale_longitude = gare_initiale['lon'].iloc[0]
     
     #Recherche des destinations atteignable avec les 20 prochains trains au départ de la gare choisie
     
@@ -181,6 +183,8 @@ def affichage_destination_map(nom_recherche):
     nom_fichier = 'Carte_SNCF_departs'+ str(recherche_gare(nom_recherche)['label'].iloc[0]) +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
 
+    print('Carte des Destination (Normale) des 20 prochains trains depuis la gare de ' + str(gare_initiale['label'].iloc[0]) + ' générée.' )
+
     return(fmap)
 
 ###Affichage des destinations, en modifiant la position des marqueurs sur la carte de telle façon que la distance
@@ -191,8 +195,10 @@ def affichage_destination_map_h(nom_recherche):
     
     #Recherche des coordonnées de la gare choisie pour etre l'origine des trajets       
     
-    gares_initiale_latitude = recherche_gare(nom_recherche)['lat'].iloc[0]
-    gares_initiale_longitude = recherche_gare(nom_recherche)['lon'].iloc[0]
+    gare_initiale=recherche_gare(nom_recherche)
+    
+    gares_initiale_latitude = gare_initiale['lat'].iloc[0]
+    gares_initiale_longitude = gare_initiale['lon'].iloc[0]
     
     #Recherche des destinations atteignable avec les 20 prochains trains au départ de la gare choisie
     
@@ -235,6 +241,9 @@ def affichage_destination_map_h(nom_recherche):
     nom_fichier = 'Carte_SNCF_departs_h'+ str(recherche_gare(nom_recherche)['label'].iloc[0]) +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
 
+    print('Carte des Destination (Déformée) des 20 prochains trains depuis la gare de ' + str(gare_initiale['label'].iloc[0]) + ' générée.' )
+
+
     return(fmap)
 
 #Affichage des gares atteignables depuis une gare choisie via les 20 prochains trains, points réels et points déformés (combinaison des deux fonctions précédentes)
@@ -245,8 +254,10 @@ def affichage_destination_map_t(nom_recherche):
         
     gares_recherche=requete_destinations_api(nom_recherche)
     
-    gares_initiale_latitude = recherche_gare(nom_recherche)['lat'].iloc[0]
-    gares_initiale_longitude = recherche_gare(nom_recherche)['lon'].iloc[0]
+    gare_initiale=recherche_gare(nom_recherche)
+    
+    gares_initiale_latitude = gare_initiale['lat'].iloc[0]
+    gares_initiale_longitude = gare_initiale['lon'].iloc[0]
 
 
     departs_gares_latitude =gares_recherche["lat"]
@@ -299,5 +310,6 @@ def affichage_destination_map_t(nom_recherche):
     nom_fichier = 'Carte_SNCF_departs_t'+ str(recherche_gare(nom_recherche)['label'].iloc[0]) +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
 
+    print('Carte des Destination (Normale et Déformée) des 20 prochains trains depuis la gare de ' + str(gare_initiale['label'].iloc[0]) + ' générée.' )
 
     return(fmap)
