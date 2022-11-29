@@ -1,3 +1,7 @@
+###################################################
+#
+#Affichage des destination atteignables depuis une origine en train (20 prochains) ou en avion (journée)
+
 import affichage_vol_dest as avd
 import affichage_gare_sncf as ags
 import calcul_distances as cdist
@@ -99,5 +103,3 @@ def affichage_total(nom_recherche):
     nom_fichier = 'Carte_vol_dest_'+ nom_recherche +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
     return(fmap)
-
-affichage_total('Angoulême')
