@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b92efca8f353cd66c7b6cde82ff305d5 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b92efca8f353cd66c7b6cde82ff305d5" ></div>
+        
+</body>
+<script>    
+    
+            var map_b92efca8f353cd66c7b6cde82ff305d5 = L.map(
+                "map_b92efca8f353cd66c7b6cde82ff305d5",
+                {
+                    center: [45.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_97d90fe55f9d40f1a94454cb027e46a6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_46a872d4a31a4411f9ebea0d30dcc409 = L.marker(
+                [47.366892, 1.740131],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_ca84ba002426ec23dc6bd242d42a8a53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_46a872d4a31a4411f9ebea0d30dcc409.setIcon(icon_ca84ba002426ec23dc6bd242d42a8a53);
+        
+    
+        var popup_4b2adac521cb5802cca9e1e624412b92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3da79517b70064575a4cb861bab090d2 = $(`<div id="html_3da79517b70064575a4cb861bab090d2" style="width: 100.0%; height: 100.0%;">Romorantin Blanc Argent (Romorantin-Lanthenay)</div>`)[0];
+                popup_4b2adac521cb5802cca9e1e624412b92.setContent(html_3da79517b70064575a4cb861bab090d2);
+            
+        
+
+        marker_46a872d4a31a4411f9ebea0d30dcc409.bindPopup(popup_4b2adac521cb5802cca9e1e624412b92)
+        ;
+
+        
+    
+    
+            var marker_01ac54a34d49972d6f7882d789979dc8 = L.marker(
+                [47.355562, 1.739209],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_e40f0bade872742015a9d2138d755ac8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_01ac54a34d49972d6f7882d789979dc8.setIcon(icon_e40f0bade872742015a9d2138d755ac8);
+        
+    
+        var popup_c35ad605ae706908fcc53fc755d6167e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1c0aca0b84cf6873fde4a7a7b5ac68ae = $(`<div id="html_1c0aca0b84cf6873fde4a7a7b5ac68ae" style="width: 100.0%; height: 100.0%;">Romorantin Blanc Argent (Romorantin-Lanthenay) - 1.3 km</div>`)[0];
+                popup_c35ad605ae706908fcc53fc755d6167e.setContent(html_1c0aca0b84cf6873fde4a7a7b5ac68ae);
+            
+        
+
+        marker_01ac54a34d49972d6f7882d789979dc8.bindPopup(popup_c35ad605ae706908fcc53fc755d6167e)
+        ;
+
+        
+    
+    
+            var poly_line_513e240a28e4f091834f512c1d4faf16 = L.polyline(
+                [[47.366892, 1.740131], [47.355562, 1.739209]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_58f56a3a0c1cf4b8c5b4c68ebd611d1c = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_7347989f259fb525cb8ae78820dcb985 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_58f56a3a0c1cf4b8c5b4c68ebd611d1c.setIcon(icon_7347989f259fb525cb8ae78820dcb985);
+        
+    
+        var popup_d94f146198158030989dace61dfb0659 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b69b9c1ca505a94656895134a5d82f54 = $(`<div id="html_b69b9c1ca505a94656895134a5d82f54" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_d94f146198158030989dace61dfb0659.setContent(html_b69b9c1ca505a94656895134a5d82f54);
+            
+        
+
+        marker_58f56a3a0c1cf4b8c5b4c68ebd611d1c.bindPopup(popup_d94f146198158030989dace61dfb0659)
+        ;
+
+        
+    
+    
+            var poly_line_4413d3c8e00cf4567ad8f4de10b2c91b = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_1b66e15a5edffdd6c733179830fc1d70 = L.marker(
+                [47.355562, 1.739209],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_84113b8ec44c5b3dd278c99799faacf9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1b66e15a5edffdd6c733179830fc1d70.setIcon(icon_84113b8ec44c5b3dd278c99799faacf9);
+        
+    
+        var popup_6a2f9076ff70b8106fd889f9b1c594b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e1f1dceb6b050e882b103bb4e44db5c = $(`<div id="html_4e1f1dceb6b050e882b103bb4e44db5c" style="width: 100.0%; height: 100.0%;">Romorantin Blanc Argent (Romorantin-Lanthenay) - 1.3 km</div>`)[0];
+                popup_6a2f9076ff70b8106fd889f9b1c594b5.setContent(html_4e1f1dceb6b050e882b103bb4e44db5c);
+            
+        
+
+        marker_1b66e15a5edffdd6c733179830fc1d70.bindPopup(popup_6a2f9076ff70b8106fd889f9b1c594b5)
+        ;
+
+        
+    
+    
+            var poly_line_4d83ee440396dd3cdeb5f657b0be3cdb = L.polyline(
+                [[47.366892, 1.740131], [47.355562, 1.739209]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_e1e4f7dd22d36a717b0c96f70a059d59 = L.marker(
+                [47.163055, 1.558658],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_dab2812c4c1de662046d7a5891046bc4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e1e4f7dd22d36a717b0c96f70a059d59.setIcon(icon_dab2812c4c1de662046d7a5891046bc4);
+        
+    
+        var popup_0eb06543681228b6b13389015c1cfb84 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_84a144bf039fa5a4fdf3af7d387342dc = $(`<div id="html_84a144bf039fa5a4fdf3af7d387342dc" style="width: 100.0%; height: 100.0%;">Valençay (Valençay) - 26.5 km</div>`)[0];
+                popup_0eb06543681228b6b13389015c1cfb84.setContent(html_84a144bf039fa5a4fdf3af7d387342dc);
+            
+        
+
+        marker_e1e4f7dd22d36a717b0c96f70a059d59.bindPopup(popup_0eb06543681228b6b13389015c1cfb84)
+        ;
+
+        
+    
+    
+            var poly_line_f9f9cf2c77cbc73bcb8bc3e1acdf6655 = L.polyline(
+                [[47.366892, 1.740131], [47.163055, 1.558658]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_f8bc85a17fc143b5a583fc2f92664636 = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_f297f25c7923d394597fbe5b1a5a9465 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8bc85a17fc143b5a583fc2f92664636.setIcon(icon_f297f25c7923d394597fbe5b1a5a9465);
+        
+    
+        var popup_20c54dd5fb4bd0a17b7e843160fd1814 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f607c024fc9d3b3461077443b9edbf0d = $(`<div id="html_f607c024fc9d3b3461077443b9edbf0d" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_20c54dd5fb4bd0a17b7e843160fd1814.setContent(html_f607c024fc9d3b3461077443b9edbf0d);
+            
+        
+
+        marker_f8bc85a17fc143b5a583fc2f92664636.bindPopup(popup_20c54dd5fb4bd0a17b7e843160fd1814)
+        ;
+
+        
+    
+    
+            var poly_line_ad79195162aa8c2df0e001434e5ebe90 = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_4acc2ef397037156797aa4a1eba96d73 = L.marker(
+                [47.163055, 1.558658],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_c3ae7286a176416f9b545eef3cd95b66 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4acc2ef397037156797aa4a1eba96d73.setIcon(icon_c3ae7286a176416f9b545eef3cd95b66);
+        
+    
+        var popup_2390036f22b46393e5b8a09ebdb600ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aea7e06597137d7724bb0567d665af3c = $(`<div id="html_aea7e06597137d7724bb0567d665af3c" style="width: 100.0%; height: 100.0%;">Valençay (Valençay) - 26.5 km</div>`)[0];
+                popup_2390036f22b46393e5b8a09ebdb600ab.setContent(html_aea7e06597137d7724bb0567d665af3c);
+            
+        
+
+        marker_4acc2ef397037156797aa4a1eba96d73.bindPopup(popup_2390036f22b46393e5b8a09ebdb600ab)
+        ;
+
+        
+    
+    
+            var poly_line_f557f5e314ed66894e1530a37c8dd12b = L.polyline(
+                [[47.366892, 1.740131], [47.163055, 1.558658]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_c68d3c7064c207eda5903743d8a645ea = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_b7ccc2653b288cdb8eaafd7e61cfac6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c68d3c7064c207eda5903743d8a645ea.setIcon(icon_b7ccc2653b288cdb8eaafd7e61cfac6b);
+        
+    
+        var popup_7ce10a55e7be6317de4ee83d94fc0efd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_840b13581b4598db17df40d7e69a0f4d = $(`<div id="html_840b13581b4598db17df40d7e69a0f4d" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_7ce10a55e7be6317de4ee83d94fc0efd.setContent(html_840b13581b4598db17df40d7e69a0f4d);
+            
+        
+
+        marker_c68d3c7064c207eda5903743d8a645ea.bindPopup(popup_7ce10a55e7be6317de4ee83d94fc0efd)
+        ;
+
+        
+    
+    
+            var poly_line_e4c38c82cb250f4e3b72527de91119db = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_2d6bd2646234c99ffcd694e8bc37a6ff = L.marker(
+                [47.163055, 1.558658],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_696cf91f470f1e2605dc8ee63638d042 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2d6bd2646234c99ffcd694e8bc37a6ff.setIcon(icon_696cf91f470f1e2605dc8ee63638d042);
+        
+    
+        var popup_fa6208c87578514f2daaae2765055ce0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05bbf8f2c85a7d25aa3bfe9d7cfff971 = $(`<div id="html_05bbf8f2c85a7d25aa3bfe9d7cfff971" style="width: 100.0%; height: 100.0%;">Valençay (Valençay) - 26.5 km</div>`)[0];
+                popup_fa6208c87578514f2daaae2765055ce0.setContent(html_05bbf8f2c85a7d25aa3bfe9d7cfff971);
+            
+        
+
+        marker_2d6bd2646234c99ffcd694e8bc37a6ff.bindPopup(popup_fa6208c87578514f2daaae2765055ce0)
+        ;
+
+        
+    
+    
+            var poly_line_a45d944c71b93adeb5fcf439bfb65d7a = L.polyline(
+                [[47.366892, 1.740131], [47.163055, 1.558658]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_d8a3c8e7e728747bfe87c2c57ed732cf = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_9c4ad622135c93620e558b350e305e40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d8a3c8e7e728747bfe87c2c57ed732cf.setIcon(icon_9c4ad622135c93620e558b350e305e40);
+        
+    
+        var popup_4e7668d99ee9130b7ce749f352ce9df7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18e7c72e1e052dff288da952578d173f = $(`<div id="html_18e7c72e1e052dff288da952578d173f" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_4e7668d99ee9130b7ce749f352ce9df7.setContent(html_18e7c72e1e052dff288da952578d173f);
+            
+        
+
+        marker_d8a3c8e7e728747bfe87c2c57ed732cf.bindPopup(popup_4e7668d99ee9130b7ce749f352ce9df7)
+        ;
+
+        
+    
+    
+            var poly_line_9c7909091934105caa1c4d611122889d = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_a2bfe7b6d908534a52d8d65f51b9c128 = L.marker(
+                [47.355562, 1.739209],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_9384278e8990cd4b83b2f1819216e3b9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a2bfe7b6d908534a52d8d65f51b9c128.setIcon(icon_9384278e8990cd4b83b2f1819216e3b9);
+        
+    
+        var popup_a24a9c5cc8c2f3bcfd2687c38af2c9e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7142e8395292035e2d86d7e6784bd938 = $(`<div id="html_7142e8395292035e2d86d7e6784bd938" style="width: 100.0%; height: 100.0%;">Romorantin Blanc Argent (Romorantin-Lanthenay) - 1.3 km</div>`)[0];
+                popup_a24a9c5cc8c2f3bcfd2687c38af2c9e2.setContent(html_7142e8395292035e2d86d7e6784bd938);
+            
+        
+
+        marker_a2bfe7b6d908534a52d8d65f51b9c128.bindPopup(popup_a24a9c5cc8c2f3bcfd2687c38af2c9e2)
+        ;
+
+        
+    
+    
+            var poly_line_620a89456e761c00844f0ac7ad52de9b = L.polyline(
+                [[47.366892, 1.740131], [47.355562, 1.739209]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_06c0b52ca2aea7df8c0fff1f863bd952 = L.marker(
+                [47.355562, 1.739209],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_625a87982465592274df3d1fd552ed7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_06c0b52ca2aea7df8c0fff1f863bd952.setIcon(icon_625a87982465592274df3d1fd552ed7b);
+        
+    
+        var popup_0037f33913d9471b3ca2e2bbf74410ae = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f46dd582fcc2aec4c81a33ed450e71c = $(`<div id="html_0f46dd582fcc2aec4c81a33ed450e71c" style="width: 100.0%; height: 100.0%;">Romorantin Blanc Argent (Romorantin-Lanthenay) - 1.3 km</div>`)[0];
+                popup_0037f33913d9471b3ca2e2bbf74410ae.setContent(html_0f46dd582fcc2aec4c81a33ed450e71c);
+            
+        
+
+        marker_06c0b52ca2aea7df8c0fff1f863bd952.bindPopup(popup_0037f33913d9471b3ca2e2bbf74410ae)
+        ;
+
+        
+    
+    
+            var poly_line_7773237b6576dbd159c7b2280c0a556e = L.polyline(
+                [[47.366892, 1.740131], [47.355562, 1.739209]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_7b8e9351d59cecf713e7cb5b98f6a32c = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_84b7ae351fb6386c8d95020e9574c90b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7b8e9351d59cecf713e7cb5b98f6a32c.setIcon(icon_84b7ae351fb6386c8d95020e9574c90b);
+        
+    
+        var popup_a3c8866b397d805cf3e7ca6c9599445a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34904208980e296a7591bc1d7c442548 = $(`<div id="html_34904208980e296a7591bc1d7c442548" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_a3c8866b397d805cf3e7ca6c9599445a.setContent(html_34904208980e296a7591bc1d7c442548);
+            
+        
+
+        marker_7b8e9351d59cecf713e7cb5b98f6a32c.bindPopup(popup_a3c8866b397d805cf3e7ca6c9599445a)
+        ;
+
+        
+    
+    
+            var poly_line_946f5fa8fb1b7fa86bdbd8d34914a501 = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_448b00a44f9eb6000703288bf58d434b = L.marker(
+                [47.355562, 1.739209],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_e614e8dcbfdf2224b8e23324377a3324 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_448b00a44f9eb6000703288bf58d434b.setIcon(icon_e614e8dcbfdf2224b8e23324377a3324);
+        
+    
+        var popup_aac352b92eb0542ea062662ad230e4ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c7b75cc88d239347bd830e067cb0837 = $(`<div id="html_6c7b75cc88d239347bd830e067cb0837" style="width: 100.0%; height: 100.0%;">Romorantin Blanc Argent (Romorantin-Lanthenay) - 1.3 km</div>`)[0];
+                popup_aac352b92eb0542ea062662ad230e4ce.setContent(html_6c7b75cc88d239347bd830e067cb0837);
+            
+        
+
+        marker_448b00a44f9eb6000703288bf58d434b.bindPopup(popup_aac352b92eb0542ea062662ad230e4ce)
+        ;
+
+        
+    
+    
+            var poly_line_33df4862836e730cc5a12c3872078a52 = L.polyline(
+                [[47.366892, 1.740131], [47.355562, 1.739209]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_56661e4b7a126a17c72f317346289d86 = L.marker(
+                [47.163055, 1.558658],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_56824e188fb9ac68f8fd1e591969a190 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_56661e4b7a126a17c72f317346289d86.setIcon(icon_56824e188fb9ac68f8fd1e591969a190);
+        
+    
+        var popup_85d023ac9bba05c91d544b205a8d2401 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_34883fbbee677be5ec1aee274b17c952 = $(`<div id="html_34883fbbee677be5ec1aee274b17c952" style="width: 100.0%; height: 100.0%;">Valençay (Valençay) - 26.5 km</div>`)[0];
+                popup_85d023ac9bba05c91d544b205a8d2401.setContent(html_34883fbbee677be5ec1aee274b17c952);
+            
+        
+
+        marker_56661e4b7a126a17c72f317346289d86.bindPopup(popup_85d023ac9bba05c91d544b205a8d2401)
+        ;
+
+        
+    
+    
+            var poly_line_c63eefbf7269f6bced4b7e1102dce663 = L.polyline(
+                [[47.366892, 1.740131], [47.163055, 1.558658]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_af3466d222987f697fdebb232c00cd5f = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_5cc9006d4725f2f583191f6c7154333b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_af3466d222987f697fdebb232c00cd5f.setIcon(icon_5cc9006d4725f2f583191f6c7154333b);
+        
+    
+        var popup_707a4e04acc3b3e5d37523444ba2016d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_41462bda13bd54f026c9179cdbf80015 = $(`<div id="html_41462bda13bd54f026c9179cdbf80015" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_707a4e04acc3b3e5d37523444ba2016d.setContent(html_41462bda13bd54f026c9179cdbf80015);
+            
+        
+
+        marker_af3466d222987f697fdebb232c00cd5f.bindPopup(popup_707a4e04acc3b3e5d37523444ba2016d)
+        ;
+
+        
+    
+    
+            var poly_line_98d0ae27ef6aee1eabb51277d2ec6696 = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_c768888ca6573b6db5d049dbef36d080 = L.marker(
+                [47.163055, 1.558658],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_00b56a770e39a8d816ee1769215f1634 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c768888ca6573b6db5d049dbef36d080.setIcon(icon_00b56a770e39a8d816ee1769215f1634);
+        
+    
+        var popup_7bf4a7d7139244432849a58ce7018b3f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f89254014e25051f7f3fcf2bd9324cba = $(`<div id="html_f89254014e25051f7f3fcf2bd9324cba" style="width: 100.0%; height: 100.0%;">Valençay (Valençay) - 26.5 km</div>`)[0];
+                popup_7bf4a7d7139244432849a58ce7018b3f.setContent(html_f89254014e25051f7f3fcf2bd9324cba);
+            
+        
+
+        marker_c768888ca6573b6db5d049dbef36d080.bindPopup(popup_7bf4a7d7139244432849a58ce7018b3f)
+        ;
+
+        
+    
+    
+            var poly_line_fadbb7106a3f891e16720a9a0e89204b = L.polyline(
+                [[47.366892, 1.740131], [47.163055, 1.558658]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_a0faf47a724302e7f62b7b2184b43a13 = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_409f36679823e815a5f7530104a22dfe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a0faf47a724302e7f62b7b2184b43a13.setIcon(icon_409f36679823e815a5f7530104a22dfe);
+        
+    
+        var popup_30c681ceaab910002d8b44bd70473ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22c1fdb86ee51cacb2bc23a262ef39ee = $(`<div id="html_22c1fdb86ee51cacb2bc23a262ef39ee" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_30c681ceaab910002d8b44bd70473ec0.setContent(html_22c1fdb86ee51cacb2bc23a262ef39ee);
+            
+        
+
+        marker_a0faf47a724302e7f62b7b2184b43a13.bindPopup(popup_30c681ceaab910002d8b44bd70473ec0)
+        ;
+
+        
+    
+    
+            var poly_line_a86a24615feb142b67af7c63983db471 = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_7c61ea552d3923b25c09325269aac4d0 = L.marker(
+                [47.163055, 1.558658],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_2b2690df5762f59d6e476c3904d1812b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c61ea552d3923b25c09325269aac4d0.setIcon(icon_2b2690df5762f59d6e476c3904d1812b);
+        
+    
+        var popup_bfbc3c70c161d0920b2b32d784b365e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_98a2e858fee6ceb02c7d4d5c083eabbd = $(`<div id="html_98a2e858fee6ceb02c7d4d5c083eabbd" style="width: 100.0%; height: 100.0%;">Valençay (Valençay) - 26.5 km</div>`)[0];
+                popup_bfbc3c70c161d0920b2b32d784b365e9.setContent(html_98a2e858fee6ceb02c7d4d5c083eabbd);
+            
+        
+
+        marker_7c61ea552d3923b25c09325269aac4d0.bindPopup(popup_bfbc3c70c161d0920b2b32d784b365e9)
+        ;
+
+        
+    
+    
+            var poly_line_394fd4bc9b3361d71b9b86cfe5dca145 = L.polyline(
+                [[47.366892, 1.740131], [47.163055, 1.558658]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_b4f386e5bd45c2b917bc9d5854a3a038 = L.marker(
+                [47.425186, 2.047751],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_d2c432e7c2fe5d7cfd68417d7b507ad5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4f386e5bd45c2b917bc9d5854a3a038.setIcon(icon_d2c432e7c2fe5d7cfd68417d7b507ad5);
+        
+    
+        var popup_2c9fededc832594a8f365a4f992271f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa05b80e4e1d5d0bedb11f22e1eaaf61 = $(`<div id="html_fa05b80e4e1d5d0bedb11f22e1eaaf61" style="width: 100.0%; height: 100.0%;">Salbris (Salbris) - 24.0 km</div>`)[0];
+                popup_2c9fededc832594a8f365a4f992271f5.setContent(html_fa05b80e4e1d5d0bedb11f22e1eaaf61);
+            
+        
+
+        marker_b4f386e5bd45c2b917bc9d5854a3a038.bindPopup(popup_2c9fededc832594a8f365a4f992271f5)
+        ;
+
+        
+    
+    
+            var poly_line_54c218047f26efde8fcf1413b3506e9d = L.polyline(
+                [[47.366892, 1.740131], [47.425186, 2.047751]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var marker_61fb002e3d626423d8485c0a34585c33 = L.marker(
+                [47.355562, 1.739209],
+                {}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+    
+            var icon_5d7288bd9e758eddfe6fbe36ec57832e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61fb002e3d626423d8485c0a34585c33.setIcon(icon_5d7288bd9e758eddfe6fbe36ec57832e);
+        
+    
+        var popup_0a3970e5fd31463e8e7ef7ac3cb38bfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1dff5e3eb0779f521eea686482fbce09 = $(`<div id="html_1dff5e3eb0779f521eea686482fbce09" style="width: 100.0%; height: 100.0%;">Romorantin Blanc Argent (Romorantin-Lanthenay) - 1.3 km</div>`)[0];
+                popup_0a3970e5fd31463e8e7ef7ac3cb38bfc.setContent(html_1dff5e3eb0779f521eea686482fbce09);
+            
+        
+
+        marker_61fb002e3d626423d8485c0a34585c33.bindPopup(popup_0a3970e5fd31463e8e7ef7ac3cb38bfc)
+        ;
+
+        
+    
+    
+            var poly_line_5818b35ff1b0a0c4cf1d511386ee5e28 = L.polyline(
+                [[47.366892, 1.740131], [47.355562, 1.739209]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b92efca8f353cd66c7b6cde82ff305d5);
+        
+</script>

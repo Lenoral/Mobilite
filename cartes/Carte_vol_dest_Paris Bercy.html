@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_bbdf7e7fd2e27ed5daafa9593cb986bf {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_bbdf7e7fd2e27ed5daafa9593cb986bf" ></div>
+        
+</body>
+<script>    
+    
+            var map_bbdf7e7fd2e27ed5daafa9593cb986bf = L.map(
+                "map_bbdf7e7fd2e27ed5daafa9593cb986bf",
+                {
+                    center: [45.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d26597864e86bfebdcdec03913662cb6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_2f4c34536f9f797ff3413b903c395f97 = L.marker(
+                [48.839215, 2.382791],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_d1367b481b25adf9672b09de4874182c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f4c34536f9f797ff3413b903c395f97.setIcon(icon_d1367b481b25adf9672b09de4874182c);
+        
+    
+        var popup_d17511eab850003f953390a03e42d538 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02d6b959be71eb11b249e2b9f3d4247a = $(`<div id="html_02d6b959be71eb11b249e2b9f3d4247a" style="width: 100.0%; height: 100.0%;">Auxerre Saint-Gervais (Auxerre)</div>`)[0];
+                popup_d17511eab850003f953390a03e42d538.setContent(html_02d6b959be71eb11b249e2b9f3d4247a);
+            
+        
+
+        marker_2f4c34536f9f797ff3413b903c395f97.bindPopup(popup_d17511eab850003f953390a03e42d538)
+        ;
+
+        
+    
+    
+            var marker_1395895a80f8ef1c967c1e6fda5aa65c = L.marker(
+                [47.797645, 3.58514],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_a0b1ea1ae4901c78bfec3dd83da6888e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1395895a80f8ef1c967c1e6fda5aa65c.setIcon(icon_a0b1ea1ae4901c78bfec3dd83da6888e);
+        
+    
+        var popup_f11ea8f31e4c7c271d808c1cb25cdd5b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_32be2dacc0790ab9378c0dd963d2d6dc = $(`<div id="html_32be2dacc0790ab9378c0dd963d2d6dc" style="width: 100.0%; height: 100.0%;">Auxerre Saint-Gervais (Auxerre) - 146.0 km</div>`)[0];
+                popup_f11ea8f31e4c7c271d808c1cb25cdd5b.setContent(html_32be2dacc0790ab9378c0dd963d2d6dc);
+            
+        
+
+        marker_1395895a80f8ef1c967c1e6fda5aa65c.bindPopup(popup_f11ea8f31e4c7c271d808c1cb25cdd5b)
+        ;
+
+        
+    
+    
+            var poly_line_71ed6aeea8c88a515a9e5489fcc312b9 = L.polyline(
+                [[48.839215, 2.382791], [47.797645, 3.58514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_bd6d52069bc9984faea4b2ad5f389ba0 = L.marker(
+                [45.748508, 4.825777],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_ff2cef1c65e83523bb58a9441f841f40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bd6d52069bc9984faea4b2ad5f389ba0.setIcon(icon_ff2cef1c65e83523bb58a9441f841f40);
+        
+    
+        var popup_f3beb0ace9d2ff4e4ad427c5cae0c839 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6dc997f33f94e1a33d66bd5723afa3fb = $(`<div id="html_6dc997f33f94e1a33d66bd5723afa3fb" style="width: 100.0%; height: 100.0%;">Lyon Perrache (Lyon) - 389.9 km</div>`)[0];
+                popup_f3beb0ace9d2ff4e4ad427c5cae0c839.setContent(html_6dc997f33f94e1a33d66bd5723afa3fb);
+            
+        
+
+        marker_bd6d52069bc9984faea4b2ad5f389ba0.bindPopup(popup_f3beb0ace9d2ff4e4ad427c5cae0c839)
+        ;
+
+        
+    
+    
+            var poly_line_696149e72d899b023ca9cb60b63dec62 = L.polyline(
+                [[48.839215, 2.382791], [45.748508, 4.825777]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_21a9993a21223f07ae8cbce58fcacdaf = L.marker(
+                [47.495755, 3.912446],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_b060fb3f368699836c0972ec64dee2a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_21a9993a21223f07ae8cbce58fcacdaf.setIcon(icon_b060fb3f368699836c0972ec64dee2a6);
+        
+    
+        var popup_5a0702eca2c238a54150b8f466abd9c6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_78429645a4e8cb70f1e0649b14a7070a = $(`<div id="html_78429645a4e8cb70f1e0649b14a7070a" style="width: 100.0%; height: 100.0%;">Avallon (Avallon) - 187.6 km</div>`)[0];
+                popup_5a0702eca2c238a54150b8f466abd9c6.setContent(html_78429645a4e8cb70f1e0649b14a7070a);
+            
+        
+
+        marker_21a9993a21223f07ae8cbce58fcacdaf.bindPopup(popup_5a0702eca2c238a54150b8f466abd9c6)
+        ;
+
+        
+    
+    
+            var poly_line_a5acc8da5a44b33962e76e8417b9cb82 = L.polyline(
+                [[48.839215, 2.382791], [47.495755, 3.912446]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_c2d3833e337669e89cd12924c9888434 = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_3bb107666e8c2e69858b5fd1498a1b1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c2d3833e337669e89cd12924c9888434.setIcon(icon_3bb107666e8c2e69858b5fd1498a1b1f);
+        
+    
+        var popup_90dcbdcb664c0b4fe983b6f1dda0b8e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14b88abb25d990c3719e79a99a8d745e = $(`<div id="html_14b88abb25d990c3719e79a99a8d745e" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 344.6 km</div>`)[0];
+                popup_90dcbdcb664c0b4fe983b6f1dda0b8e9.setContent(html_14b88abb25d990c3719e79a99a8d745e);
+            
+        
+
+        marker_c2d3833e337669e89cd12924c9888434.bindPopup(popup_90dcbdcb664c0b4fe983b6f1dda0b8e9)
+        ;
+
+        
+    
+    
+            var poly_line_de88f30f8103a9d795efdd79fa8d8148 = L.polyline(
+                [[48.839215, 2.382791], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_119050887ab9e1b0f080961f3a70637d = L.marker(
+                [45.760596, 4.859409],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_4a136ab31e06937b3d2b263071b56813 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_119050887ab9e1b0f080961f3a70637d.setIcon(icon_4a136ab31e06937b3d2b263071b56813);
+        
+    
+        var popup_74a69aeafdd8a4c616abefa2bf660634 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d47a45a8db0817c3259ae138d90f9319 = $(`<div id="html_d47a45a8db0817c3259ae138d90f9319" style="width: 100.0%; height: 100.0%;">Lyon Part Dieu (Lyon) - 389.9 km</div>`)[0];
+                popup_74a69aeafdd8a4c616abefa2bf660634.setContent(html_d47a45a8db0817c3259ae138d90f9319);
+            
+        
+
+        marker_119050887ab9e1b0f080961f3a70637d.bindPopup(popup_74a69aeafdd8a4c616abefa2bf660634)
+        ;
+
+        
+    
+    
+            var poly_line_efd699ed5fbd937f410a2b5d771bcecc = L.polyline(
+                [[48.839215, 2.382791], [45.760596, 4.859409]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_cdd815bccd7f7ed059ad2b8125b14a28 = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_d26bb3a3cb07e287b1e4e28c6ed35b53 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cdd815bccd7f7ed059ad2b8125b14a28.setIcon(icon_d26bb3a3cb07e287b1e4e28c6ed35b53);
+        
+    
+        var popup_b1b403402846da41e91e39b9f1c0b9b0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8d2f1323a1743e4ec948806f70d327ef = $(`<div id="html_8d2f1323a1743e4ec948806f70d327ef" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 344.6 km</div>`)[0];
+                popup_b1b403402846da41e91e39b9f1c0b9b0.setContent(html_8d2f1323a1743e4ec948806f70d327ef);
+            
+        
+
+        marker_cdd815bccd7f7ed059ad2b8125b14a28.bindPopup(popup_b1b403402846da41e91e39b9f1c0b9b0)
+        ;
+
+        
+    
+    
+            var poly_line_1e05780323faca68a57c550064c3df81 = L.polyline(
+                [[48.839215, 2.382791], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_bedf1430a94c86545de21357b0440cc7 = L.marker(
+                [46.987282, 3.150743],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_8e77f44b8756f9a30648516d1a41a379 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bedf1430a94c86545de21357b0440cc7.setIcon(icon_8e77f44b8756f9a30648516d1a41a379);
+        
+    
+        var popup_d22b361f0b68b6cac065ac360ca02b56 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_28da25f3bd96f3773eb8c8117a95f482 = $(`<div id="html_28da25f3bd96f3773eb8c8117a95f482" style="width: 100.0%; height: 100.0%;">Nevers (Nevers) - 213.7 km</div>`)[0];
+                popup_d22b361f0b68b6cac065ac360ca02b56.setContent(html_28da25f3bd96f3773eb8c8117a95f482);
+            
+        
+
+        marker_bedf1430a94c86545de21357b0440cc7.bindPopup(popup_d22b361f0b68b6cac065ac360ca02b56)
+        ;
+
+        
+    
+    
+            var poly_line_586761be7263651b8016f7a958da6736 = L.polyline(
+                [[48.839215, 2.382791], [46.987282, 3.150743]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_79ce4424abbf8a2fae8c527eaa6afb40 = L.marker(
+                [47.466698, 3.520767],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_fc338fa8225e6c51d646f19c7107515e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_79ce4424abbf8a2fae8c527eaa6afb40.setIcon(icon_fc338fa8225e6c51d646f19c7107515e);
+        
+    
+        var popup_8b5ebafd033712326314eb03dda7fa28 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0f3dcf66d129b0f5bb2b038ad9e5f7e1 = $(`<div id="html_0f3dcf66d129b0f5bb2b038ad9e5f7e1" style="width: 100.0%; height: 100.0%;">Clamecy (Clamecy) - 174.4 km</div>`)[0];
+                popup_8b5ebafd033712326314eb03dda7fa28.setContent(html_0f3dcf66d129b0f5bb2b038ad9e5f7e1);
+            
+        
+
+        marker_79ce4424abbf8a2fae8c527eaa6afb40.bindPopup(popup_8b5ebafd033712326314eb03dda7fa28)
+        ;
+
+        
+    
+    
+            var poly_line_d378257f2aa436d88ce098cd3aba7cd6 = L.polyline(
+                [[48.839215, 2.382791], [47.466698, 3.520767]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_2772a12d244045ac515af749fdf52580 = L.marker(
+                [45.760596, 4.859409],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_ccf3d33b0d2a2f1dd3b47cbd3d1bb787 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2772a12d244045ac515af749fdf52580.setIcon(icon_ccf3d33b0d2a2f1dd3b47cbd3d1bb787);
+        
+    
+        var popup_c395365d33d1481d436898794e7609ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ed808c67472048d9909086e74f8dde98 = $(`<div id="html_ed808c67472048d9909086e74f8dde98" style="width: 100.0%; height: 100.0%;">Lyon Part Dieu (Lyon) - 389.9 km</div>`)[0];
+                popup_c395365d33d1481d436898794e7609ba.setContent(html_ed808c67472048d9909086e74f8dde98);
+            
+        
+
+        marker_2772a12d244045ac515af749fdf52580.bindPopup(popup_c395365d33d1481d436898794e7609ba)
+        ;
+
+        
+    
+    
+            var poly_line_84ae0a76b91228349ad852f04becd6d1 = L.polyline(
+                [[48.839215, 2.382791], [45.760596, 4.859409]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_da18cd55aab2847e3475303511f8b046 = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_a942c8c4e84c05283e804464ff94e1dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_da18cd55aab2847e3475303511f8b046.setIcon(icon_a942c8c4e84c05283e804464ff94e1dc);
+        
+    
+        var popup_998f7120c7bbe3ae587742a5db2ca997 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18389475f7b50c66e6496924839bd4c1 = $(`<div id="html_18389475f7b50c66e6496924839bd4c1" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 344.6 km</div>`)[0];
+                popup_998f7120c7bbe3ae587742a5db2ca997.setContent(html_18389475f7b50c66e6496924839bd4c1);
+            
+        
+
+        marker_da18cd55aab2847e3475303511f8b046.bindPopup(popup_998f7120c7bbe3ae587742a5db2ca997)
+        ;
+
+        
+    
+    
+            var poly_line_c49a918111541ba13fae2a2a8b4de0b2 = L.polyline(
+                [[48.839215, 2.382791], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_9ca8a1e843394f43ecc326e57b71255c = L.marker(
+                [47.797645, 3.58514],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_0b2cb803291ce45e107b211bb2f9f9d5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ca8a1e843394f43ecc326e57b71255c.setIcon(icon_0b2cb803291ce45e107b211bb2f9f9d5);
+        
+    
+        var popup_fe647f88ce62568d881df8c36a9bbcc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_154e4dd940e20f6d0e5debf198a786c5 = $(`<div id="html_154e4dd940e20f6d0e5debf198a786c5" style="width: 100.0%; height: 100.0%;">Auxerre Saint-Gervais (Auxerre) - 146.0 km</div>`)[0];
+                popup_fe647f88ce62568d881df8c36a9bbcc0.setContent(html_154e4dd940e20f6d0e5debf198a786c5);
+            
+        
+
+        marker_9ca8a1e843394f43ecc326e57b71255c.bindPopup(popup_fe647f88ce62568d881df8c36a9bbcc0)
+        ;
+
+        
+    
+    
+            var poly_line_a4e1f73d27f40ad9eee7706c2780f6db = L.polyline(
+                [[48.839215, 2.382791], [47.797645, 3.58514]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_53da0266db28a04ab01b9c7bbf54ac15 = L.marker(
+                [45.748508, 4.825777],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_8367f46805e2410ceccf809844ef514d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_53da0266db28a04ab01b9c7bbf54ac15.setIcon(icon_8367f46805e2410ceccf809844ef514d);
+        
+    
+        var popup_06433b5c67c9500ea7c820cfe17dfb90 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f1b27c0bd7c3598fe11160496569ffea = $(`<div id="html_f1b27c0bd7c3598fe11160496569ffea" style="width: 100.0%; height: 100.0%;">Lyon Perrache (Lyon) - 389.9 km</div>`)[0];
+                popup_06433b5c67c9500ea7c820cfe17dfb90.setContent(html_f1b27c0bd7c3598fe11160496569ffea);
+            
+        
+
+        marker_53da0266db28a04ab01b9c7bbf54ac15.bindPopup(popup_06433b5c67c9500ea7c820cfe17dfb90)
+        ;
+
+        
+    
+    
+            var poly_line_0b6883e4a72708efe5290880bd65bd2b = L.polyline(
+                [[48.839215, 2.382791], [45.748508, 4.825777]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_b3da519a96bf15cb8fdb3d2050afd72a = L.marker(
+                [47.495755, 3.912446],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_9fc5b84df8c5bd8fdb25d4239a7b9522 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b3da519a96bf15cb8fdb3d2050afd72a.setIcon(icon_9fc5b84df8c5bd8fdb25d4239a7b9522);
+        
+    
+        var popup_262bffc5104eaa6e454bfe4fd832b8d9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03fa61d9f21935017fd45719b6fc3586 = $(`<div id="html_03fa61d9f21935017fd45719b6fc3586" style="width: 100.0%; height: 100.0%;">Avallon (Avallon) - 187.6 km</div>`)[0];
+                popup_262bffc5104eaa6e454bfe4fd832b8d9.setContent(html_03fa61d9f21935017fd45719b6fc3586);
+            
+        
+
+        marker_b3da519a96bf15cb8fdb3d2050afd72a.bindPopup(popup_262bffc5104eaa6e454bfe4fd832b8d9)
+        ;
+
+        
+    
+    
+            var poly_line_e194c4256a2eff0c0afae5b7a8fb4c7b = L.polyline(
+                [[48.839215, 2.382791], [47.495755, 3.912446]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_42b8d872da936f720b192f7c59ae0512 = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_f4aea321565e16c622440e19e7e1aa79 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_42b8d872da936f720b192f7c59ae0512.setIcon(icon_f4aea321565e16c622440e19e7e1aa79);
+        
+    
+        var popup_7098ba2808ee9ae91cafcc11190a175d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c064b38e449c0c932d19a5af99707df0 = $(`<div id="html_c064b38e449c0c932d19a5af99707df0" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 344.6 km</div>`)[0];
+                popup_7098ba2808ee9ae91cafcc11190a175d.setContent(html_c064b38e449c0c932d19a5af99707df0);
+            
+        
+
+        marker_42b8d872da936f720b192f7c59ae0512.bindPopup(popup_7098ba2808ee9ae91cafcc11190a175d)
+        ;
+
+        
+    
+    
+            var poly_line_62e4c8c4cde9c7b16ce04a82ed05112a = L.polyline(
+                [[48.839215, 2.382791], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_69568d6e57300f0932447a9a2af83008 = L.marker(
+                [45.760596, 4.859409],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_c013b67d87c416be9feb74ae9d790049 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_69568d6e57300f0932447a9a2af83008.setIcon(icon_c013b67d87c416be9feb74ae9d790049);
+        
+    
+        var popup_84a4370288c7011b3d4347d1034efa5e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_932af9647b5323b5c3c78282587b86ee = $(`<div id="html_932af9647b5323b5c3c78282587b86ee" style="width: 100.0%; height: 100.0%;">Lyon Part Dieu (Lyon) - 389.9 km</div>`)[0];
+                popup_84a4370288c7011b3d4347d1034efa5e.setContent(html_932af9647b5323b5c3c78282587b86ee);
+            
+        
+
+        marker_69568d6e57300f0932447a9a2af83008.bindPopup(popup_84a4370288c7011b3d4347d1034efa5e)
+        ;
+
+        
+    
+    
+            var poly_line_999e1d2511281132e44d6729d5427a1d = L.polyline(
+                [[48.839215, 2.382791], [45.760596, 4.859409]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_0d8a4006d062a450732393e4b1787cc8 = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_876401de7bf74ff5b6e5d38092f946cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0d8a4006d062a450732393e4b1787cc8.setIcon(icon_876401de7bf74ff5b6e5d38092f946cd);
+        
+    
+        var popup_b286fe649d85a3ffbbc0c2d0f6d6a625 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a72c8add98584ce4208b42764e5ce25e = $(`<div id="html_a72c8add98584ce4208b42764e5ce25e" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 344.6 km</div>`)[0];
+                popup_b286fe649d85a3ffbbc0c2d0f6d6a625.setContent(html_a72c8add98584ce4208b42764e5ce25e);
+            
+        
+
+        marker_0d8a4006d062a450732393e4b1787cc8.bindPopup(popup_b286fe649d85a3ffbbc0c2d0f6d6a625)
+        ;
+
+        
+    
+    
+            var poly_line_76634249f380c49d901176042baf323b = L.polyline(
+                [[48.839215, 2.382791], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_db1650d960e3896269e85f6983088991 = L.marker(
+                [46.987282, 3.150743],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_d7011ae7d71a27b6f9abe16406753560 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db1650d960e3896269e85f6983088991.setIcon(icon_d7011ae7d71a27b6f9abe16406753560);
+        
+    
+        var popup_0453a00fad1f44e3bf6c476314068966 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3cf89a6e1ae78aaa7da0b6113534c010 = $(`<div id="html_3cf89a6e1ae78aaa7da0b6113534c010" style="width: 100.0%; height: 100.0%;">Nevers (Nevers) - 213.7 km</div>`)[0];
+                popup_0453a00fad1f44e3bf6c476314068966.setContent(html_3cf89a6e1ae78aaa7da0b6113534c010);
+            
+        
+
+        marker_db1650d960e3896269e85f6983088991.bindPopup(popup_0453a00fad1f44e3bf6c476314068966)
+        ;
+
+        
+    
+    
+            var poly_line_435aa0282978548dd0ae383ac50c4892 = L.polyline(
+                [[48.839215, 2.382791], [46.987282, 3.150743]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_fc7770d35a66f177e9b5e1028cf238d2 = L.marker(
+                [47.466698, 3.520767],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_3515bfbda3db2016f8cef2e564e14443 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fc7770d35a66f177e9b5e1028cf238d2.setIcon(icon_3515bfbda3db2016f8cef2e564e14443);
+        
+    
+        var popup_63290e4326f91c631ab91055cd6a1965 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_27f121f0218a3f85e18c91a4cd9a5261 = $(`<div id="html_27f121f0218a3f85e18c91a4cd9a5261" style="width: 100.0%; height: 100.0%;">Clamecy (Clamecy) - 174.4 km</div>`)[0];
+                popup_63290e4326f91c631ab91055cd6a1965.setContent(html_27f121f0218a3f85e18c91a4cd9a5261);
+            
+        
+
+        marker_fc7770d35a66f177e9b5e1028cf238d2.bindPopup(popup_63290e4326f91c631ab91055cd6a1965)
+        ;
+
+        
+    
+    
+            var poly_line_bc0e55ce8fa8f66032a15f7e50866760 = L.polyline(
+                [[48.839215, 2.382791], [47.466698, 3.520767]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_8f5949ce8ff2c76975e8e53483962e57 = L.marker(
+                [45.760596, 4.859409],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_a2eb08c77d0f041bdd05e82c4a4285f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8f5949ce8ff2c76975e8e53483962e57.setIcon(icon_a2eb08c77d0f041bdd05e82c4a4285f2);
+        
+    
+        var popup_7eeab7acc41d92f7ba59da2cc172c924 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ede0957682d07f285683a7758ca91805 = $(`<div id="html_ede0957682d07f285683a7758ca91805" style="width: 100.0%; height: 100.0%;">Lyon Part Dieu (Lyon) - 389.9 km</div>`)[0];
+                popup_7eeab7acc41d92f7ba59da2cc172c924.setContent(html_ede0957682d07f285683a7758ca91805);
+            
+        
+
+        marker_8f5949ce8ff2c76975e8e53483962e57.bindPopup(popup_7eeab7acc41d92f7ba59da2cc172c924)
+        ;
+
+        
+    
+    
+            var poly_line_15a401783b403a4b8a8a13ca73712660 = L.polyline(
+                [[48.839215, 2.382791], [45.760596, 4.859409]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var marker_3eff22c5be5f362dcd16845617aa4c84 = L.marker(
+                [45.778945, 3.100543],
+                {}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+    
+            var icon_c456b752b6cd3cc3f8cf814066d11aa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3eff22c5be5f362dcd16845617aa4c84.setIcon(icon_c456b752b6cd3cc3f8cf814066d11aa1);
+        
+    
+        var popup_7aa0646f1b65d8bb7bde466509a08ed7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_12acd54592e194444a0514260b2b8b16 = $(`<div id="html_12acd54592e194444a0514260b2b8b16" style="width: 100.0%; height: 100.0%;">Clermont-Ferrand (Clermont-Ferrand) - 344.6 km</div>`)[0];
+                popup_7aa0646f1b65d8bb7bde466509a08ed7.setContent(html_12acd54592e194444a0514260b2b8b16);
+            
+        
+
+        marker_3eff22c5be5f362dcd16845617aa4c84.bindPopup(popup_7aa0646f1b65d8bb7bde466509a08ed7)
+        ;
+
+        
+    
+    
+            var poly_line_743ad4c05822b23ecd374f36272caaa6 = L.polyline(
+                [[48.839215, 2.382791], [45.778945, 3.100543]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_bbdf7e7fd2e27ed5daafa9593cb986bf);
+        
+</script>

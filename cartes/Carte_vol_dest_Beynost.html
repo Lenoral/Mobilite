@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_d815ebda2bcc388a865346fd47e71a40 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_d815ebda2bcc388a865346fd47e71a40" ></div>
+        
+</body>
+<script>    
+    
+            var map_d815ebda2bcc388a865346fd47e71a40 = L.map(
+                "map_d815ebda2bcc388a865346fd47e71a40",
+                {
+                    center: [45.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d1f0bbaf75492a82a13ba999c4cab75a = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_4076ef713f444a9fd1a3b66af8acb72c = L.marker(
+                [45.833898, 5.006947],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_92b1a629ca2568713dbce19d6ade8569 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4076ef713f444a9fd1a3b66af8acb72c.setIcon(icon_92b1a629ca2568713dbce19d6ade8569);
+        
+    
+        var popup_e41b4cbcd4083f71782e62d1f201ef26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f3cb85baf0b6d80e0043a4fc1b351e2 = $(`<div id="html_8f3cb85baf0b6d80e0043a4fc1b351e2" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey)</div>`)[0];
+                popup_e41b4cbcd4083f71782e62d1f201ef26.setContent(html_8f3cb85baf0b6d80e0043a4fc1b351e2);
+            
+        
+
+        marker_4076ef713f444a9fd1a3b66af8acb72c.bindPopup(popup_e41b4cbcd4083f71782e62d1f201ef26)
+        ;
+
+        
+    
+    
+            var marker_3539db1f260ae5722276482d84a47e45 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_1edd1d18cc11f9cc47c98fd316e4ad88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_3539db1f260ae5722276482d84a47e45.setIcon(icon_1edd1d18cc11f9cc47c98fd316e4ad88);
+        
+    
+        var popup_4c6b4f2abd47ba30a5167c462d83799d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_415098b6690040fe0ea64261079f5d0f = $(`<div id="html_415098b6690040fe0ea64261079f5d0f" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_4c6b4f2abd47ba30a5167c462d83799d.setContent(html_415098b6690040fe0ea64261079f5d0f);
+            
+        
+
+        marker_3539db1f260ae5722276482d84a47e45.bindPopup(popup_4c6b4f2abd47ba30a5167c462d83799d)
+        ;
+
+        
+    
+    
+            var poly_line_b178be16d92bb7a38a40f07cdeaead90 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_4b7b0b2c8cf39f7f101035e8222d196e = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_fc3aad793c47b8d640b91509b6a0aba2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4b7b0b2c8cf39f7f101035e8222d196e.setIcon(icon_fc3aad793c47b8d640b91509b6a0aba2);
+        
+    
+        var popup_d16367c049217ca9571f20c05722ea66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b9c7071536987f3d52ad8945c9c85908 = $(`<div id="html_b9c7071536987f3d52ad8945c9c85908" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_d16367c049217ca9571f20c05722ea66.setContent(html_b9c7071536987f3d52ad8945c9c85908);
+            
+        
+
+        marker_4b7b0b2c8cf39f7f101035e8222d196e.bindPopup(popup_d16367c049217ca9571f20c05722ea66)
+        ;
+
+        
+    
+    
+            var poly_line_17d161f82454f606a781f9cb89a6ecfd = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_35ba826b3a5e8e48a32bc8de385055fd = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_dc03b368a8e06bc97b1dc87f9fc09aa3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_35ba826b3a5e8e48a32bc8de385055fd.setIcon(icon_dc03b368a8e06bc97b1dc87f9fc09aa3);
+        
+    
+        var popup_d5364c273c5a8c0c0bc5be7d276dddca = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65364555e09f04d7a308dae0de20d027 = $(`<div id="html_65364555e09f04d7a308dae0de20d027" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_d5364c273c5a8c0c0bc5be7d276dddca.setContent(html_65364555e09f04d7a308dae0de20d027);
+            
+        
+
+        marker_35ba826b3a5e8e48a32bc8de385055fd.bindPopup(popup_d5364c273c5a8c0c0bc5be7d276dddca)
+        ;
+
+        
+    
+    
+            var poly_line_be824b709c17c8ab6389864d36e7aa20 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_fdb6234d7661b129d82b950579eb04b5 = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_a59a17fb48e5b51f4bf7882933eba4e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fdb6234d7661b129d82b950579eb04b5.setIcon(icon_a59a17fb48e5b51f4bf7882933eba4e1);
+        
+    
+        var popup_5306369d6bd6d77b55b510f52e8537a0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_eed7d3f2ac69727a0c078ba058f7a15d = $(`<div id="html_eed7d3f2ac69727a0c078ba058f7a15d" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_5306369d6bd6d77b55b510f52e8537a0.setContent(html_eed7d3f2ac69727a0c078ba058f7a15d);
+            
+        
+
+        marker_fdb6234d7661b129d82b950579eb04b5.bindPopup(popup_5306369d6bd6d77b55b510f52e8537a0)
+        ;
+
+        
+    
+    
+            var poly_line_850a063d3f7bd405a4d5866eb2bdd241 = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_61c7a32d84afcd2ef09b8205a3e33b03 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_ce967f920e84ab74ee0d8ffb27507da9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_61c7a32d84afcd2ef09b8205a3e33b03.setIcon(icon_ce967f920e84ab74ee0d8ffb27507da9);
+        
+    
+        var popup_59dcfc9e2ba54fb01f2e3eec4f2f648f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_001dea15ec8b096872b4ade91b23cf4b = $(`<div id="html_001dea15ec8b096872b4ade91b23cf4b" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_59dcfc9e2ba54fb01f2e3eec4f2f648f.setContent(html_001dea15ec8b096872b4ade91b23cf4b);
+            
+        
+
+        marker_61c7a32d84afcd2ef09b8205a3e33b03.bindPopup(popup_59dcfc9e2ba54fb01f2e3eec4f2f648f)
+        ;
+
+        
+    
+    
+            var poly_line_cffd78a53df5b446f6ac73c011e2117f = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_8237710d5df7cd8f4b384012135f1bcd = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_6520640ac2ef31208e67d66cd5bc7b30 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8237710d5df7cd8f4b384012135f1bcd.setIcon(icon_6520640ac2ef31208e67d66cd5bc7b30);
+        
+    
+        var popup_d05d0797c658e85bf77acd078ce0f6d8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5c8cb3d0fb98b21126d7c274ed1e2d74 = $(`<div id="html_5c8cb3d0fb98b21126d7c274ed1e2d74" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_d05d0797c658e85bf77acd078ce0f6d8.setContent(html_5c8cb3d0fb98b21126d7c274ed1e2d74);
+            
+        
+
+        marker_8237710d5df7cd8f4b384012135f1bcd.bindPopup(popup_d05d0797c658e85bf77acd078ce0f6d8)
+        ;
+
+        
+    
+    
+            var poly_line_e288d2b0bc9b846c6ea426f7a0fbe921 = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_519e95b0140a03e6191cc711c1e3ebf9 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_0f2125c6b42293c322652c1cc311698a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_519e95b0140a03e6191cc711c1e3ebf9.setIcon(icon_0f2125c6b42293c322652c1cc311698a);
+        
+    
+        var popup_dd3f8d77de09365a734d0200d80d558d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42068ff68c93bbf50ac4b1f55fa2a0ab = $(`<div id="html_42068ff68c93bbf50ac4b1f55fa2a0ab" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_dd3f8d77de09365a734d0200d80d558d.setContent(html_42068ff68c93bbf50ac4b1f55fa2a0ab);
+            
+        
+
+        marker_519e95b0140a03e6191cc711c1e3ebf9.bindPopup(popup_dd3f8d77de09365a734d0200d80d558d)
+        ;
+
+        
+    
+    
+            var poly_line_6908c695d81a74ccf1dd6db95a7196f0 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_8064889bc623a38065c51f548aa7d80e = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_3d899a7aa6ff942aab459fa54ff548cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8064889bc623a38065c51f548aa7d80e.setIcon(icon_3d899a7aa6ff942aab459fa54ff548cd);
+        
+    
+        var popup_2b0f807be97da99b1ea526d77dc2eb63 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9d8ce206fb9a63f0b87edbfc0f44993d = $(`<div id="html_9d8ce206fb9a63f0b87edbfc0f44993d" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_2b0f807be97da99b1ea526d77dc2eb63.setContent(html_9d8ce206fb9a63f0b87edbfc0f44993d);
+            
+        
+
+        marker_8064889bc623a38065c51f548aa7d80e.bindPopup(popup_2b0f807be97da99b1ea526d77dc2eb63)
+        ;
+
+        
+    
+    
+            var poly_line_37dcc971b8f700182956665e2285faa3 = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_13e46e2a49cfc462a4cc0a972764a6bc = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_8efd7c2c70b7d8c534d9cecdd875ee46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_13e46e2a49cfc462a4cc0a972764a6bc.setIcon(icon_8efd7c2c70b7d8c534d9cecdd875ee46);
+        
+    
+        var popup_2c1d03f671c719ca4ceda095e5542d22 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e15eeb25c42dccffaa6b2cdd21ec577d = $(`<div id="html_e15eeb25c42dccffaa6b2cdd21ec577d" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_2c1d03f671c719ca4ceda095e5542d22.setContent(html_e15eeb25c42dccffaa6b2cdd21ec577d);
+            
+        
+
+        marker_13e46e2a49cfc462a4cc0a972764a6bc.bindPopup(popup_2c1d03f671c719ca4ceda095e5542d22)
+        ;
+
+        
+    
+    
+            var poly_line_db82312a38c1f7df84918d4c9a3d2951 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_f66376ae81b566e862449d3b2e4e94ff = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_dbefffda00cd52df9fbd2b12e8258996 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f66376ae81b566e862449d3b2e4e94ff.setIcon(icon_dbefffda00cd52df9fbd2b12e8258996);
+        
+    
+        var popup_4878c6b20535c522826ba21e38e2b153 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7d153bca0ed7ba9b2c461dbc77ba7c0d = $(`<div id="html_7d153bca0ed7ba9b2c461dbc77ba7c0d" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_4878c6b20535c522826ba21e38e2b153.setContent(html_7d153bca0ed7ba9b2c461dbc77ba7c0d);
+            
+        
+
+        marker_f66376ae81b566e862449d3b2e4e94ff.bindPopup(popup_4878c6b20535c522826ba21e38e2b153)
+        ;
+
+        
+    
+    
+            var poly_line_c7c39307033538eb7e0169162500346a = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_c0310d06b084d7c2fee23d0a47838837 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_e3771b1c16ea1f5e12ec5f6a9f89c6ea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c0310d06b084d7c2fee23d0a47838837.setIcon(icon_e3771b1c16ea1f5e12ec5f6a9f89c6ea);
+        
+    
+        var popup_a8908f5ab888291a378bddfa00da1fb4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b6aa1c5160881cdd1e9b1b3cf7e6c7e = $(`<div id="html_8b6aa1c5160881cdd1e9b1b3cf7e6c7e" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_a8908f5ab888291a378bddfa00da1fb4.setContent(html_8b6aa1c5160881cdd1e9b1b3cf7e6c7e);
+            
+        
+
+        marker_c0310d06b084d7c2fee23d0a47838837.bindPopup(popup_a8908f5ab888291a378bddfa00da1fb4)
+        ;
+
+        
+    
+    
+            var poly_line_d4eaf72feb84e79aad27f1c742130f25 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_75968e6d4ac4d44546f0781f26d58d4d = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_fff5f2155704055e9c8daed57e0a089b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_75968e6d4ac4d44546f0781f26d58d4d.setIcon(icon_fff5f2155704055e9c8daed57e0a089b);
+        
+    
+        var popup_79ac37740cf94b7cdd9d859f8de62e4a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ce69cc7fc30388d20e5ae9ed2d9e9de6 = $(`<div id="html_ce69cc7fc30388d20e5ae9ed2d9e9de6" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_79ac37740cf94b7cdd9d859f8de62e4a.setContent(html_ce69cc7fc30388d20e5ae9ed2d9e9de6);
+            
+        
+
+        marker_75968e6d4ac4d44546f0781f26d58d4d.bindPopup(popup_79ac37740cf94b7cdd9d859f8de62e4a)
+        ;
+
+        
+    
+    
+            var poly_line_ec102eda4ba7ba9fdbc77e1ae3ce064d = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_a1ae43d4ffc7c6508184ed519691559e = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_910b4048d7901b49ec28d5163adf73cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a1ae43d4ffc7c6508184ed519691559e.setIcon(icon_910b4048d7901b49ec28d5163adf73cf);
+        
+    
+        var popup_d4c92c2e4ade85ed449a9b38f504965b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d808ca833c98995fc5821add14f54be = $(`<div id="html_4d808ca833c98995fc5821add14f54be" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_d4c92c2e4ade85ed449a9b38f504965b.setContent(html_4d808ca833c98995fc5821add14f54be);
+            
+        
+
+        marker_a1ae43d4ffc7c6508184ed519691559e.bindPopup(popup_d4c92c2e4ade85ed449a9b38f504965b)
+        ;
+
+        
+    
+    
+            var poly_line_48943ad7e79085f64f3ddf47768a7cf2 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_b1879166d7361696cac14932f28a09bd = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_7c95940be54ebd16679a047ecf458c49 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1879166d7361696cac14932f28a09bd.setIcon(icon_7c95940be54ebd16679a047ecf458c49);
+        
+    
+        var popup_c147d5924889ea5b40798b593b08165f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bae935b02e2e9363884cda6f385108f = $(`<div id="html_9bae935b02e2e9363884cda6f385108f" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_c147d5924889ea5b40798b593b08165f.setContent(html_9bae935b02e2e9363884cda6f385108f);
+            
+        
+
+        marker_b1879166d7361696cac14932f28a09bd.bindPopup(popup_c147d5924889ea5b40798b593b08165f)
+        ;
+
+        
+    
+    
+            var poly_line_93008afbf9585069bfde6854e4bd0f49 = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_d45cea1841400588d9abfc98c6ab6b0d = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_e14b8a88ed5d2db96aebd58c60f5b694 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d45cea1841400588d9abfc98c6ab6b0d.setIcon(icon_e14b8a88ed5d2db96aebd58c60f5b694);
+        
+    
+        var popup_d44ba8c195fc731fcca46a622463a66a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d31588b8a51551874fdf3b463e9a1008 = $(`<div id="html_d31588b8a51551874fdf3b463e9a1008" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_d44ba8c195fc731fcca46a622463a66a.setContent(html_d31588b8a51551874fdf3b463e9a1008);
+            
+        
+
+        marker_d45cea1841400588d9abfc98c6ab6b0d.bindPopup(popup_d44ba8c195fc731fcca46a622463a66a)
+        ;
+
+        
+    
+    
+            var poly_line_aaf0bff4a3d5d47a60ee01cc5c8d9478 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_1e85e4aa72a3490829b436f7bd224b58 = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_35c2da95bbbddc18de4979d94dc41911 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1e85e4aa72a3490829b436f7bd224b58.setIcon(icon_35c2da95bbbddc18de4979d94dc41911);
+        
+    
+        var popup_73d765295e2240ee48079702dbec3a66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_592f465b0f68341f4867287626ab25ec = $(`<div id="html_592f465b0f68341f4867287626ab25ec" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_73d765295e2240ee48079702dbec3a66.setContent(html_592f465b0f68341f4867287626ab25ec);
+            
+        
+
+        marker_1e85e4aa72a3490829b436f7bd224b58.bindPopup(popup_73d765295e2240ee48079702dbec3a66)
+        ;
+
+        
+    
+    
+            var poly_line_6c439fc3f98d51047a778bd636ded88b = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_7638cdf7c8ebf818d723fab68182f8fa = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_4397330295d5258d630a9c19826494ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7638cdf7c8ebf818d723fab68182f8fa.setIcon(icon_4397330295d5258d630a9c19826494ad);
+        
+    
+        var popup_b45a14e0744ed3ba2a0d55f4e91c9212 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bb1f0d079c67acce4e0b150f0891c1d = $(`<div id="html_9bb1f0d079c67acce4e0b150f0891c1d" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_b45a14e0744ed3ba2a0d55f4e91c9212.setContent(html_9bb1f0d079c67acce4e0b150f0891c1d);
+            
+        
+
+        marker_7638cdf7c8ebf818d723fab68182f8fa.bindPopup(popup_b45a14e0744ed3ba2a0d55f4e91c9212)
+        ;
+
+        
+    
+    
+            var poly_line_5c076feb830b779e32f47d964907f8f1 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_0dec3da77ece92e7ae413833bec15095 = L.marker(
+                [45.443366, 4.399722],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_fb1a11834cc9711a6832021c1b115bc2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0dec3da77ece92e7ae413833bec15095.setIcon(icon_fb1a11834cc9711a6832021c1b115bc2);
+        
+    
+        var popup_979e5536fd8f6e48a027af2178d315ef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ca9eeb67600f2aad416b63fa76321b35 = $(`<div id="html_ca9eeb67600f2aad416b63fa76321b35" style="width: 100.0%; height: 100.0%;">Saint-Étienne Châteaucreux (Saint-Étienne) - 64.1 km</div>`)[0];
+                popup_979e5536fd8f6e48a027af2178d315ef.setContent(html_ca9eeb67600f2aad416b63fa76321b35);
+            
+        
+
+        marker_0dec3da77ece92e7ae413833bec15095.bindPopup(popup_979e5536fd8f6e48a027af2178d315ef)
+        ;
+
+        
+    
+    
+            var poly_line_322c8484437d13f74e4e60961964d92d = L.polyline(
+                [[45.833898, 5.006947], [45.443366, 4.399722]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_63f22e12e90a89ad9433758b552f7e96 = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_248d9fcddbab24c556a5df43614da133 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_63f22e12e90a89ad9433758b552f7e96.setIcon(icon_248d9fcddbab24c556a5df43614da133);
+        
+    
+        var popup_bace72eac0ff6a69a51bf497b50b7945 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4889aae98ddd60d0c3f17784f6f1011 = $(`<div id="html_e4889aae98ddd60d0c3f17784f6f1011" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_bace72eac0ff6a69a51bf497b50b7945.setContent(html_e4889aae98ddd60d0c3f17784f6f1011);
+            
+        
+
+        marker_63f22e12e90a89ad9433758b552f7e96.bindPopup(popup_bace72eac0ff6a69a51bf497b50b7945)
+        ;
+
+        
+    
+    
+            var poly_line_cae581d68bbcc8c2286a4d0eb1d5d5c8 = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var marker_10680951864283d9a38477578e7c795e = L.marker(
+                [45.954014, 5.342402],
+                {}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+    
+            var icon_368f0282b3778d29574237b26c2a4733 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_10680951864283d9a38477578e7c795e.setIcon(icon_368f0282b3778d29574237b26c2a4733);
+        
+    
+        var popup_15e22d868cfa34597bfe68b517fe348b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fef384ea3a2845731f7a8be4fc0dceb7 = $(`<div id="html_fef384ea3a2845731f7a8be4fc0dceb7" style="width: 100.0%; height: 100.0%;">Ambérieu-en-Bugey (Ambérieu-en-Bugey) - 29.2 km</div>`)[0];
+                popup_15e22d868cfa34597bfe68b517fe348b.setContent(html_fef384ea3a2845731f7a8be4fc0dceb7);
+            
+        
+
+        marker_10680951864283d9a38477578e7c795e.bindPopup(popup_15e22d868cfa34597bfe68b517fe348b)
+        ;
+
+        
+    
+    
+            var poly_line_e4eed2941958c11a4434a393a497093a = L.polyline(
+                [[45.833898, 5.006947], [45.954014, 5.342402]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_d815ebda2bcc388a865346fd47e71a40);
+        
+</script>
