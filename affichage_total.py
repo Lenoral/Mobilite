@@ -21,7 +21,7 @@ def affichage_total(nom_recherche):
     print('Nbr aerpo' +str(nombre_aeroports))
 
     fmap= folium.Map(location=[45,0])
-    couleur =['blue','red','green']
+    couleur =['red','blue','green']
     for i in range(nombre_aeroports):
         
         code_aeroport = aeroports_recherche['code'].iloc[i]
@@ -94,7 +94,7 @@ def affichage_total(nom_recherche):
             
             #Tracé de la ligne
             points=[tuple([gares_initiale_latitude,gares_initiale_longitude]),tuple([latitude,longitude])]
-            folium.PolyLine(points, color="black", weight=2.5, opacity=1).add_to(fmap)
+            folium.PolyLine(points, color="blue", weight=2.5, opacity=1).add_to(fmap)
     
     
     
@@ -103,3 +103,4 @@ def affichage_total(nom_recherche):
     nom_fichier = 'Carte_vol_dest_'+ nom_recherche +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
     return(fmap)
+
