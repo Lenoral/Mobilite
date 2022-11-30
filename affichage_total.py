@@ -103,5 +103,3 @@ def affichage_total(nom_recherche):
     nom_fichier = 'Carte_vol_dest_'+ nom_recherche +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
     return(fmap)
-
-affichage_total('Orléans (Orléans)')

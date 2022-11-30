@@ -77,10 +77,11 @@ def affichage_vol_dest(code):
     nom_fichier = 'Carte_vol_dest_'+ str(code) +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
 
-    print('Finito')
+    
     
     fmap
     return(fmap)
         
 #vol_dest_api('BOD')
 #affichage_vol_dest('BOD')
+print(vol_dest_api('BOD'))
