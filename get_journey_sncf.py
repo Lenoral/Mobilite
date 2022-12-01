@@ -4,9 +4,11 @@ import numpy as np
 import pandas as pd
 import io
 import json
+import csv
 from datetime import datetime
 import time
 import requests
+import pickle
 from requests.adapters import HTTPAdapter
 import itertools  # list operators
 
@@ -26,7 +28,7 @@ def get_cog(name_city, db_cog):
     else:
         code = db_cog.loc[db_cog['NCCENR'] == name_city]['CHEFLIEU'].values
         if len(code) != 1:
-            print("Error code")
+            print("City not found:" + name_city)
             return -1
         else:
             return code[0]
@@ -77,12 +79,21 @@ def read_info_journey(journey):
     h_depart = datetime.strptime(journey['departure_date_time'], '%Y%m%dT%H%M%S')
     h_arrive =  datetime.strptime(journey['arrival_date_time'], '%Y%m%dT%H%M%S')
     duration = journey['durations']['total']
-    no_train = journey['sections'][-2]['display_informations']['headsign']
-    type_train = journey['sections'][-2]['display_informations']['commercial_mode']
-    direction = journey['sections'][-2]['display_informations']['direction']
+    station_orig = journey['sections'][1]['from']['stop_point']['name']
+    station_orig_lat = journey['sections'][1]['from']['stop_point']['coord']['lat']
+    station_orig_lon = journey['sections'][1]['from']['stop_point']['coord']['lon']
+    station_dest = journey['sections'][-2]['to']['stop_point']['name']
+    station_dest_lat = journey['sections'][-2]['to']['stop_point']['coord']['lat']
+    station_dest_lon = journey['sections'][-2]['to']['stop_point']['coord']['lon']
+    # no_train = journey['sections'][-2]['display_informations']['headsign']
+    # type_train = journey['sections'][-2]['display_informations']['commercial_mode']
+    # direction = journey['sections'][-2]['display_informations']['direction']
     nb_transfers = journey['nb_transfers']
 
-    return [h_depart, h_arrive, duration, no_train, type_train, direction, nb_transfers]
+    return [h_depart, h_arrive, station_orig, station_orig_lat, station_orig_lon, duration, nb_transfers,
+        station_dest, station_dest_lat, station_dest_lon]
+    # return [h_depart, h_arrive, duration, no_train, type_train, direction, nb_transfers]
+
 
 if __name__ == '__main__':
     auth = "42f6483b-fd9a-483a-89b8-4286395fd523"
@@ -94,34 +105,72 @@ if __name__ == '__main__':
     # https://ressources.data.sncf.com/api/records/1.0/search/?dataset=liste-des-gares&q=&rows=10000&facet=fret&facet=voyageurs&facet=code_ligne&facet=departemen
     path = './data/referentiel_gares_voyageurs.csv'
     df_station = pd.read_csv(path, sep=';')
-    # select only train station not RER etc. Not sure about the meaning of cols...
+    # select only train station not only for region
     df_station = df_station.loc[df_station["Niveau de service"] >= 2]
+    df_station_foreign = pd.read_csv('./data/gares_etrangeres.csv', usecols=['name', 'id', 'lat', 'lon', 'city'])
 
-    o = 'Bordeaux'
+    o = 'Paris'
     d = list(df_station['Commune'].unique())
-    stations_foreign = []
-    dt = "28/11/2022 09:00:00"
+    dt0 = "01/12/2022 10:00:00"
+    d_e = df_station_foreign['city'].unique()
+    # d_e = ['Genève']
+    # d = ['Lyon']
+    dt = datetime.strptime(dt0, '%d/%m/%Y %H:%M:%S')
+    t_string = datetime.strftime(dt, '%Y%m%dT%H%M%S')
+    # col_name = ['h_depart', 'h_arrive', 'duration', 'no_train', 'type_train', 'direction', 'nb_transfers']
+    col_name = ['h_depart', 'h_arrive', 'station_orig', 'station_orig_lat', 'station_orig_lon', 'duration', 'nb_transfers',
+                'station_dest', 'station_dest_lat', 'station_dest_lon']
     results = {}
-    for d_city in d:
-        if get_cog(d_city, db_cog) == -1:
-            print(d_city)
-        else:
-            params = form_parameters(o, d_city, dt, db_cog, 3)
-            r = execute_req(api_url, auth, params)
 
+    for city_d in d_e:
+        df_city = []
+        for station_d in df_station_foreign.loc[df_station_foreign['city'] == city_d].iterrows():
+            params = {'from': "admin:fr:" + get_cog(o, db_cog),
+                      'to': station_d[1]['id'],
+                      'datetime': str(t_string),
+                      'min_nb_journeys': 3,
+                      'max_nb_transfers': 2
+                  }
+            r = execute_req(api_url, auth, params)
             if r != -1:
-                col_name = ['h_depart', 'h_arrive', 'duration', 'no_train', 'type_train', 'direction', 'nb_transfers']
                 info = []
                 for journey in r:
                     info.append(read_info_journey(journey))
                 df = pd.DataFrame(info, columns=col_name)
-                df['waiting_time'] = df['h_depart'].apply(lambda x: (datetime.strptime(dt, '%d/%m/%Y %H:%M:%S') - x).seconds)
+                df['waiting_time'] = df['h_depart'].apply(
+                    lambda x: (x - dt).seconds)
                 df['total_time'] = df['waiting_time'] + df['duration']
+                df['depart'] = o
+                df['arrival'] = station_d[1]['name']
+                df_city.append(df)
+        print(city_d + ' done !')
+        if df_city:
+            results[city_d] = pd.concat(df_city)
+
+    for d_city in d:
+        if get_cog(d_city, db_cog) == -1:
+            print(d_city + 'not found')
+        else:
+            params = form_parameters(o, d_city, dt0, db_cog, 1)
+            r = execute_req(api_url, auth, params)
+
+            if r != -1:
+                info = []
+                for journey in r:
+                    info.append(read_info_journey(journey))
+                df = pd.DataFrame(info, columns=col_name)
+                df['waiting_time'] = df['h_depart'].apply(lambda x: (x - dt).seconds)
+                df['total_time'] = df['waiting_time'] + df['duration']
+                df['depart'] = o
+                df['arrival'] = d_city
                 results[d_city] = df
-    print('')
 
+    total_time = {}
+    cols = list(results[city_d].columns)
+    for city in results.keys():
+        total_time[city] = results[city].loc[results[city]['duration'] == min(results[city]['duration'])].values.tolist()[0] # if several journeys with same duration, keep the first
+    total_time = pd.DataFrame.from_dict(total_time, orient='index', columns=cols)
 
-
-
-
-
+    with open('results_' + o + '.pickle', 'wb') as f:
+        pickle.dump(results, f)
+    total_time.to_csv('results' + '_' + o + '_' + t_string + '.csv')

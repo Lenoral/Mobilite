@@ -1,0 +1,3 @@
+,h_depart,h_arrive,station_orig,station_orig_lat,station_orig_lon,duration,nb_transfers,station_dest,station_dest_lat,station_dest_lon,waiting_time,total_time,depart,arrival
+Genève,2022-12-01 12:18:00,2022-12-01 15:29:00,Paris Gare de Lyon Hall 1 &2,48.844945,2.373481,11460,0,Genève,46.21022,6.14244,8280,19740,Paris,Genève
+Lyon,2022-12-01 10:00:00,2022-12-01 11:56:00,Paris Gare de Lyon Hall 1 &2,48.844945,2.373481,6960,0,Lyon Part Dieu,45.760596,4.859409,0,6960,Paris,Lyon
