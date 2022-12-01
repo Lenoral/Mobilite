@@ -96,6 +96,7 @@ def read_info_journey(journey):
 
 
 if __name__ == '__main__':
+    # read data and input parameters
     auth = "42f6483b-fd9a-483a-89b8-4286395fd523"
     api_url = 'https://api.sncf.com/v1/coverage/sncf/journeys?'
     path = './data/arrondissement_2022.csv'
@@ -109,19 +110,27 @@ if __name__ == '__main__':
     df_station = df_station.loc[df_station["Niveau de service"] >= 2]
     df_station_foreign = pd.read_csv('./data/gares_etrangeres.csv', usecols=['name', 'id', 'lat', 'lon', 'city'])
 
+    # search OD and time
+    '''==============================================TO SET=========================================================='''
     o = 'Paris'
-    d = list(df_station['Commune'].unique())
     dt0 = "01/12/2022 10:00:00"
+    '''=============================================================================================================='''
+    dt = datetime.strptime(dt0, '%d/%m/%Y %H:%M:%S')
+    t_string = datetime.strftime(dt, '%Y%m%dT%H%M%S')
+    # all possible destination in France
+    d = list(df_station['Commune'].unique())
+    # possible foreign destination for SNCF,
     d_e = df_station_foreign['city'].unique()
     # d_e = ['Genève']
     # d = ['Lyon']
-    dt = datetime.strptime(dt0, '%d/%m/%Y %H:%M:%S')
-    t_string = datetime.strftime(dt, '%Y%m%dT%H%M%S')
+
+    # define information for each trip
     # col_name = ['h_depart', 'h_arrive', 'duration', 'no_train', 'type_train', 'direction', 'nb_transfers']
     col_name = ['h_depart', 'h_arrive', 'station_orig', 'station_orig_lat', 'station_orig_lon', 'duration', 'nb_transfers',
                 'station_dest', 'station_dest_lat', 'station_dest_lon']
     results = {}
 
+    # get info for foreign destinations
     for city_d in d_e:
         df_city = []
         for station_d in df_station_foreign.loc[df_station_foreign['city'] == city_d].iterrows():
@@ -147,6 +156,7 @@ if __name__ == '__main__':
         if df_city:
             results[city_d] = pd.concat(df_city)
 
+    # get info for destinations in France
     for d_city in d:
         if get_cog(d_city, db_cog) == -1:
             print(d_city + 'not found')
@@ -169,8 +179,10 @@ if __name__ == '__main__':
     cols = list(results[city_d].columns)
     for city in results.keys():
         total_time[city] = results[city].loc[results[city]['duration'] == min(results[city]['duration'])].values.tolist()[0] # if several journeys with same duration, keep the first
+    # the trip with min duration(in train and transfer) for each destination city not station
     total_time = pd.DataFrame.from_dict(total_time, orient='index', columns=cols)
 
+    # save results
     with open('results_' + o + '.pickle', 'wb') as f:
         pickle.dump(results, f)
     total_time.to_csv('results' + '_' + o + '_' + t_string + '.csv')
