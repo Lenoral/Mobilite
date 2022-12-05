@@ -107,13 +107,13 @@ if __name__ == '__main__':
     path = './Data/referentiel_gares_voyageurs.csv'
     df_station = pd.read_csv(path, sep=';')
     # select only train station not only for region
-    df_station = df_station.loc[df_station["Niveau de service"] >= 2]
+    df_station = df_station.loc[df_station["Niveau de service"] >= 0]
     df_station_foreign = pd.read_csv('./Data/gares_etrangeres.csv', usecols=['name', 'id', 'lat', 'lon', 'city'])
 
     # search OD and time
     '''==============================================TO SET=========================================================='''
-    o = 'Paris'
-    dt0 = "01/12/2022 10:00:00"
+    o = 'Bordeaux'
+    dt0 = "05/12/2022 10:00:00"
     '''=============================================================================================================='''
     dt = datetime.strptime(dt0, '%d/%m/%Y %H:%M:%S')
     t_string = datetime.strftime(dt, '%Y%m%dT%H%M%S')
@@ -138,7 +138,7 @@ if __name__ == '__main__':
                       'to': station_d[1]['id'],
                       'datetime': str(t_string),
                       'min_nb_journeys': 3,
-                      'max_nb_transfers': 2
+                      'max_nb_transfers': 0
                   }
             r = execute_req(api_url, auth, params)
             if r != -1:
@@ -159,7 +159,7 @@ if __name__ == '__main__':
     # get info for destinations in France
     for d_city in d:
         if get_cog(d_city, db_cog) == -1:
-            print(d_city + 'not found')
+            print(str(d_city) + 'not found')
         else:
             params = form_parameters(o, d_city, dt0, db_cog, 1)
             r = execute_req(api_url, auth, params)
