@@ -73,7 +73,7 @@ def affichage_aiport_map():
             
     nom_fichier = 'Carte_airports' +'.html'
     fmap.save(outfile='Cartes/' + nom_fichier)
-    print('Carte des aeroports disponible générée')
+    print('Carte des aeroports disponibles générée')
     
     return(fmap)
         

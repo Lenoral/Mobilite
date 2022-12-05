@@ -34,7 +34,6 @@ def recherche_gare(nom_gare):
     '''Renvoie les gares dont le nom contient nom_gare'''
     gares_filtres = gares[gares['name'].str.contains(nom_gare, na=False)]
     gares_filtres.insert(1,'SNCF_ID',gares_filtres['id'].str[15:])
-    
     return(gares_filtres)
 
 #Expression et lecture du temps en format API SNCF et standard
@@ -42,7 +41,12 @@ def recherche_gare(nom_gare):
 def time_api():
     '''Renvoie la date sous le format utilisé par l'api SNCF'''
     t = time.localtime()
-    time_api= str(t.tm_year) + str(t.tm_mon) + str(t.tm_mday) + 'T' + str(t.tm_hour) + str(t.tm_min) + '1'
+    min= t.tm_min
+    if min<10:
+        min='0'+str(int(min)+1)
+    else:
+        min = str(int(min)+1)
+    time_api= str(t.tm_year) + str(t.tm_mon) + str(t.tm_mday) + 'T' + str(t.tm_hour) + str(min) + '00'
     
     return(time_api)
 
@@ -56,6 +60,7 @@ def time_standard(t):
     min = t[11:13]
     
     
+    
     return(hour+ ':' + min + '  ' + day + '/' + month + '/' + year)
 
 
@@ -67,7 +72,8 @@ def requete_destinations_api(nom_recherche):
     
     gares_recherche = recherche_gare(nom_recherche) #Renvoie le dataframe des gares contenant le nom recherché
     if gares_recherche.empty:
-        return('Aucune gare ne contient le nom recherché.')
+        print('Aucune gare trouvée pour '+ str(nom_recherche) +'.')
+        return(gares_recherche)
     else:
         print('Les gares qui contiennent la recherche sont: ' + str(gares_recherche['label']))       
 
@@ -103,9 +109,10 @@ def requete_destinations_api(nom_recherche):
             for departs in ensemble_departs['departures']:
 
                 departs['label'] = departs['display_informations']['direction']
-        
-                
+                departs['Horaire_API'] = departs['stop_date_time']['departure_date_time']
+                         
             departs = ensemble_departs['departures']
+            
             dp= pd.DataFrame(departs)
 
             departsdfs.append(dp)
@@ -114,7 +121,8 @@ def requete_destinations_api(nom_recherche):
         departs_liste = pd.concat(departsdfs)
         #Ajout des colonnes longitude et latitude dans le tableau des gares de destination 
         departs_gares = pd.merge(departs_liste,gares,on='label',how='left')
-        departs_gares_loc= departs_gares[['label','lat','lon']]
+        
+        departs_gares_loc= departs_gares[['label','lat','lon','Horaire_API']]
         
         ###Coordonnées de la gare choisie (gare de départ)
         lat_ori = gares_recherche['lat'].iloc[0]
@@ -127,9 +135,181 @@ def requete_destinations_api(nom_recherche):
         
         departs_gares_loc['Distance'] = departs_gares_loc.apply(add_dist_df,axis=1)
         
+        #Affichage des horaires sous le format classique
+        
+        def add_time_format(x):
+            return(time_standard(x['Horaire_API']))
+        
+        departs_gares_loc['Horaire'] = departs_gares_loc.apply(add_time_format,axis=1)
         
         
     return(departs_gares_loc)    
+
+##Requete API à partir d'un temps donné
+
+
+def requete_destinations_api_time(nom_recherche,time):
+    
+    
+    '''Renvoie le nom des destinations, et les coordonnées associées des 20 prochains départs de la gare recherchée'''
+    
+    gares_recherche = recherche_gare(nom_recherche) #Renvoie le dataframe des gares contenant le nom recherché
+    if gares_recherche.empty:
+        print('Aucune gare trouvée pour '+ str(nom_recherche) +'.')
+        return(gares_recherche)
+    else:
+        print('Les gares qui contiennent la recherche sont: ' + str(gares_recherche['label']))       
+
+        SNCF_ID = gares_recherche['SNCF_ID'].iloc[0] #Selection de l'ID de la 1ere gare du tableau des gares recherchées
+
+        print('Résultats présentés pour la gare '+ gares_recherche['label'].iloc[0] + ' (ID: ' + SNCF_ID +').') #Info utilisateurs de la gare choisie
+
+        def page_departs(numero_page) :
+            return requests.get(
+                ('https://api.sncf.com/v1/coverage/sncf/stop_areas/stop_area:SNCF:'+SNCF_ID+'/departures?from_datetime=' + time).format(numero_page),
+                auth=('16cbfb01-1943-471f-aac9-7a1139abab77', ''))
+
+        
+        #On commence par la première page qui nous donne le nombre de résultats par page ainsi que le nombre total de résultats
+
+        page_initiale = page_departs(0)
+        item_per_page = page_initiale.json()['pagination']['items_per_page']
+        total_items = page_initiale.json()['pagination']['total_result']
+        departsdfs = []
+
+        # on fait une boucle sur toutes les pages suivantes
+
+        for page in range(int(total_items/item_per_page)+1) :
+            departs_page = page_departs(page)
+
+            ensemble_departs = departs_page.json()
+
+            if 'departures' not in ensemble_departs:
+                # pas d'arrêt
+                continue
+
+            # on ne retient que les informations qui nous intéressent
+            for departs in ensemble_departs['departures']:
+
+                departs['label'] = departs['display_informations']['direction']
+                departs['Horaire_API'] = departs['stop_date_time']['departure_date_time']
+                         
+            departs = ensemble_departs['departures']
+            
+            dp= pd.DataFrame(departs)
+
+            departsdfs.append(dp)
+        
+            
+        departs_liste = pd.concat(departsdfs)
+        #Ajout des colonnes longitude et latitude dans le tableau des gares de destination 
+        departs_gares = pd.merge(departs_liste,gares,on='label',how='left')
+        
+        departs_gares_loc= departs_gares[['label','lat','lon','Horaire_API']]
+        
+        ###Coordonnées de la gare choisie (gare de départ)
+        lat_ori = gares_recherche['lat'].iloc[0]
+        lon_ori = gares_recherche['lon'].iloc[0]
+
+        #Calcul de la distance entre la gare choisie et la gare de destination
+        def add_dist_df(x):
+
+            return(round(cdist.get_dist_km_2(lon_ori,lat_ori,x['lon'],x['lat']),1))
+        
+        departs_gares_loc['Distance'] = departs_gares.apply(add_dist_df,axis=1)
+        
+        #Affichage des horaires sous le format classique
+        
+        def add_time_format(x):
+            return(time_standard(x['Horaire_API']))
+        
+        departs_gares_loc['Horaire'] = departs_gares_loc.apply(add_time_format,axis=1)
+        
+        
+    return(departs_gares_loc)    
+
+###Accumulation des requetes API SNCF:
+
+def requete_destinations_api_cumul(nom_recherche,iterations):
+    gares_destination = requete_destinations_api_time(nom_recherche,time_api())
+    
+    for iter in range(iterations):
+        n=gares_destination.shape[0]
+        if n==0:
+            dernier_horaire = gares_destination['Horaire_API'].iloc[0]
+        else:
+            dernier_horaire = gares_destination['Horaire_API'].iloc[n-1]
+        
+        gares_destination_supp = requete_destinations_api_time(nom_recherche,dernier_horaire)
+        gares_destination = gares_destination.append(gares_destination_supp,ignore_index=True)
+    
+    return(gares_destination)
+ 
+#Affichage des requetes API SNCF dans les x prochaines minutes
+
+def to_sec(heure,min):
+    return(3600*int(heure)+60*int(min))
+
+def requete_destinations_api_minutes_pro(nom_recherche,minutes_pro):
+    
+    #Heure actuelle
+    temps_api = time_api()
+    heure_act = temps_api[9:11]
+    min_act = temps_api[11:13]
+    sec_tot = to_sec(heure_act,min_act)
+    gares_destination = requete_destinations_api_time(nom_recherche,time_api())
+    
+    n=gares_destination.shape[0]
+    print(n)
+    horaire_train=gares_destination['Horaire_API'].iloc[n-1]
+    heure_train=horaire_train[9:11]
+    min_train =horaire_train[11:13]
+    sec_tot_train = to_sec(heure_train,min_train)
+   # print(str(sec_tot))
+   # print(str(sec_tot_train))
+   # print(str(sec_tot_train-sec_tot))
+   # print(str(60*minutes_pro))
+    iter = 0
+    while((sec_tot_train-sec_tot)<(60*int(minutes_pro)) and iter<10):
+        iter = iter + 1
+        if n==0:
+            dernier_horaire = gares_destination['Horaire_API'].iloc[0]
+        else:
+            dernier_horaire = gares_destination['Horaire_API'].iloc[n-1]
+            
+        gares_destination_supp = requete_destinations_api_time(nom_recherche,dernier_horaire)
+        gares_destination = gares_destination.append(gares_destination_supp,ignore_index=True)
+
+        n=gares_destination.shape[0]
+        print('Iter'+str(iter))
+        if n==0:
+            horaire_train = gares_destination['Horaire_API'].iloc[0]
+        else:
+            horaire_train=gares_destination['Horaire_API'].iloc[n-1]
+            
+            
+        heure_train=horaire_train[9:11]
+        min_train =horaire_train[11:13]
+        sec_tot_train = to_sec(heure_train,min_train)
+        
+    
+    n=gares_destination.shape[0]
+    nb_train_ok = 0
+    for train in range(n):
+        
+        horaire_train=gares_destination['Horaire_API'].iloc[train]
+        print(horaire_train)
+        heure_train=horaire_train[9:11]
+        min_train =horaire_train[11:13]
+        sec_tot_train = to_sec(heure_train,min_train)
+        if (sec_tot_train-sec_tot)>(60*int(minutes_pro)):
+            nb_train_ok = nb_train_ok + 1
+    print('NBTRAIN: ' + str(nb_train_ok))        
+    return(gares_destination[:nb_train_ok])
+    
+        
+       
+    
     
 ####Affichage sur la carte des destination atteignables depuis la gare recherchée
 
@@ -313,3 +493,5 @@ def affichage_destination_map_t(nom_recherche):
     print('Carte des Destination (Normale et Déformée) des 20 prochains trains depuis la gare de ' + str(gare_initiale['label'].iloc[0]) + ' générée.' )
 
     return(fmap)
+#print(requete_destinations_api_time('Bordeaux',time_api()))
+#print(requete_destinations_api_minutes_pro('Bordeaux',60))

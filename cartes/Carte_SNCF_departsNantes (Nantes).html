@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b595cd85ac851529264e2ab4e16fd26e {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b595cd85ac851529264e2ab4e16fd26e" ></div>
+        
+</body>
+<script>    
+    
+            var map_b595cd85ac851529264e2ab4e16fd26e = L.map(
+                "map_b595cd85ac851529264e2ab4e16fd26e",
+                {
+                    center: [47.343088, -1.530181],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_a92223d47344a0726d41dd6b8faedd58 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_64007d2ad020610d05a39d8413313fa1 = L.marker(
+                [47.217491, -1.542077],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_aad23e7974542b32b94ca05128cbe6e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_64007d2ad020610d05a39d8413313fa1.setIcon(icon_aad23e7974542b32b94ca05128cbe6e6);
+        
+    
+        var popup_43128977781c35b4a2c762cb0f0e29a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a1801633d5b9246592a44b9cc59f80a = $(`<div id="html_5a1801633d5b9246592a44b9cc59f80a" style="width: 100.0%; height: 100.0%;">Sucé-sur-Erdre (Sucé-sur-Erdre)</div>`)[0];
+                popup_43128977781c35b4a2c762cb0f0e29a4.setContent(html_5a1801633d5b9246592a44b9cc59f80a);
+            
+        
+
+        marker_64007d2ad020610d05a39d8413313fa1.bindPopup(popup_43128977781c35b4a2c762cb0f0e29a4)
+        ;
+
+        
+    
+    
+            var marker_c88096a5d71eceb064f4695aa2ceee2c = L.marker(
+                [47.343088, -1.530181],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_0d8a66df8f1ab6a841e72e301c3a9792 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c88096a5d71eceb064f4695aa2ceee2c.setIcon(icon_0d8a66df8f1ab6a841e72e301c3a9792);
+        
+    
+        var popup_a937acfd92a7a0d894672add0cd7fb7b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f22f9d8f51ffa12241aa3267bcbbbac2 = $(`<div id="html_f22f9d8f51ffa12241aa3267bcbbbac2" style="width: 100.0%; height: 100.0%;">Sucé-sur-Erdre (Sucé-sur-Erdre) - 14.0 km</div>`)[0];
+                popup_a937acfd92a7a0d894672add0cd7fb7b.setContent(html_f22f9d8f51ffa12241aa3267bcbbbac2);
+            
+        
+
+        marker_c88096a5d71eceb064f4695aa2ceee2c.bindPopup(popup_a937acfd92a7a0d894672add0cd7fb7b)
+        ;
+
+        
+    
+    
+            var poly_line_0188d311c96ad0ac469a490092279e0e = L.polyline(
+                [[47.217491, -1.542077], [47.343088, -1.530181]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_2e7ee859ed275a7a374926a6623304da = L.marker(
+                [47.086015, -1.286292],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_237efe3db04b985cade31005f4a94007 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2e7ee859ed275a7a374926a6623304da.setIcon(icon_237efe3db04b985cade31005f4a94007);
+        
+    
+        var popup_e1958eef87e8d8b8a9102278d32b630e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2870335386714db9bddc0e370821c011 = $(`<div id="html_2870335386714db9bddc0e370821c011" style="width: 100.0%; height: 100.0%;">Clisson (Clisson) - 24.2 km</div>`)[0];
+                popup_e1958eef87e8d8b8a9102278d32b630e.setContent(html_2870335386714db9bddc0e370821c011);
+            
+        
+
+        marker_2e7ee859ed275a7a374926a6623304da.bindPopup(popup_e1958eef87e8d8b8a9102278d32b630e)
+        ;
+
+        
+    
+    
+            var poly_line_a29c14ccc2faab108764876e8db7f735 = L.polyline(
+                [[47.217491, -1.542077], [47.086015, -1.286292]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_d8650636276cda7399c4559f94637a05 = L.marker(
+                [47.369334, -1.177763],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_0bb5ac811786f8cad989ec0671bc82c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d8650636276cda7399c4559f94637a05.setIcon(icon_0bb5ac811786f8cad989ec0671bc82c0);
+        
+    
+        var popup_b5e48cab4852ca89bb3740dd01e67cd5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_96674d84ae59b52a83f2eec907f31e69 = $(`<div id="html_96674d84ae59b52a83f2eec907f31e69" style="width: 100.0%; height: 100.0%;">Ancenis (Ancenis-Saint-Géréon) - 32.2 km</div>`)[0];
+                popup_b5e48cab4852ca89bb3740dd01e67cd5.setContent(html_96674d84ae59b52a83f2eec907f31e69);
+            
+        
+
+        marker_d8650636276cda7399c4559f94637a05.bindPopup(popup_b5e48cab4852ca89bb3740dd01e67cd5)
+        ;
+
+        
+    
+    
+            var poly_line_a451f6fb66b84de7609af21a1c37c778 = L.polyline(
+                [[47.217491, -1.542077], [47.369334, -1.177763]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_dde0f7dbafec8ea6b057de5880a4906a = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_ec86863050d0c22ca04f3de2b28430cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dde0f7dbafec8ea6b057de5880a4906a.setIcon(icon_ec86863050d0c22ca04f3de2b28430cf);
+        
+    
+        var popup_ea007eb22e9c61a1718fd3065842f616 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bcce03b65643b86c928e702677fe334 = $(`<div id="html_9bcce03b65643b86c928e702677fe334" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 99.0 km</div>`)[0];
+                popup_ea007eb22e9c61a1718fd3065842f616.setContent(html_9bcce03b65643b86c928e702677fe334);
+            
+        
+
+        marker_dde0f7dbafec8ea6b057de5880a4906a.bindPopup(popup_ea007eb22e9c61a1718fd3065842f616)
+        ;
+
+        
+    
+    
+            var poly_line_2a9297a9a8471eacf8222689dcca204a = L.polyline(
+                [[47.217491, -1.542077], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_75b8e93921d99b6480aeb1a08aeb3498 = L.marker(
+                [47.995615, 0.192614],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_2ee4e4e03bdae5650f3b1bb73dd33bf2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_75b8e93921d99b6480aeb1a08aeb3498.setIcon(icon_2ee4e4e03bdae5650f3b1bb73dd33bf2);
+        
+    
+        var popup_c64e40ce878e79df420dc15dbb438775 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0e74f89ae6684e35b06686aae4256c0f = $(`<div id="html_0e74f89ae6684e35b06686aae4256c0f" style="width: 100.0%; height: 100.0%;">Le Mans (Le Mans) - 156.2 km</div>`)[0];
+                popup_c64e40ce878e79df420dc15dbb438775.setContent(html_0e74f89ae6684e35b06686aae4256c0f);
+            
+        
+
+        marker_75b8e93921d99b6480aeb1a08aeb3498.bindPopup(popup_c64e40ce878e79df420dc15dbb438775)
+        ;
+
+        
+    
+    
+            var poly_line_fb4e74a69eaf1f3302a309a63dad67d5 = L.polyline(
+                [[47.217491, -1.542077], [47.995615, 0.192614]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_ed309e8df2bb800b29ef1dd716406e3a = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_dde725e535e8a48aea1416168af23106 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed309e8df2bb800b29ef1dd716406e3a.setIcon(icon_dde725e535e8a48aea1416168af23106);
+        
+    
+        var popup_5a2a2985d030388ea8bb8e64636ef5b2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_07d2756b5ec63c760b760f10144be7ef = $(`<div id="html_07d2756b5ec63c760b760f10144be7ef" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 276.6 km</div>`)[0];
+                popup_5a2a2985d030388ea8bb8e64636ef5b2.setContent(html_07d2756b5ec63c760b760f10144be7ef);
+            
+        
+
+        marker_ed309e8df2bb800b29ef1dd716406e3a.bindPopup(popup_5a2a2985d030388ea8bb8e64636ef5b2)
+        ;
+
+        
+    
+    
+            var poly_line_f4df73eff68a575cc35048e9efdfd26b = L.polyline(
+                [[47.217491, -1.542077], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_184562d75b06b4bdfbd6a5c29d4e2842 = L.marker(
+                [47.065702, -0.869897],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_0e62421739a9eb89daf1dade3bdaceb9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_184562d75b06b4bdfbd6a5c29d4e2842.setIcon(icon_0e62421739a9eb89daf1dade3bdaceb9);
+        
+    
+        var popup_98444074bde02d2423e57f48c8f5ccd8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_22e1753bc8b508b1b5ac15ded89f4fdc = $(`<div id="html_22e1753bc8b508b1b5ac15ded89f4fdc" style="width: 100.0%; height: 100.0%;">Cholet (Cholet) - 53.6 km</div>`)[0];
+                popup_98444074bde02d2423e57f48c8f5ccd8.setContent(html_22e1753bc8b508b1b5ac15ded89f4fdc);
+            
+        
+
+        marker_184562d75b06b4bdfbd6a5c29d4e2842.bindPopup(popup_98444074bde02d2423e57f48c8f5ccd8)
+        ;
+
+        
+    
+    
+            var poly_line_03744c5e46063b92548e8f0b7de97c02 = L.polyline(
+                [[47.217491, -1.542077], [47.065702, -0.869897]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_dda7ba5f6f2846b2d1bf3604c1ec8818 = L.marker(
+                [47.289889, -2.50734],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_ee3902cc192992a41d645f9db61d5a6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dda7ba5f6f2846b2d1bf3604c1ec8818.setIcon(icon_ee3902cc192992a41d645f9db61d5a6b);
+        
+    
+        var popup_3ff725b75a64c910e0f9434bf6336d30 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_17cb75e29209ccf06e7e191aaeec4aac = $(`<div id="html_17cb75e29209ccf06e7e191aaeec4aac" style="width: 100.0%; height: 100.0%;">Le Croisic (Le Croisic) - 73.3 km</div>`)[0];
+                popup_3ff725b75a64c910e0f9434bf6336d30.setContent(html_17cb75e29209ccf06e7e191aaeec4aac);
+            
+        
+
+        marker_dda7ba5f6f2846b2d1bf3604c1ec8818.bindPopup(popup_3ff725b75a64c910e0f9434bf6336d30)
+        ;
+
+        
+    
+    
+            var poly_line_43e303605ffb8c59a597feb526a77ddc = L.polyline(
+                [[47.217491, -1.542077], [47.289889, -2.50734]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_26647a0a2d0442f2d2e761f7424193c1 = L.marker(
+                [47.441925, -1.503167],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_d2fbcbb276e0a21f6cf960d01f7a3f5a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_26647a0a2d0442f2d2e761f7424193c1.setIcon(icon_d2fbcbb276e0a21f6cf960d01f7a3f5a);
+        
+    
+        var popup_18f67da7a7d2dfb6a4169ae17fff69de = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3715d5bdb1a8d142d9109ef797c2533a = $(`<div id="html_3715d5bdb1a8d142d9109ef797c2533a" style="width: 100.0%; height: 100.0%;">Nort-sur-Erdre (Nort-sur-Erdre) - 25.1 km</div>`)[0];
+                popup_18f67da7a7d2dfb6a4169ae17fff69de.setContent(html_3715d5bdb1a8d142d9109ef797c2533a);
+            
+        
+
+        marker_26647a0a2d0442f2d2e761f7424193c1.bindPopup(popup_18f67da7a7d2dfb6a4169ae17fff69de)
+        ;
+
+        
+    
+    
+            var poly_line_383eaf709e4821b70dff04f7774e8218 = L.polyline(
+                [[47.217491, -1.542077], [47.441925, -1.503167]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_4dfd9b880ec3fde3ad74627f8ae3ce9a = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_23766ede7bf429d142be4730ff04534c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4dfd9b880ec3fde3ad74627f8ae3ce9a.setIcon(icon_23766ede7bf429d142be4730ff04534c);
+        
+    
+        var popup_45cadb1874329e2148ce43807ea5a6f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f14ae66ecb17042f51d5b2fab44fc715 = $(`<div id="html_f14ae66ecb17042f51d5b2fab44fc715" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 99.0 km</div>`)[0];
+                popup_45cadb1874329e2148ce43807ea5a6f6.setContent(html_f14ae66ecb17042f51d5b2fab44fc715);
+            
+        
+
+        marker_4dfd9b880ec3fde3ad74627f8ae3ce9a.bindPopup(popup_45cadb1874329e2148ce43807ea5a6f6)
+        ;
+
+        
+    
+    
+            var poly_line_c0ec01cc41581c90894270ec38872d4c = L.polyline(
+                [[47.217491, -1.542077], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_e7819dba0ece17da406f3b19542be396 = L.marker(
+                [47.343088, -1.530181],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_3e10a4fa673edb75b89db24317841dc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e7819dba0ece17da406f3b19542be396.setIcon(icon_3e10a4fa673edb75b89db24317841dc3);
+        
+    
+        var popup_05692e871bea9683014cb9519c3abb43 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fb3e32e0d64291faa418f94f629ddc9a = $(`<div id="html_fb3e32e0d64291faa418f94f629ddc9a" style="width: 100.0%; height: 100.0%;">Sucé-sur-Erdre (Sucé-sur-Erdre) - 14.0 km</div>`)[0];
+                popup_05692e871bea9683014cb9519c3abb43.setContent(html_fb3e32e0d64291faa418f94f629ddc9a);
+            
+        
+
+        marker_e7819dba0ece17da406f3b19542be396.bindPopup(popup_05692e871bea9683014cb9519c3abb43)
+        ;
+
+        
+    
+    
+            var poly_line_4b066f48eeddcd3351eb4de2e9de2c69 = L.polyline(
+                [[47.217491, -1.542077], [47.343088, -1.530181]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_2d2122f50676c52b5c1378a9e85907a8 = L.marker(
+                [47.086015, -1.286292],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_974843cf53ce8cba37d6806ade6cd022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2d2122f50676c52b5c1378a9e85907a8.setIcon(icon_974843cf53ce8cba37d6806ade6cd022);
+        
+    
+        var popup_893539456c7100bbb85e207b0b82ff1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ad2dd5f5fcbb8157f9a05db25b0a6551 = $(`<div id="html_ad2dd5f5fcbb8157f9a05db25b0a6551" style="width: 100.0%; height: 100.0%;">Clisson (Clisson) - 24.2 km</div>`)[0];
+                popup_893539456c7100bbb85e207b0b82ff1a.setContent(html_ad2dd5f5fcbb8157f9a05db25b0a6551);
+            
+        
+
+        marker_2d2122f50676c52b5c1378a9e85907a8.bindPopup(popup_893539456c7100bbb85e207b0b82ff1a)
+        ;
+
+        
+    
+    
+            var poly_line_9b7129ffcc76bff3f37652e0cb00641e = L.polyline(
+                [[47.217491, -1.542077], [47.086015, -1.286292]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_81026685c83467d51a15c2c806147212 = L.marker(
+                [47.369334, -1.177763],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_92421e07467599225619e070a6cdc9c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_81026685c83467d51a15c2c806147212.setIcon(icon_92421e07467599225619e070a6cdc9c0);
+        
+    
+        var popup_a89e969ae02c7b3ed1e7c8a88e408a98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7795e5cd751ba6749954ea9ced916ed0 = $(`<div id="html_7795e5cd751ba6749954ea9ced916ed0" style="width: 100.0%; height: 100.0%;">Ancenis (Ancenis-Saint-Géréon) - 32.2 km</div>`)[0];
+                popup_a89e969ae02c7b3ed1e7c8a88e408a98.setContent(html_7795e5cd751ba6749954ea9ced916ed0);
+            
+        
+
+        marker_81026685c83467d51a15c2c806147212.bindPopup(popup_a89e969ae02c7b3ed1e7c8a88e408a98)
+        ;
+
+        
+    
+    
+            var poly_line_1644db108a72f8730c01f8e8d754e9ce = L.polyline(
+                [[47.217491, -1.542077], [47.369334, -1.177763]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_a065c630c0593c9ce78fea60e4ce7e8e = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_0bb15f0a885b01f0844da0465bcb9182 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_a065c630c0593c9ce78fea60e4ce7e8e.setIcon(icon_0bb15f0a885b01f0844da0465bcb9182);
+        
+    
+        var popup_2bbb101f7124a92ce03e639167072b3e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68fee72428868afcaa28020ea433dc4c = $(`<div id="html_68fee72428868afcaa28020ea433dc4c" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 99.0 km</div>`)[0];
+                popup_2bbb101f7124a92ce03e639167072b3e.setContent(html_68fee72428868afcaa28020ea433dc4c);
+            
+        
+
+        marker_a065c630c0593c9ce78fea60e4ce7e8e.bindPopup(popup_2bbb101f7124a92ce03e639167072b3e)
+        ;
+
+        
+    
+    
+            var poly_line_d56202f09e441820179befcbb1765940 = L.polyline(
+                [[47.217491, -1.542077], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_905d9845487a70a597e8e6bd0c8479f5 = L.marker(
+                [47.995615, 0.192614],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_8536f53e130cafaae372c69ae76168d6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_905d9845487a70a597e8e6bd0c8479f5.setIcon(icon_8536f53e130cafaae372c69ae76168d6);
+        
+    
+        var popup_20cdf0a6b4858a048e7bcdb0a0b3abe1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3a7b90f4b30fc91fe7e40469a5fa781e = $(`<div id="html_3a7b90f4b30fc91fe7e40469a5fa781e" style="width: 100.0%; height: 100.0%;">Le Mans (Le Mans) - 156.2 km</div>`)[0];
+                popup_20cdf0a6b4858a048e7bcdb0a0b3abe1.setContent(html_3a7b90f4b30fc91fe7e40469a5fa781e);
+            
+        
+
+        marker_905d9845487a70a597e8e6bd0c8479f5.bindPopup(popup_20cdf0a6b4858a048e7bcdb0a0b3abe1)
+        ;
+
+        
+    
+    
+            var poly_line_4269841931f492b79e85b63cc1a0e9a2 = L.polyline(
+                [[47.217491, -1.542077], [47.995615, 0.192614]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_9cc3beaf6290a49d1d792df826f29540 = L.marker(
+                [44.825873, -0.556697],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_7eb56631c08f30aff4bb7c2f151de3df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9cc3beaf6290a49d1d792df826f29540.setIcon(icon_7eb56631c08f30aff4bb7c2f151de3df);
+        
+    
+        var popup_4948ec0f250411768964a335eef99f7e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb9421643a847e0ab2c2bc14c19e5009 = $(`<div id="html_bb9421643a847e0ab2c2bc14c19e5009" style="width: 100.0%; height: 100.0%;">Bordeaux Saint-Jean (Bordeaux) - 276.6 km</div>`)[0];
+                popup_4948ec0f250411768964a335eef99f7e.setContent(html_bb9421643a847e0ab2c2bc14c19e5009);
+            
+        
+
+        marker_9cc3beaf6290a49d1d792df826f29540.bindPopup(popup_4948ec0f250411768964a335eef99f7e)
+        ;
+
+        
+    
+    
+            var poly_line_8ee4b934cf4cd7008a796652d67fe061 = L.polyline(
+                [[47.217491, -1.542077], [44.825873, -0.556697]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_066cbc0babef34b7741d289813f24100 = L.marker(
+                [47.065702, -0.869897],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_9a4b55415a34dea07620d5656d062262 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_066cbc0babef34b7741d289813f24100.setIcon(icon_9a4b55415a34dea07620d5656d062262);
+        
+    
+        var popup_9d6d6135d60f3458b96e6be035d697f9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4f79b0440bf571f69e4a2f014665e54a = $(`<div id="html_4f79b0440bf571f69e4a2f014665e54a" style="width: 100.0%; height: 100.0%;">Cholet (Cholet) - 53.6 km</div>`)[0];
+                popup_9d6d6135d60f3458b96e6be035d697f9.setContent(html_4f79b0440bf571f69e4a2f014665e54a);
+            
+        
+
+        marker_066cbc0babef34b7741d289813f24100.bindPopup(popup_9d6d6135d60f3458b96e6be035d697f9)
+        ;
+
+        
+    
+    
+            var poly_line_4ae79dc47281adb9d68d06ef9a2f116d = L.polyline(
+                [[47.217491, -1.542077], [47.065702, -0.869897]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_1361b2032f0d4a98db8ebf2f515aa6ea = L.marker(
+                [47.289889, -2.50734],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_6a75877e7fa5cc26e4537676101dd1c6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1361b2032f0d4a98db8ebf2f515aa6ea.setIcon(icon_6a75877e7fa5cc26e4537676101dd1c6);
+        
+    
+        var popup_bdcc80585fff51e445e464e5357cb29b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cc51ad7e614cfd5218f03945eba96220 = $(`<div id="html_cc51ad7e614cfd5218f03945eba96220" style="width: 100.0%; height: 100.0%;">Le Croisic (Le Croisic) - 73.3 km</div>`)[0];
+                popup_bdcc80585fff51e445e464e5357cb29b.setContent(html_cc51ad7e614cfd5218f03945eba96220);
+            
+        
+
+        marker_1361b2032f0d4a98db8ebf2f515aa6ea.bindPopup(popup_bdcc80585fff51e445e464e5357cb29b)
+        ;
+
+        
+    
+    
+            var poly_line_eb3002d4c7ff9c549e5ed223731a7309 = L.polyline(
+                [[47.217491, -1.542077], [47.289889, -2.50734]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_3507171aab4ffeca120fd17fe632e891 = L.marker(
+                [47.441925, -1.503167],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_db8799427cda7fd07deb9ebc5b18dc19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3507171aab4ffeca120fd17fe632e891.setIcon(icon_db8799427cda7fd07deb9ebc5b18dc19);
+        
+    
+        var popup_6151707ba5ba1019e0c667ff13faea2d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5d5be683b80191ec2eb4cf70625c8cb6 = $(`<div id="html_5d5be683b80191ec2eb4cf70625c8cb6" style="width: 100.0%; height: 100.0%;">Nort-sur-Erdre (Nort-sur-Erdre) - 25.1 km</div>`)[0];
+                popup_6151707ba5ba1019e0c667ff13faea2d.setContent(html_5d5be683b80191ec2eb4cf70625c8cb6);
+            
+        
+
+        marker_3507171aab4ffeca120fd17fe632e891.bindPopup(popup_6151707ba5ba1019e0c667ff13faea2d)
+        ;
+
+        
+    
+    
+            var poly_line_e2e7c3099721eeff6688c17f8f1f8bd5 = L.polyline(
+                [[47.217491, -1.542077], [47.441925, -1.503167]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var marker_d4cd2657056970caaa4af5ebd5319ccf = L.marker(
+                [48.103517, -1.672744],
+                {}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+    
+            var icon_58c3545e2728f98055ce36abb73b06fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d4cd2657056970caaa4af5ebd5319ccf.setIcon(icon_58c3545e2728f98055ce36abb73b06fb);
+        
+    
+        var popup_628ca1f1414118a5f87eb7530df37c9e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c7f1e0f3f9fdc4a34fc31823a84dabc8 = $(`<div id="html_c7f1e0f3f9fdc4a34fc31823a84dabc8" style="width: 100.0%; height: 100.0%;">Rennes (Rennes) - 99.0 km</div>`)[0];
+                popup_628ca1f1414118a5f87eb7530df37c9e.setContent(html_c7f1e0f3f9fdc4a34fc31823a84dabc8);
+            
+        
+
+        marker_d4cd2657056970caaa4af5ebd5319ccf.bindPopup(popup_628ca1f1414118a5f87eb7530df37c9e)
+        ;
+
+        
+    
+    
+            var poly_line_a79b4b75e7bba29101883dfce27180f3 = L.polyline(
+                [[47.217491, -1.542077], [48.103517, -1.672744]],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "red", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b595cd85ac851529264e2ab4e16fd26e);
+        
+</script>
