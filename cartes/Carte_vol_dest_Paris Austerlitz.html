@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_13398d9da0788910b9e5e610efc1593d {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_13398d9da0788910b9e5e610efc1593d" ></div>
+        
+</body>
+<script>    
+    
+            var map_13398d9da0788910b9e5e610efc1593d = L.map(
+                "map_13398d9da0788910b9e5e610efc1593d",
+                {
+                    center: [45.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_f57ccaf777db2af3582854a81380b8e6 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_cf4fbcfd95b9e44d709ce7b23d043ffa = L.marker(
+                [48.842285, 2.364891],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_564dace3d1a7476bab652dd5af13ff02 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cf4fbcfd95b9e44d709ce7b23d043ffa.setIcon(icon_564dace3d1a7476bab652dd5af13ff02);
+        
+    
+        var popup_f3d09161d31c87a965c6b8a416f139f6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_654463a17271ca41cf4d7d255153784a = $(`<div id="html_654463a17271ca41cf4d7d255153784a" style="width: 100.0%; height: 100.0%;">Châteaudun (Châteaudun)</div>`)[0];
+                popup_f3d09161d31c87a965c6b8a416f139f6.setContent(html_654463a17271ca41cf4d7d255153784a);
+            
+        
+
+        marker_cf4fbcfd95b9e44d709ce7b23d043ffa.bindPopup(popup_f3d09161d31c87a965c6b8a416f139f6)
+        ;
+
+        
+    
+    
+            var marker_ffe161b8430f6c3c06edcd29d4b10565 = L.marker(
+                [48.073409, 1.338114],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_c18778cb2f47c8af9134450504e0a4a5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffe161b8430f6c3c06edcd29d4b10565.setIcon(icon_c18778cb2f47c8af9134450504e0a4a5);
+        
+    
+        var popup_a481077d70031d6f0fa3f015b71306cb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9a56adbdfac5969cedab4264daed717 = $(`<div id="html_a9a56adbdfac5969cedab4264daed717" style="width: 100.0%; height: 100.0%;">Châteaudun (Châteaudun) - 114.2 km</div>`)[0];
+                popup_a481077d70031d6f0fa3f015b71306cb.setContent(html_a9a56adbdfac5969cedab4264daed717);
+            
+        
+
+        marker_ffe161b8430f6c3c06edcd29d4b10565.bindPopup(popup_a481077d70031d6f0fa3f015b71306cb)
+        ;
+
+        
+    
+    
+            var poly_line_619f0b60f964eb1182f0918f8810b388 = L.polyline(
+                [[48.842285, 2.364891], [48.073409, 1.338114]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_f617712ba1b0eb7c41174527c14b22ff = L.marker(
+                [47.217491, -1.542077],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_04729f4139c2cb0dce2198210a05218e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f617712ba1b0eb7c41174527c14b22ff.setIcon(icon_04729f4139c2cb0dce2198210a05218e);
+        
+    
+        var popup_0526828c182bd42b9985d3e8d07f7b46 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c64f1b7e16c7b66b12e072b9ea3eaa9c = $(`<div id="html_c64f1b7e16c7b66b12e072b9ea3eaa9c" style="width: 100.0%; height: 100.0%;">Nantes (Nantes) - 342.1 km</div>`)[0];
+                popup_0526828c182bd42b9985d3e8d07f7b46.setContent(html_c64f1b7e16c7b66b12e072b9ea3eaa9c);
+            
+        
+
+        marker_f617712ba1b0eb7c41174527c14b22ff.bindPopup(popup_0526828c182bd42b9985d3e8d07f7b46)
+        ;
+
+        
+    
+    
+            var poly_line_eb1ce419ed2fc430c25158c098f5a2b5 = L.polyline(
+                [[48.842285, 2.364891], [47.217491, -1.542077]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_7c3ad4f41d7c4bab14fa4b1625d6d84c = L.marker(
+                [47.801959, 1.068219],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_ae524751cd3f6c74444aa489bf6bd1a0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7c3ad4f41d7c4bab14fa4b1625d6d84c.setIcon(icon_ae524751cd3f6c74444aa489bf6bd1a0);
+        
+    
+        var popup_5bb60aa51b1676ca63a08ba6e3f03ac7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13bb4fbed3f4509f0e79cdbf3130f8aa = $(`<div id="html_13bb4fbed3f4509f0e79cdbf3130f8aa" style="width: 100.0%; height: 100.0%;">Vendôme (Vendôme) - 150.2 km</div>`)[0];
+                popup_5bb60aa51b1676ca63a08ba6e3f03ac7.setContent(html_13bb4fbed3f4509f0e79cdbf3130f8aa);
+            
+        
+
+        marker_7c3ad4f41d7c4bab14fa4b1625d6d84c.bindPopup(popup_5bb60aa51b1676ca63a08ba6e3f03ac7)
+        ;
+
+        
+    
+    
+            var poly_line_6d157d51a4d8765a77ff8d9062b0d8ff = L.polyline(
+                [[48.842285, 2.364891], [47.801959, 1.068219]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_195affe4930780ca3acf69915b3ea2aa = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_32c90bbe41c7aed50220a9c20b7ee5e8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_195affe4930780ca3acf69915b3ea2aa.setIcon(icon_32c90bbe41c7aed50220a9c20b7ee5e8);
+        
+    
+        var popup_ec191599f3a8248f2ec6287292a97cf9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ab60d9f86cc4c6397a1139ce9d5826d1 = $(`<div id="html_ab60d9f86cc4c6397a1139ce9d5826d1" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_ec191599f3a8248f2ec6287292a97cf9.setContent(html_ab60d9f86cc4c6397a1139ce9d5826d1);
+            
+        
+
+        marker_195affe4930780ca3acf69915b3ea2aa.bindPopup(popup_ec191599f3a8248f2ec6287292a97cf9)
+        ;
+
+        
+    
+    
+            var poly_line_a7f1d86b11c1e37614c38541ae6d070e = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_7f6e69db272954a521427118e35bc0e3 = L.marker(
+                [43.611206, 1.453616],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_036922afcb912a9522bfc50794554079 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7f6e69db272954a521427118e35bc0e3.setIcon(icon_036922afcb912a9522bfc50794554079);
+        
+    
+        var popup_f59bf51671c901eb90f271eef37182fc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdb531187d7ddc48e800004b4dce665f = $(`<div id="html_fdb531187d7ddc48e800004b4dce665f" style="width: 100.0%; height: 100.0%;">Toulouse Matabiau (Toulouse) - 585.9 km</div>`)[0];
+                popup_f59bf51671c901eb90f271eef37182fc.setContent(html_fdb531187d7ddc48e800004b4dce665f);
+            
+        
+
+        marker_7f6e69db272954a521427118e35bc0e3.bindPopup(popup_f59bf51671c901eb90f271eef37182fc)
+        ;
+
+        
+    
+    
+            var poly_line_77733527feaf470965aad82b04820b10 = L.polyline(
+                [[48.842285, 2.364891], [43.611206, 1.453616]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_c5d454fefaafa70d18ecdf99f6bea0c5 = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_0eeede7de0ac486692d41ee4cb195e0e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c5d454fefaafa70d18ecdf99f6bea0c5.setIcon(icon_0eeede7de0ac486692d41ee4cb195e0e);
+        
+    
+        var popup_27fd41e707d794624cf3afc60d4aaf19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6fdc643618051c6abf57fdabaaeaa7f3 = $(`<div id="html_6fdc643618051c6abf57fdabaaeaa7f3" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_27fd41e707d794624cf3afc60d4aaf19.setContent(html_6fdc643618051c6abf57fdabaaeaa7f3);
+            
+        
+
+        marker_c5d454fefaafa70d18ecdf99f6bea0c5.bindPopup(popup_27fd41e707d794624cf3afc60d4aaf19)
+        ;
+
+        
+    
+    
+            var poly_line_76e9891262f5cf1a405e3890f6e10725 = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_83e044f19a5ded2205c09ba9ea763540 = L.marker(
+                [48.073409, 1.338114],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_6a0306861ee80c027fc62c88a20c5c04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83e044f19a5ded2205c09ba9ea763540.setIcon(icon_6a0306861ee80c027fc62c88a20c5c04);
+        
+    
+        var popup_3ebd287dcf0e2c8a3a8b5cdcb5787e80 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4d5c04e4ea988fbfd437f24ccf994e89 = $(`<div id="html_4d5c04e4ea988fbfd437f24ccf994e89" style="width: 100.0%; height: 100.0%;">Châteaudun (Châteaudun) - 114.2 km</div>`)[0];
+                popup_3ebd287dcf0e2c8a3a8b5cdcb5787e80.setContent(html_4d5c04e4ea988fbfd437f24ccf994e89);
+            
+        
+
+        marker_83e044f19a5ded2205c09ba9ea763540.bindPopup(popup_3ebd287dcf0e2c8a3a8b5cdcb5787e80)
+        ;
+
+        
+    
+    
+            var poly_line_2438c141c3ef16169d8f75a657607053 = L.polyline(
+                [[48.842285, 2.364891], [48.073409, 1.338114]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_edda60526df64904bbb7bff015d83843 = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_47bde036f0f19648700c35d42e498ddc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_edda60526df64904bbb7bff015d83843.setIcon(icon_47bde036f0f19648700c35d42e498ddc);
+        
+    
+        var popup_6b3cc28c710866a8363477b737fff694 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_717762502e01fc3b5c3e799f41e5de54 = $(`<div id="html_717762502e01fc3b5c3e799f41e5de54" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_6b3cc28c710866a8363477b737fff694.setContent(html_717762502e01fc3b5c3e799f41e5de54);
+            
+        
+
+        marker_edda60526df64904bbb7bff015d83843.bindPopup(popup_6b3cc28c710866a8363477b737fff694)
+        ;
+
+        
+    
+    
+            var poly_line_218fb255f036fca5ce9fe833dd4a7dff = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_934b00212ff117939f3cc1c954ce78a7 = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_fc2a6ff5807b4b50f06099d00c265456 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_934b00212ff117939f3cc1c954ce78a7.setIcon(icon_fc2a6ff5807b4b50f06099d00c265456);
+        
+    
+        var popup_2b31ca6e09fd45a41680b615a7db0dd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0849e867e397834d477737c25c0fa93c = $(`<div id="html_0849e867e397834d477737c25c0fa93c" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_2b31ca6e09fd45a41680b615a7db0dd1.setContent(html_0849e867e397834d477737c25c0fa93c);
+            
+        
+
+        marker_934b00212ff117939f3cc1c954ce78a7.bindPopup(popup_2b31ca6e09fd45a41680b615a7db0dd1)
+        ;
+
+        
+    
+    
+            var poly_line_0dff61c556c95318de66afe175d91a66 = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_6b2a5ea4f7afd089319f00e13b00b7bf = L.marker(
+                [44.449275, 1.433325],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_d52dcdc5fca4bdef8ae20b789dbdeb83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b2a5ea4f7afd089319f00e13b00b7bf.setIcon(icon_d52dcdc5fca4bdef8ae20b789dbdeb83);
+        
+    
+        var popup_f662b711da757252ab0a9a2408841e91 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bb94d0284fce5991d91c6570be4d23f4 = $(`<div id="html_bb94d0284fce5991d91c6570be4d23f4" style="width: 100.0%; height: 100.0%;">Cahors (Cahors) - 493.6 km</div>`)[0];
+                popup_f662b711da757252ab0a9a2408841e91.setContent(html_bb94d0284fce5991d91c6570be4d23f4);
+            
+        
+
+        marker_6b2a5ea4f7afd089319f00e13b00b7bf.bindPopup(popup_f662b711da757252ab0a9a2408841e91)
+        ;
+
+        
+    
+    
+            var poly_line_33d87741d47841c02557bafaf539a2b0 = L.polyline(
+                [[48.842285, 2.364891], [44.449275, 1.433325]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_b8f046a5d05bfb19d0ed7413b7b50f07 = L.marker(
+                [48.073409, 1.338114],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_acf8f1d1c0b1c9ccc17046d570919013 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b8f046a5d05bfb19d0ed7413b7b50f07.setIcon(icon_acf8f1d1c0b1c9ccc17046d570919013);
+        
+    
+        var popup_a76b46d63e163a2e3345a34e90910397 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_14f61ada565343887eb3722c3e37e0a1 = $(`<div id="html_14f61ada565343887eb3722c3e37e0a1" style="width: 100.0%; height: 100.0%;">Châteaudun (Châteaudun) - 114.2 km</div>`)[0];
+                popup_a76b46d63e163a2e3345a34e90910397.setContent(html_14f61ada565343887eb3722c3e37e0a1);
+            
+        
+
+        marker_b8f046a5d05bfb19d0ed7413b7b50f07.bindPopup(popup_a76b46d63e163a2e3345a34e90910397)
+        ;
+
+        
+    
+    
+            var poly_line_84cf2d305dd714bddbb2b83d71656cd5 = L.polyline(
+                [[48.842285, 2.364891], [48.073409, 1.338114]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_45e36cb84d829109eea4c1a75c6649b9 = L.marker(
+                [47.217491, -1.542077],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_765ea1b602e57637bffc2439de079208 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45e36cb84d829109eea4c1a75c6649b9.setIcon(icon_765ea1b602e57637bffc2439de079208);
+        
+    
+        var popup_ed020a84dd2e12cddc91cbbae255c0d5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fa7181eb86cda1ced2152979ac678bad = $(`<div id="html_fa7181eb86cda1ced2152979ac678bad" style="width: 100.0%; height: 100.0%;">Nantes (Nantes) - 342.1 km</div>`)[0];
+                popup_ed020a84dd2e12cddc91cbbae255c0d5.setContent(html_fa7181eb86cda1ced2152979ac678bad);
+            
+        
+
+        marker_45e36cb84d829109eea4c1a75c6649b9.bindPopup(popup_ed020a84dd2e12cddc91cbbae255c0d5)
+        ;
+
+        
+    
+    
+            var poly_line_eacbac0996edd4a62b7824c2d2930f02 = L.polyline(
+                [[48.842285, 2.364891], [47.217491, -1.542077]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_1742de7ae1eb12ae10d17f6ad83df8bc = L.marker(
+                [47.801959, 1.068219],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_40019d70db299ffe5d09f209ccc10d63 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1742de7ae1eb12ae10d17f6ad83df8bc.setIcon(icon_40019d70db299ffe5d09f209ccc10d63);
+        
+    
+        var popup_2ed111165f78e44ab9cad49c406423b4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a9044bda87407c93e9d8b02e84636586 = $(`<div id="html_a9044bda87407c93e9d8b02e84636586" style="width: 100.0%; height: 100.0%;">Vendôme (Vendôme) - 150.2 km</div>`)[0];
+                popup_2ed111165f78e44ab9cad49c406423b4.setContent(html_a9044bda87407c93e9d8b02e84636586);
+            
+        
+
+        marker_1742de7ae1eb12ae10d17f6ad83df8bc.bindPopup(popup_2ed111165f78e44ab9cad49c406423b4)
+        ;
+
+        
+    
+    
+            var poly_line_9698cfe9fd98d4f4db0b048fcf749e34 = L.polyline(
+                [[48.842285, 2.364891], [47.801959, 1.068219]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_f61c573303e02d8f2fe20dd52c5ab8d6 = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_bceeaa7ff417b0f20228fc123c2295fe = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f61c573303e02d8f2fe20dd52c5ab8d6.setIcon(icon_bceeaa7ff417b0f20228fc123c2295fe);
+        
+    
+        var popup_839a7d8c1cedb341f3c47cdef5db8c26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2ebf62a6bd686fc73abc08486f6bb5f8 = $(`<div id="html_2ebf62a6bd686fc73abc08486f6bb5f8" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_839a7d8c1cedb341f3c47cdef5db8c26.setContent(html_2ebf62a6bd686fc73abc08486f6bb5f8);
+            
+        
+
+        marker_f61c573303e02d8f2fe20dd52c5ab8d6.bindPopup(popup_839a7d8c1cedb341f3c47cdef5db8c26)
+        ;
+
+        
+    
+    
+            var poly_line_4be3e903f6f55725dc0dc7dbd46298ad = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_66795dd275859ddf05a035a9d2e319f0 = L.marker(
+                [43.611206, 1.453616],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_c201f80c4b529e1367cbb8556747e163 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_66795dd275859ddf05a035a9d2e319f0.setIcon(icon_c201f80c4b529e1367cbb8556747e163);
+        
+    
+        var popup_86cc8cf6d028fa50de6d8a511fd235ac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6152ecfb0656e748346985de2ba4b50f = $(`<div id="html_6152ecfb0656e748346985de2ba4b50f" style="width: 100.0%; height: 100.0%;">Toulouse Matabiau (Toulouse) - 585.9 km</div>`)[0];
+                popup_86cc8cf6d028fa50de6d8a511fd235ac.setContent(html_6152ecfb0656e748346985de2ba4b50f);
+            
+        
+
+        marker_66795dd275859ddf05a035a9d2e319f0.bindPopup(popup_86cc8cf6d028fa50de6d8a511fd235ac)
+        ;
+
+        
+    
+    
+            var poly_line_0b7fa620e3b86f0e87856cc2a5d1c45d = L.polyline(
+                [[48.842285, 2.364891], [43.611206, 1.453616]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_f8e2eedd92fc6aa29561cca9cb7110a0 = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_5410cc6b6aa7156c7ed9060cb0846454 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f8e2eedd92fc6aa29561cca9cb7110a0.setIcon(icon_5410cc6b6aa7156c7ed9060cb0846454);
+        
+    
+        var popup_a93aca9f52fc3c389017d1e18ba4f464 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ded1d77187c279b337c3118a1573b49e = $(`<div id="html_ded1d77187c279b337c3118a1573b49e" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_a93aca9f52fc3c389017d1e18ba4f464.setContent(html_ded1d77187c279b337c3118a1573b49e);
+            
+        
+
+        marker_f8e2eedd92fc6aa29561cca9cb7110a0.bindPopup(popup_a93aca9f52fc3c389017d1e18ba4f464)
+        ;
+
+        
+    
+    
+            var poly_line_4748553b2294bf726a6e0d9270c5ab10 = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_c33a5ba6145b2819394876d29480d8cf = L.marker(
+                [48.073409, 1.338114],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_d9c58a56a57ad3cae8b6a813094cb85a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c33a5ba6145b2819394876d29480d8cf.setIcon(icon_d9c58a56a57ad3cae8b6a813094cb85a);
+        
+    
+        var popup_ef7c6af61cfbb803d01d1b30db7d131b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d458dbc10ad3e3371bf743d21a83c6a2 = $(`<div id="html_d458dbc10ad3e3371bf743d21a83c6a2" style="width: 100.0%; height: 100.0%;">Châteaudun (Châteaudun) - 114.2 km</div>`)[0];
+                popup_ef7c6af61cfbb803d01d1b30db7d131b.setContent(html_d458dbc10ad3e3371bf743d21a83c6a2);
+            
+        
+
+        marker_c33a5ba6145b2819394876d29480d8cf.bindPopup(popup_ef7c6af61cfbb803d01d1b30db7d131b)
+        ;
+
+        
+    
+    
+            var poly_line_c69c50b4c595e0cb359924437433d9d3 = L.polyline(
+                [[48.842285, 2.364891], [48.073409, 1.338114]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_9e730d731127153ab93ac543b01101bc = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_736263bd1e054c6567c97d96b4a021ad = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9e730d731127153ab93ac543b01101bc.setIcon(icon_736263bd1e054c6567c97d96b4a021ad);
+        
+    
+        var popup_1b65eb4ff6f34ba7b4364c0cb319711e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b84c989a69f031066be1891c531c0bf = $(`<div id="html_1b84c989a69f031066be1891c531c0bf" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_1b65eb4ff6f34ba7b4364c0cb319711e.setContent(html_1b84c989a69f031066be1891c531c0bf);
+            
+        
+
+        marker_9e730d731127153ab93ac543b01101bc.bindPopup(popup_1b65eb4ff6f34ba7b4364c0cb319711e)
+        ;
+
+        
+    
+    
+            var poly_line_1d085cb1fd9ba6635710c016c77b6e28 = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_4c4c077ffed004e748e493643f50697e = L.marker(
+                [47.907891, 1.904242],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_79efa66dab9a12fa3f945b762a357a1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4c4c077ffed004e748e493643f50697e.setIcon(icon_79efa66dab9a12fa3f945b762a357a1d);
+        
+    
+        var popup_575d684e9704d88f6b0856ff219e3cb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_36ded1bd439366b43e4247f0f23bc2b1 = $(`<div id="html_36ded1bd439366b43e4247f0f23bc2b1" style="width: 100.0%; height: 100.0%;">Orléans (Orléans) - 109.3 km</div>`)[0];
+                popup_575d684e9704d88f6b0856ff219e3cb6.setContent(html_36ded1bd439366b43e4247f0f23bc2b1);
+            
+        
+
+        marker_4c4c077ffed004e748e493643f50697e.bindPopup(popup_575d684e9704d88f6b0856ff219e3cb6)
+        ;
+
+        
+    
+    
+            var poly_line_20ef3c863c8797e0b1981eb23058e421 = L.polyline(
+                [[48.842285, 2.364891], [47.907891, 1.904242]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var marker_71f947a5a988fe776cfaf4f0a116b1a6 = L.marker(
+                [44.449275, 1.433325],
+                {}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+    
+            var icon_cc7ea23bcafb68f973a668279dd0d49b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71f947a5a988fe776cfaf4f0a116b1a6.setIcon(icon_cc7ea23bcafb68f973a668279dd0d49b);
+        
+    
+        var popup_c45a09410c6caab97bf5bc0a2b94b19e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2b79bc3af7e54ec31b17e8c85fed9bb7 = $(`<div id="html_2b79bc3af7e54ec31b17e8c85fed9bb7" style="width: 100.0%; height: 100.0%;">Cahors (Cahors) - 493.6 km</div>`)[0];
+                popup_c45a09410c6caab97bf5bc0a2b94b19e.setContent(html_2b79bc3af7e54ec31b17e8c85fed9bb7);
+            
+        
+
+        marker_71f947a5a988fe776cfaf4f0a116b1a6.bindPopup(popup_c45a09410c6caab97bf5bc0a2b94b19e)
+        ;
+
+        
+    
+    
+            var poly_line_daba6e42ef991cd6e44d9db9d64331c8 = L.polyline(
+                [[48.842285, 2.364891], [44.449275, 1.433325]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_13398d9da0788910b9e5e610efc1593d);
+        
+</script>

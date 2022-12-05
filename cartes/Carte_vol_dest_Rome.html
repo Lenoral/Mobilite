@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_b7c88bc69181a2482d18257f9f34b344 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_b7c88bc69181a2482d18257f9f34b344" ></div>
+        
+</body>
+<script>    
+    
+            var map_b7c88bc69181a2482d18257f9f34b344 = L.map(
+                "map_b7c88bc69181a2482d18257f9f34b344",
+                {
+                    center: [45.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_27930c24c2e9aa752ddcfaeb8366e975 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var marker_2c08455241f827e9e952ecc13be3fb63 = L.marker(
+                [42.491243, 2.038396],
+                {}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var icon_9b4e258346fc83e148344c67c0222e10 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2c08455241f827e9e952ecc13be3fb63.setIcon(icon_9b4e258346fc83e148344c67c0222e10);
+        
+    
+        var popup_d119261bfee1c75cf261e65671e40024 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b987ce27b9191edd08123752faf3de0 = $(`<div id="html_8b987ce27b9191edd08123752faf3de0" style="width: 100.0%; height: 100.0%;">Villefranche - Vernet-les-Bains (Fuilla)</div>`)[0];
+                popup_d119261bfee1c75cf261e65671e40024.setContent(html_8b987ce27b9191edd08123752faf3de0);
+            
+        
+
+        marker_2c08455241f827e9e952ecc13be3fb63.bindPopup(popup_d119261bfee1c75cf261e65671e40024)
+        ;
+
+        
+    
+    
+            var marker_e0f2ecf938eb2ca91317455abd101aa9 = L.marker(
+                [42.5917, 2.370354],
+                {}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var icon_c6dcb092a2584e1439ead239d9f741bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e0f2ecf938eb2ca91317455abd101aa9.setIcon(icon_c6dcb092a2584e1439ead239d9f741bc);
+        
+    
+        var popup_48128716f49ce0df3daf27608204737d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e1267d4d2afaeafb04af6e2c74d9b591 = $(`<div id="html_e1267d4d2afaeafb04af6e2c74d9b591" style="width: 100.0%; height: 100.0%;">Villefranche - Vernet-les-Bains (Fuilla) - 29.4 km</div>`)[0];
+                popup_48128716f49ce0df3daf27608204737d.setContent(html_e1267d4d2afaeafb04af6e2c74d9b591);
+            
+        
+
+        marker_e0f2ecf938eb2ca91317455abd101aa9.bindPopup(popup_48128716f49ce0df3daf27608204737d)
+        ;
+
+        
+    
+    
+            var poly_line_17bcb255d3319985acbe7b297401f67f = L.polyline(
+                [[42.491243, 2.038396], [42.5917, 2.370354]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var marker_5618403ea34bf12faa262f65e59e0399 = L.marker(
+                [42.5917, 2.370354],
+                {}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var icon_87e98fe1ba15fd74032016ce40aad221 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5618403ea34bf12faa262f65e59e0399.setIcon(icon_87e98fe1ba15fd74032016ce40aad221);
+        
+    
+        var popup_85d7cac259950c03d1fffda926ecc881 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_111194a8b9bdc89fb471033b0b4fe860 = $(`<div id="html_111194a8b9bdc89fb471033b0b4fe860" style="width: 100.0%; height: 100.0%;">Villefranche - Vernet-les-Bains (Fuilla) - 29.4 km</div>`)[0];
+                popup_85d7cac259950c03d1fffda926ecc881.setContent(html_111194a8b9bdc89fb471033b0b4fe860);
+            
+        
+
+        marker_5618403ea34bf12faa262f65e59e0399.bindPopup(popup_85d7cac259950c03d1fffda926ecc881)
+        ;
+
+        
+    
+    
+            var poly_line_3b1f2b759220b3ef77eb80ff5545cbdf = L.polyline(
+                [[42.491243, 2.038396], [42.5917, 2.370354]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var marker_ee9c32f288aa3251edd0acf757961169 = L.marker(
+                [42.458991, 1.904433],
+                {}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var icon_5d44dce2f16302e076ac0ad1988019de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ee9c32f288aa3251edd0acf757961169.setIcon(icon_5d44dce2f16302e076ac0ad1988019de);
+        
+    
+        var popup_01cff19670d4f73087c7e849aa5a0854 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8be30477a03400f5b7fec0a0aed63b4b = $(`<div id="html_8be30477a03400f5b7fec0a0aed63b4b" style="width: 100.0%; height: 100.0%;">Latour-de-Carol - Enveitg (Enveitg) - 11.6 km</div>`)[0];
+                popup_01cff19670d4f73087c7e849aa5a0854.setContent(html_8be30477a03400f5b7fec0a0aed63b4b);
+            
+        
+
+        marker_ee9c32f288aa3251edd0acf757961169.bindPopup(popup_01cff19670d4f73087c7e849aa5a0854)
+        ;
+
+        
+    
+    
+            var poly_line_f00bd18c1d660e9cc4452fd7cba97127 = L.polyline(
+                [[42.491243, 2.038396], [42.458991, 1.904433]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var marker_129218d57a0f103c23790be06b63f21f = L.marker(
+                [42.5917, 2.370354],
+                {}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var icon_58b2a22f491d4ef8407e23b8e80c64dc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_129218d57a0f103c23790be06b63f21f.setIcon(icon_58b2a22f491d4ef8407e23b8e80c64dc);
+        
+    
+        var popup_5bea6e2d7b356fb77c9f6835a47ab672 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_80143a3a9a366c56a6c944eeb2948a14 = $(`<div id="html_80143a3a9a366c56a6c944eeb2948a14" style="width: 100.0%; height: 100.0%;">Villefranche - Vernet-les-Bains (Fuilla) - 29.4 km</div>`)[0];
+                popup_5bea6e2d7b356fb77c9f6835a47ab672.setContent(html_80143a3a9a366c56a6c944eeb2948a14);
+            
+        
+
+        marker_129218d57a0f103c23790be06b63f21f.bindPopup(popup_5bea6e2d7b356fb77c9f6835a47ab672)
+        ;
+
+        
+    
+    
+            var poly_line_e8d0aa668208733e5d0c631b2050fa2c = L.polyline(
+                [[42.491243, 2.038396], [42.5917, 2.370354]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var marker_9ac2e8fd6188fa93ee0363a0e7d52c28 = L.marker(
+                [42.458991, 1.904433],
+                {}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+    
+            var icon_f6c1ef0778d012c899decc94da419066 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ac2e8fd6188fa93ee0363a0e7d52c28.setIcon(icon_f6c1ef0778d012c899decc94da419066);
+        
+    
+        var popup_99794cca414a77c8af451fea225b5da7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_53485907547f041840efc023d273782c = $(`<div id="html_53485907547f041840efc023d273782c" style="width: 100.0%; height: 100.0%;">Latour-de-Carol - Enveitg (Enveitg) - 11.6 km</div>`)[0];
+                popup_99794cca414a77c8af451fea225b5da7.setContent(html_53485907547f041840efc023d273782c);
+            
+        
+
+        marker_9ac2e8fd6188fa93ee0363a0e7d52c28.bindPopup(popup_99794cca414a77c8af451fea225b5da7)
+        ;
+
+        
+    
+    
+            var poly_line_f37ce7c0864c59e5ad4deca9ebb468e0 = L.polyline(
+                [[42.491243, 2.038396], [42.458991, 1.904433]],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": false, "fillColor": "blue", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 1, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_b7c88bc69181a2482d18257f9f34b344);
+        
+</script>
