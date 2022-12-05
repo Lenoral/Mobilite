@@ -183,6 +183,8 @@ if __name__ == '__main__':
     total_time = pd.DataFrame.from_dict(total_time, orient='index', columns=cols)
 
     # save results
+    results_df = pd.concat(results.values(), ignore_index=True)
+    results_df.to_csv('trajets' + '_' + o + '_' + t_string + '.csv')
     with open('results_' + o + '.pickle', 'wb') as f:
         pickle.dump(results, f)
     total_time.to_csv('results' + '_' + o + '_' + t_string + '.csv')
