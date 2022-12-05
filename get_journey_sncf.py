@@ -97,18 +97,18 @@ def read_info_journey(journey):
 
 if __name__ == '__main__':
     # read data and input parameters
-    auth = "42f6483b-fd9a-483a-89b8-4286395fd523"
+    auth = "16cbfb01-1943-471f-aac9-7a1139abab77"
     api_url = 'https://api.sncf.com/v1/coverage/sncf/journeys?'
-    path = './data/arrondissement_2022.csv'
+    path = './Data/arrondissement_2022.csv'
     db_cog = read_cog(path)
 
     # get info of SNCF train stations
     # https://ressources.data.sncf.com/api/records/1.0/search/?dataset=liste-des-gares&q=&rows=10000&facet=fret&facet=voyageurs&facet=code_ligne&facet=departemen
-    path = './data/referentiel_gares_voyageurs.csv'
+    path = './Data/referentiel_gares_voyageurs.csv'
     df_station = pd.read_csv(path, sep=';')
     # select only train station not only for region
     df_station = df_station.loc[df_station["Niveau de service"] >= 2]
-    df_station_foreign = pd.read_csv('./data/gares_etrangeres.csv', usecols=['name', 'id', 'lat', 'lon', 'city'])
+    df_station_foreign = pd.read_csv('./Data/gares_etrangeres.csv', usecols=['name', 'id', 'lat', 'lon', 'city'])
 
     # search OD and time
     '''==============================================TO SET=========================================================='''

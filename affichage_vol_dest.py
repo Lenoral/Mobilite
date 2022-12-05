@@ -32,7 +32,7 @@ def delta_time_api(time1,time2):
     
 def vol_dest_api(code):
     nombre_res =1000
-    r=requests.get('https://api.tequila.kiwi.com/v2/search?fly_from='+ str(code) +'&dateFrom=02/12/2022&dateTo=03/12/2022',headers= {'apikey': 'heKrsP3At973_NDG5Rdo5Hxev6myEuDa', 'accept': 'application/json'})
+    r=requests.get('https://api.tequila.kiwi.com/v2/search?fly_from='+ str(code) +'&dateFrom=05/12/2022&dateTo=06/12/2022',headers= {'apikey': 'heKrsP3At973_NDG5Rdo5Hxev6myEuDa', 'accept': 'application/json'})
     
     if r.status_code != 200: # see HTTP errors
         print("HTTP ERROR")
