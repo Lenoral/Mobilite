@@ -94,7 +94,7 @@ def read_info_journey(journey):
         station_dest, station_dest_lat, station_dest_lon]
     # return [h_depart, h_arrive, duration, no_train, type_train, direction, nb_transfers]
 
-def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service):
+def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
     if __name__ == '__main__':
         # read data and input parameters
         auth = "16cbfb01-1943-471f-aac9-7a1139abab77"
@@ -138,7 +138,7 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service):
                     params = {'from': "admin:fr:" + get_cog(o, db_cog),
                             'to': station_d[1]['id'],
                             'datetime': str(t_string),
-                            'min_nb_journeys': 3,
+                            'min_nb_journeys': 0,
                             'max_nb_transfers': nb_trajets
                         }
                     r = execute_req(api_url, auth, params)
@@ -188,8 +188,11 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service):
         results_df.to_csv('Outputs/trajets' + '_' + o + '_' + t_string + '.csv')
         with open('results_' + o + '.pickle', 'wb') as f:
             pickle.dump(results, f)
-        total_time.to_csv('results' + '_' + o + '_' + t_string + '.csv')
-    return(results_df)
+        
+        
+        result_limit =total_time[total_time['total_time']<60*minutes_max]
+        result_limit.to_csv('Outputs/results' + '_' + o + '_' + t_string + '.csv')
+    return(result_limit)
 
-df =get_OD_now(ville_origine='Limoges',nb_trajets=1,etranger=False,niveau_service=2)
+df =get_OD_now(ville_origine='Limoges',nb_trajets=0,etranger=False,niveau_service=2,minutes_max=360)
 print(df)
