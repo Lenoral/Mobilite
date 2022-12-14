@@ -29,10 +29,22 @@ def delta_time_api(time1,time2):
     time2_format = time_api_teq(time2)
     delta = time2_format-time1_format
     return(delta)
-    
+
+def delta_time_dep(time):
+    time_format = time_api_teq(time)
+    delta = time_format-datetime.datetime.now()
+    return(delta)
+
 def vol_dest_api(code):
+    t=time.localtime()
+    
+    date_ajd = str(t.tm_mday)+'/'+str(t.tm_mon)+'/'+str(t.tm_year)
+    date_plus3 =str(int(t.tm_mday)+3)+'/'+str(t.tm_mon)+'/'+str(t.tm_year)
+    
+    heure_mtn = str(t.tm_hour)+':'+str(t.tm_min)
+    
     nombre_res =1000
-    r=requests.get('https://api.tequila.kiwi.com/v2/search?fly_from='+ str(code) +'&dateFrom=05/12/2022&dateTo=06/12/2022',headers= {'apikey': 'heKrsP3At973_NDG5Rdo5Hxev6myEuDa', 'accept': 'application/json'})
+    r=requests.get('https://api.tequila.kiwi.com/v2/search?fly_from='+ str(code) +'&dateFrom='+ date_ajd+'&dateTo='+date_plus3+'&dtime_from='+ heure_mtn,headers= {'apikey': 'heKrsP3At973_NDG5Rdo5Hxev6myEuDa', 'accept': 'application/json'})
     
     if r.status_code != 200: # see HTTP errors
         print("HTTP ERROR")
@@ -55,8 +67,11 @@ def vol_dest_api(code):
         
     def temps_vol(x):
         return(delta_time_api(x['utc_departure'],x['utc_arrival']))
+    def temps_depart(x):
+        return(delta_time_dep(x['utc_arrival']))
     
     dest['Tps_trajet']= dest.apply(temps_vol,axis=1)
+    dest['Tps_total'] =dest.apply(temps_depart,axis=1)
     
     def temps_vol_sec(x):
         temps_vol = str(x['Tps_trajet'])
@@ -64,7 +79,14 @@ def vol_dest_api(code):
         heure = temps_vol[-8:-6]
         return(60*int(min)+3600*int(heure))
     
+    def temps_vol_dep_sec(x):
+        temps_vol = str(x['Tps_total'])
+        min=temps_vol[-12:-10]
+        heure = temps_vol[-15:-13]
+        return(60*int(min)+3600*int(heure))
+    
     dest['Tps_trajet_sec']= dest.apply(temps_vol_sec,axis=1)
+    dest['Tps_total_sec'] = dest.apply(temps_vol_dep_sec,axis=1)
     
     lon_ori = airports[airports['code']==code]['lon']
     lat_ori = airports[airports['code']==code]['lat']    
@@ -74,7 +96,11 @@ def vol_dest_api(code):
     dest['Distance'] = dest.apply(add_dist_df,axis=1)
         
     return(dest)
-      
+
+def voldest_dureemax(code,minutes_max):
+    dest = vol_dest_api(code)
+    dest_dureemax = dest[dest['Tps_total_sec']<60*minutes_max]
+    return(dest_dureemax)
     
     
 def recherche_airport(nom_recherche):
@@ -117,7 +143,7 @@ def affichage_vol_dest_code(code):
             #Tracé du point
             folium.Marker([latitude, longitude],
             popup=nom +'\n Distance: ' + str(distance) + '\n Temps de trajet: ' + str(Tps_trajet),
-            icon=folium.Icon(color='red')).add_to(fmap)
+            icon=folium.Icon(color='red',icon='plane')).add_to(fmap)
             
             #Tracé de la ligne
             points=[tuple([airport_ori_latitude,airport_ori_longitude]),tuple([latitude,longitude])]
@@ -196,3 +222,4 @@ def affichage_vol_dest(nom_recherche):
     return(fmap)
 
 #vol_dest_api('BOD')
+
