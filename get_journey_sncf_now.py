@@ -12,6 +12,7 @@ import pickle
 from requests.adapters import HTTPAdapter
 import itertools  # list operators
 import tqdm
+
 def read_cog(path):
     """
     Read code officiel géographique data, in the level of arrondissement.
@@ -156,6 +157,7 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
                 print(city_d + ' done !')
                 if df_city:
                     results[city_d] = pd.concat(df_city)
+            
 
         # get info for destinations in France
         for d_city in d:
@@ -175,12 +177,14 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
                     df['depart'] = o
                     df['arrival'] = d_city
                     results[d_city] = df
-
+                    
+                    
+        result_limit= {}
         total_time = {}
         cols = list(results[d_city].columns)
         for city in results.keys():
             total_time[city] = results[city].loc[results[city]['duration'] == min(results[city]['duration'])].values.tolist()[0] # if several journeys with same duration, keep the first
-        # the trip with min duration(in train and transfer) for each destination city not station
+            # the trip with min duration(in train and transfer) for each destination city not station
         total_time = pd.DataFrame.from_dict(total_time, orient='index', columns=cols)
 
         # save results
@@ -190,9 +194,11 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
             pickle.dump(results, f)
         
         
-        result_limit =total_time[total_time['total_time']<60*minutes_max]
+        result_limit = total_time[total_time['total_time']<60*minutes_max]
+        
         result_limit.to_csv('Outputs/results' + '_' + o + '_' + t_string + '.csv')
+        
     return(result_limit)
+get_OD_now('Bordeaux',etranger=False,minutes_max=180,nb_trajets=2,niveau_service=2)
 
-df =get_OD_now(ville_origine='Limoges',nb_trajets=0,etranger=False,niveau_service=2,minutes_max=360)
-print(df)
+
