@@ -543,4 +543,4 @@ def affichage_total_gpd_def(nom_recherche,minutes_max_train, minutes_max_avion):
     fmap.save(outfile='Cartes/' + nom_fichier)
     return(fmap)
 
-affichage_total_gpd('Bordeaux', 1440,1440)
+affichage_total_gpd('Quimper', 1440,1440)
