@@ -70,8 +70,8 @@ def vol_dest_api(code):
     def temps_depart(x):
         return(delta_time_dep(x['utc_arrival']))
     
-    dest['Tps_trajet']= dest.apply(temps_vol,axis=1)
-    dest['Tps_total'] =dest.apply(temps_depart,axis=1)
+    #dest['Tps_trajet']= dest.apply(temps_vol,axis=1)
+    #dest['Tps_total'] =dest.apply(temps_depart,axis=1)
     
     def temps_vol_sec(x):
         temps_vol = str(x['Tps_trajet'])
@@ -85,15 +85,15 @@ def vol_dest_api(code):
         heure = temps_vol[-15:-13]
         return(60*int(min)+3600*int(heure))
     
-    dest['Tps_trajet_sec']= dest.apply(temps_vol_sec,axis=1)
-    dest['Tps_total_sec'] = dest.apply(temps_vol_dep_sec,axis=1)
+    #dest['Tps_trajet_sec']= dest.apply(temps_vol_sec,axis=1)
+    #dest['Tps_total_sec'] = dest.apply(temps_vol_dep_sec,axis=1)
     
     lon_ori = airports[airports['code']==code]['lon']
     lat_ori = airports[airports['code']==code]['lat']    
     def add_dist_df(x):
         return(round(cdist.get_dist_km_2(lon_ori,lat_ori,x['lon'],x['lat']),1))
         
-    dest['Distance'] = dest.apply(add_dist_df,axis=1)
+    #dest['Distance'] = dest.apply(add_dist_df,axis=1)
         
     return(dest)
 
@@ -137,13 +137,13 @@ def affichage_vol_dest_code(code):
         latitude = airports_dest['lat'].iloc[i]
         nom = airports_dest['cityTo'].iloc[i]
         distance = airports_dest['Distance'].iloc[i]
-        Tps_trajet = airports_dest['Tps_trajet'].iloc[i]
+        #Tps_trajet = airports_dest['Tps_trajet'].iloc[i]
         
         if (not(pd.isna(latitude)) and not(pd.isna(longitude))):
             #Tracé du point
             folium.Marker([latitude, longitude],
-            popup=nom +'\n Distance: ' + str(distance) + '\n Temps de trajet: ' + str(Tps_trajet),
-            icon=folium.Icon(color='red',icon='plane')).add_to(fmap)
+            popup=nom +'\n Distance: ' + str(distance) + '\n Temps de trajet: ' ),
+            icon=folium.Icon(color='red',icon='plane').add_to(fmap)
             
             #Tracé de la ligne
             points=[tuple([airport_ori_latitude,airport_ori_longitude]),tuple([latitude,longitude])]
@@ -196,13 +196,13 @@ def affichage_vol_dest(nom_recherche):
             latitude = airports_dest['lat'].iloc[j]
             nom = airports_dest['cityTo'].iloc[i]
             distance = airports_dest['Distance'].iloc[i]
-            Tps_trajet = airports_dest['Tps_trajet'].iloc[i]
+            #Tps_trajet = airports_dest['Tps_trajet'].iloc[i]
             
             
             if (not(pd.isna(latitude)) and not(pd.isna(longitude))):
                 #Tracé du point
                 folium.Marker([latitude, longitude],
-                popup=nom +'\n Distance: ' + str(distance) + '\n Temps de trajet: ' + str(Tps_trajet),
+                popup=nom +'\n Distance: ' + str(distance) + '\n Temps de trajet: ',
                 icon=folium.Icon(color='red')).add_to(fmap)
                 
                 #Tracé de la ligne
@@ -221,5 +221,4 @@ def affichage_vol_dest(nom_recherche):
     fmap.save(outfile='Cartes/' + nom_fichier)
     return(fmap)
 
-#vol_dest_api('BOD')
-
+affichage_vol_dest_code('KBP'))
