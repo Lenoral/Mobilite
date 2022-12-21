@@ -96,7 +96,7 @@ def read_info_journey(journey):
     # return [h_depart, h_arrive, duration, no_train, type_train, direction, nb_transfers]
 
 def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
-    if __name__ == '__main__':
+    if True:
         # read data and input parameters
         auth = "16cbfb01-1943-471f-aac9-7a1139abab77"
         api_url = 'https://api.sncf.com/v1/coverage/sncf/journeys?'
@@ -199,6 +199,5 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
         result_limit.to_csv('Outputs/results' + '_' + o + '_' + t_string + '.csv')
         
     return(result_limit)
-get_OD_now('Bordeaux',etranger=False,minutes_max=180,nb_trajets=2,niveau_service=2)
 
 

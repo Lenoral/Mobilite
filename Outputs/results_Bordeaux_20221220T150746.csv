@@ -1,0 +1,16 @@
+,h_depart,h_arrive,station_orig,station_orig_lat,station_orig_lon,duration,nb_transfers,station_dest,station_dest_lat,station_dest_lon,waiting_time,total_time,depart,arrival
+Paris,2022-12-20 15:46:00,2022-12-20 17:52:00,Bordeaux Saint-Jean,44.825873,-0.556697,7560,0,Paris Montparnasse Hall 1 &2,48.841172,2.320514,2294,9854,Bordeaux,Paris
+Cahors,2022-12-20 15:18:30,2022-12-20 17:43:30,Bordeaux Saint-Jean,44.825873,-0.556697,8700,1,Cahors,44.449275,1.433325,644,9344,Bordeaux,Cahors
+Muret,2022-12-20 15:18:30,2022-12-20 18:00:30,Bordeaux Saint-Jean,44.825873,-0.556697,9720,1,Muret,43.464824,1.324449,644,10364,Bordeaux,Muret
+Angoulême,2022-12-20 16:19:00,2022-12-20 17:23:00,Bordeaux Saint-Jean,44.825873,-0.556697,3840,0,Angoulême,45.653572,0.164608,4274,8114,Bordeaux,Angoulême
+Toulouse,2022-12-20 15:18:30,2022-12-20 17:31:00,Bordeaux Saint-Jean,44.825873,-0.556697,7950,0,Toulouse Matabiau,43.611206,1.453616,644,8594,Bordeaux,Toulouse
+Périgueux,2022-12-20 15:27:00,2022-12-20 16:53:00,Bordeaux Saint-Jean,44.825873,-0.556697,5160,0,Périgueux,45.187408,0.707879,1154,6314,Bordeaux,Périgueux
+Agen,2022-12-20 15:18:30,2022-12-20 16:22:00,Bordeaux Saint-Jean,44.825873,-0.556697,3810,0,Agen,44.207967,0.6208669999999999,644,4454,Bordeaux,Agen
+Arcachon,2022-12-20 15:35:00,2022-12-20 16:25:00,Bordeaux Saint-Jean,44.825873,-0.556697,3000,0,Arcachon,44.658967,-1.165323,1634,4634,Bordeaux,Arcachon
+Libourne,2022-12-20 15:27:00,2022-12-20 15:51:00,Bordeaux Saint-Jean,44.825873,-0.556697,1440,0,Libourne,44.915904,-0.236359,1154,2594,Bordeaux,Libourne
+Poitiers,2022-12-20 16:19:00,2022-12-20 18:06:00,Bordeaux Saint-Jean,44.825873,-0.556697,6420,0,Poitiers,46.582232,0.333136,4274,10694,Bordeaux,Poitiers
+Saintes,2022-12-20 15:47:00,2022-12-20 17:28:30,Bordeaux Saint-Jean,44.825873,-0.556697,6090,0,Saintes,45.74874,-0.6179,2354,8444,Bordeaux,Saintes
+Dax,2022-12-20 15:19:00,2022-12-20 16:35:00,Bordeaux Saint-Jean,44.825873,-0.556697,4560,0,Dax,43.720472,-1.050301,674,5234,Bordeaux,Dax
+Marmande,2022-12-20 15:33:00,2022-12-20 16:19:00,Bordeaux Saint-Jean,44.825873,-0.556697,2760,0,Marmande,44.503071,0.168091,1514,4274,Bordeaux,Marmande
+Bayonne,2022-12-20 15:19:00,2022-12-20 17:21:00,Bordeaux Saint-Jean,44.825873,-0.556697,7320,0,Bayonne,43.496793,-1.470368,674,7994,Bordeaux,Bayonne
+Montauban,2022-12-20 15:18:30,2022-12-20 17:01:00,Bordeaux Saint-Jean,44.825873,-0.556697,6150,0,Montauban Ville Bourbon,44.01444,1.341499,644,6794,Bordeaux,Montauban
