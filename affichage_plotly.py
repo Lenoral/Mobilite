@@ -14,7 +14,7 @@ import plotly.express as px
 
 #fig.show()
 
-def affichage_plotlty(nom_ville, minutes_max,defor):
+def affichage_plotlty(nom_ville, minutes_max):
     
     #AVIONS
     
@@ -51,7 +51,7 @@ def affichage_plotlty(nom_ville, minutes_max,defor):
         
     #TRAIN
     #trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=2,minutes_max=1500,etranger=True,niveau_service=2)
-    trajets_train = pd.read_csv('Outputs/results_Paris_20221221T115842.csv')
+    trajets_train = pd.read_csv('Outputs/results_Bordeaux_20221220T151318.csv')
     trajets_train_copy = trajets_train.copy()
     trajets_train_copy['mode']='Train'
 
@@ -102,8 +102,8 @@ def affichage_plotlty(nom_ville, minutes_max,defor):
     dest_reduit_total['lon_dest_centre'] = dest_reduit_total.apply(lon_centre_ori,axis=1)
     
     
-    if defor =='tps_total':
-        def lat_prop_tps_tot(x):
+    if True:
+        def lat_prop_tps(x):
             lat = x['lat_dest_centre']
             lon = x['lon_dest_centre']
             if not lon==0:
@@ -123,7 +123,7 @@ def affichage_plotlty(nom_ville, minutes_max,defor):
             else:
                 return(0)
             
-        def lon_prop_tps_tot(x):
+        def lon_prop_tps(x):
             lat = x['lat_dest_centre']
             lon = x['lon_dest_centre']
             if not lon==0:
@@ -143,53 +143,10 @@ def affichage_plotlty(nom_ville, minutes_max,defor):
             
             else:
                 return(0)    
-        dest_reduit_total['lat_prop_tps']=dest_reduit_total.apply(lat_prop_tps_tot,axis=1)
-        dest_reduit_total['lon_prop_tps']=dest_reduit_total.apply(lon_prop_tps_tot,axis=1)
 
-    if defor =='tps_trajet':
-        def lat_prop_tps_traj(x):
-            lat = x['lat_dest_centre']
-            lon = x['lon_dest_centre']
-            if not lon==0:
-                angle = abs(atan(x['lat_dest_centre']/x['lon_dest_centre']))
-                if lat>0:
-                    if lon>0:
-                        return(int(sin(angle)*x['Tps_trajet_sec']/60))
-                    else:
-                        return(int(sin(angle)*x['Tps_trajet_sec']/60))
-                else:
-                    if lon>0:
-                        return((-1)*sin(angle)*x['Tps_trajet_sec']/60)
-                    else:
-                        return((-1)*sin(angle)*x['Tps_trajet_sec']/60)                   
-            
-            
-            else:
-                return(0)
-            
-        def lon_prop_tps_traj(x):
-            lat = x['lat_dest_centre']
-            lon = x['lon_dest_centre']
-            if not lon==0:
-                angle = (atan(x['lat_dest_centre']/x['lon_dest_centre']))
-                if lat>0:
-                    if lon>0:
-                        return(cos(angle)*x['Tps_trajet_sec']/60)
-                    else:
-                        return((-1)*cos(angle)*x['Tps_trajet_sec']/60)
-                else:
-                    if lon>0:
-                        return(cos(angle)*x['Tps_trajet_sec']/60)
-                    else:
-                        return((-1)*cos(angle)*x['Tps_trajet_sec']/60)
-                    
-            
-            
-            else:
-                return(0)    
-            
-        dest_reduit_total['lat_prop_tps']=dest_reduit_total.apply(lat_prop_tps_traj,axis=1)
-        dest_reduit_total['lon_prop_tps']=dest_reduit_total.apply(lon_prop_tps_traj,axis=1)
+
+    dest_reduit_total['lat_prop_tps']=dest_reduit_total.apply(lat_prop_tps,axis=1)
+    dest_reduit_total['lon_prop_tps']=dest_reduit_total.apply(lon_prop_tps,axis=1)
         
     
     dest_reduit_total.reset_index()
@@ -201,14 +158,54 @@ def affichage_plotlty(nom_ville, minutes_max,defor):
 
 nom_ville = 'Paris'
 
-dest_reduit_total = affichage_plotlty(nom_ville,600,defor='tps_trajet')
+dest_reduit_total = affichage_plotlty(nom_ville,1400)
 
 def affichage_classique():
     fig = plt.plot(dest_reduit_total, x="lon_prop_tps", y="lat_prop_tps",hover_name='cityTo', color='mode',title="Destinations depuis Bordeaux",kind='scatter')
     fig.add_shape(type="circle",
     xref="x", yref="y",
-    x0=0, y0=0, x1=60, y1=60,
-    line_color="LightSeaGreen",
+    x0=-60, y0=-60, x1=60, y1=60,
+    line_color="LightSeaGreen",)
+    fig.add_shape(type="circle",
+    xref="x", yref="y",
+    x0=-120, y0=-120, x1=120, y1=120,
+    line_color="LightSeaGreen",)
+    fig.add_shape(type="circle",
+    xref="x", yref="y",
+    x0=-180, y0=-180, x1=180, y1=180,
+    line_color="LightSeaGreen",)
+    fig.add_shape(type="circle",
+    xref="x", yref="y",
+    x0=-240, y0=-240, x1=240, y1=240,
+    line_color="LightSeaGreen",)
+    fig.add_shape(type="circle",
+    xref="x", yref="y",
+    x0=-300, y0=-300, x1=300, y1=300,
+    line_color="LightSeaGreen",)
+    fig.add_shape(type="circle",
+    xref="x", yref="y",
+    x0=-360, y0=-360, x1=360, y1=360,
+    line_color="LightSeaGreen",)
+    fig.add_shape(type="circle",
+    xref="x", yref="y",
+    x0=-720, y0=-720, x1=720, y1=720,
+    line_color="LightSeaGreen",)
+    
+    fig.update_layout(
+    autosize=True,
+    width=1600,
+    height=1200,
+    margin=dict(
+        l=50,
+        r=50,
+        b=50,
+        t=50,
+        pad=5
+    ),
+    
+    
+)
+    
     fig.show()
     return()
 
