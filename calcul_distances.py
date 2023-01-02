@@ -37,7 +37,7 @@ def get_dist_km(lon_or, lat_or, lon_dest, lat_dest):
 
 def get_dist_km_2(lon_or, lat_or, lon_dest, lat_dest):
     '''Renvoie la distance en km entre deux points donnés''' #Méthode 2 => A CHOISIR
-    a=sin(rad(0.5*(lat_dest-lat_or)))**2+cos(rad(lat_or))*cos(rad(lat_dest))*sin(rad(0.5*(lon_dest-lon_or)))**2
+    a=sin(rad(0.5*(float(lat_dest)-float(lat_or))))**2+cos(rad(float(lat_or)))*cos(rad(float(lat_dest)))*sin(rad(0.5*(float(lon_dest)-float(lon_or))))**2
     c=2*atan(sqrt(a)/sqrt(1-a))
     dist=6371*c
     return(dist)

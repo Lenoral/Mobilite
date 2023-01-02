@@ -39,7 +39,7 @@ def affichage_plotlty(nom_ville, minutes_max):
         airports_dest['lat_ori']=airport_ori_latitude
         airports_dest['lon_ori']=airport_ori_longitude
         
-        dest.append(pd.DataFrame(airports_dest).dropna())
+        dest.append(pd.DataFrame(airports_dest))
 
 
 
@@ -50,8 +50,8 @@ def affichage_plotlty(nom_ville, minutes_max):
         
         
     #TRAIN
-    #trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=2,minutes_max=1500,etranger=True,niveau_service=2)
-    trajets_train = pd.read_csv('Outputs/results_Bordeaux_20221220T151318.csv')
+    trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=2,minutes_max=1500,etranger=True,niveau_service=2)
+    #trajets_train = pd.read_csv('Outputs/results_Bordeaux_20221220T151318.csv')
     trajets_train_copy = trajets_train.copy()
     trajets_train_copy['mode']='Train'
 
@@ -94,9 +94,9 @@ def affichage_plotlty(nom_ville, minutes_max):
     #Calcul des coordonnées centrées
     
     def lat_centre_ori(x):
-        return(int(x['lat'])-int(x['lat_ori']))
+        return(float(x['lat'])-float(x['lat_ori']))
     def lon_centre_ori(x):
-        return(int(x['lon'])-int(x['lon_ori']))
+        return(float(x['lon'])-float(x['lon_ori']))
 
     dest_reduit_total['lat_dest_centre'] = dest_reduit_total.apply(lat_centre_ori,axis=1)
     dest_reduit_total['lon_dest_centre'] = dest_reduit_total.apply(lon_centre_ori,axis=1)
@@ -156,7 +156,7 @@ def affichage_plotlty(nom_ville, minutes_max):
 
 
 
-nom_ville = 'Paris'
+nom_ville = 'Bordeaux'
 
 dest_reduit_total = affichage_plotlty(nom_ville,1400)
 
