@@ -20,7 +20,7 @@ def time_api_teq(time):
     month = time[5:7]
     day = time[8:10]
     hour = time[11:13]
-    min= time[14:15]
+    min= time[14:16]
     time_format = datetime.datetime(int(year),int(month),int(day),int(hour),int(min))
     return(time_format)
         
@@ -32,7 +32,7 @@ def delta_time_api(time1,time2):
 
 def delta_time_dep(time):
     time_format = time_api_teq(time)
-    delta = time_format-datetime.datetime.now()
+    delta = time_format-datetime.datetime.utcnow()
     return(delta)
 
 def vol_dest_api(code):
@@ -90,6 +90,7 @@ def vol_dest_api(code):
     
     lon_ori = airports[airports['code']==code]['lon']
     lat_ori = airports[airports['code']==code]['lat']    
+    
     def add_dist_df(x):
         return(round(cdist.get_dist_km_2(lon_ori,lat_ori,x['lon'],x['lat']),1))
         

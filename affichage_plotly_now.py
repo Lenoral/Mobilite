@@ -6,6 +6,7 @@ import get_journey_sncf_now as gjn
 from math import *
 from dash import Dash, dcc, html, Input, Output
 import plotly.express as px
+import plotly.graph_objects as go
 
 #fig = plt.plot(garefr, x="lon", y="lat",hover_name='name', title="A Plotly Express Figure",kind='scatter')
 
@@ -47,11 +48,13 @@ def affichage_plotlty(nom_ville, minutes_max):
         print('Fin de la recherche des destinations pour ' + str(code_aeroport) + '.')
         dest_aero = pd.concat(dest)
         
+        dest_aero.drop_duplicates(subset='cityTo',keep='first',inplace=True)
+        
         
         
     #TRAIN
-    trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=2,minutes_max=1500,etranger=True,niveau_service=2)
-    #trajets_train = pd.read_csv('Outputs/results_Bordeaux_20221220T151318.csv')
+    #trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=2,minutes_max=1500,etranger=True,niveau_service=2)
+    trajets_train = pd.read_csv('Outputs/trajets_Paris_20230104T085107.csv')
     trajets_train_copy = trajets_train.copy()
     trajets_train_copy['mode']='Train'
 
@@ -156,20 +159,20 @@ def affichage_plotlty(nom_ville, minutes_max):
 
 
 
-nom_ville = 'Bordeaux'
+nom_ville = 'Paris'
 
-dest_reduit_total = affichage_plotlty(nom_ville,1400)
+dest_reduit_total = affichage_plotlty(nom_ville,14000)
 
 def affichage_classique():
     fig = plt.plot(dest_reduit_total, x="lon_prop_tps", y="lat_prop_tps",hover_name='cityTo', color='mode',title="Destinations depuis Bordeaux",kind='scatter')
     fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=-60, y0=-60, x1=60, y1=60,
-    line_color="LightSeaGreen",)
+    line_color="LightGreen",)
     fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=-120, y0=-120, x1=120, y1=120,
-    line_color="LightSeaGreen",)
+    line_color="Green",)
     fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=-180, y0=-180, x1=180, y1=180,
@@ -177,19 +180,25 @@ def affichage_classique():
     fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=-240, y0=-240, x1=240, y1=240,
-    line_color="LightSeaGreen",)
+    line_color="Blue",)
     fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=-300, y0=-300, x1=300, y1=300,
-    line_color="LightSeaGreen",)
+    line_color="DarkBlue",)
     fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=-360, y0=-360, x1=360, y1=360,
-    line_color="LightSeaGreen",)
+    line_color="Purple",)
     fig.add_shape(type="circle",
     xref="x", yref="y",
     x0=-720, y0=-720, x1=720, y1=720,
-    line_color="LightSeaGreen",)
+    line_color="Red",)
+    
+    fig.add_trace(go.Scatter(
+        x=[0, 0,0,0,0,0,0],
+        y=[40, 90,150,220,280,340,700],
+        text=["-1h", "-2h","-3h","-4h","-5h","-6h","-12h"],
+        mode="text",))
     
     fig.update_layout(
     autosize=True,
@@ -245,4 +254,4 @@ def affichage_dynamique():
     app.run_server(debug=True)
     return()
 
-affichage_classique()
+affichage_dynamique()

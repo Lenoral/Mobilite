@@ -66,7 +66,7 @@ if __name__ == '__main__':
     origins_coord = [(48.8534951, 2.3483915)]
     origins_name = 'Paris'
 
-    df_city = pd.read_csv('./data/coord_city.csv')
+    df_city = pd.read_csv('./Data/coord_city.csv')
     df_city = df_city.loc[df_city.city != origins_name]
     df_city.reset_index(inplace=True, drop=True)
     df_city['coord'] = list(zip(df_city.lat_city, df_city.lon_city))

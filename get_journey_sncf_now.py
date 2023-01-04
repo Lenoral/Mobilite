@@ -177,14 +177,16 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
                     df['depart'] = o
                     df['arrival'] = d_city
                     results[d_city] = df
-                    
-                    
+        
+        print(results)
+         
+        cols = list(results[d_city].columns)           
         result_limit= {}
         total_time = {}
-        cols = list(results[d_city].columns)
         for city in results.keys():
-            total_time[city] = results[city].loc[results[city]['duration'] == min(results[city]['duration'])].values.tolist()[0] # if several journeys with same duration, keep the first
-            # the trip with min duration(in train and transfer) for each destination city not station
+                total_time[city] = results[city].loc[results[city]['duration'] == min(results[city]['duration'])].values.tolist()[0] # if several journeys with same duration, keep the first
+                # the trip with min duration(in train and transfer) for each destination city not station
+                
         total_time = pd.DataFrame.from_dict(total_time, orient='index', columns=cols)
 
         # save results
