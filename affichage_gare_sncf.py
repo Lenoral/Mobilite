@@ -494,4 +494,4 @@ def affichage_destination_map_t(nom_recherche):
 
     return(fmap)
 #print(requete_destinations_api_time('Bordeaux',time_api()))
-#print(requete_destinations_api_minutes_pro('Bordeaux',60))
+print(requete_destinations_api_minutes_pro('Bordeaux',180))

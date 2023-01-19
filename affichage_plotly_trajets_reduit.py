@@ -52,8 +52,8 @@ def affichage_plotlty(nom_ville, minutes_max):
         
         
     #TRAIN
-    trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=3,minutes_max=8000,etranger=True,niveau_service=2)
-    #trajets_train = pd.read_csv('Outputs/trajets_Lyon_20230104T140738.csv')
+    #trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=3,minutes_max=8000,etranger=True,niveau_service=2)
+    trajets_train = pd.read_csv('Outputs/trajets_Lyon_20230105T225940.csv')
     trajets_train_copy = trajets_train.copy()
     trajets_train_copy['mode']='Train'
 

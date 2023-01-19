@@ -16,7 +16,7 @@ villes_choisies= ['Quimper','Brest','Calais','Lille','Strasbourg','Lyon', 'Nice'
 
 emissions = {'Avion':284,
              'Voiture': 155,
-             'Train':95}
+             'Train':90}
 
 def affichage_plotlty(nom_ville, minutes_max):
     
