@@ -173,7 +173,8 @@ def get_OD_now(ville_origine,nb_trajets,etranger,niveau_service,minutes_max):
                         info.append(read_info_journey(journey))
                     df = pd.DataFrame(info, columns=col_name)
                     df['waiting_time'] = df['h_depart'].apply(lambda x: (x - dt).seconds)
-                    df['total_time'] = df['waiting_time'] + df['duration']
+                    df['total_time'] = df['duration']
+ #                   df['total_time'] = df['waiting_time'] + df['duration']
                     df['depart'] = o
                     df['arrival'] = d_city
                     results[d_city] = df

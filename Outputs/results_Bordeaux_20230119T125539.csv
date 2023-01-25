@@ -1,0 +1,10 @@
+,h_depart,h_arrive,station_orig,station_orig_lat,station_orig_lon,duration,nb_transfers,station_dest,station_dest_lat,station_dest_lon,waiting_time,total_time,depart,arrival
+Angoulême,2023-01-19 12:56:00,2023-01-19 13:33:00,Bordeaux Saint-Jean,44.825873,-0.556697,2220,0,Angoulême,45.653572,0.164608,21,2241,Bordeaux,Angoulême
+Périgueux,2023-01-19 13:01:00,2023-01-19 14:12:00,Bordeaux Saint-Jean,44.825873,-0.556697,4260,0,Périgueux,45.187408,0.707879,321,4581,Bordeaux,Périgueux
+Agen,2023-01-19 13:20:00,2023-01-19 14:21:00,Bordeaux Saint-Jean,44.825873,-0.556697,3660,0,Agen,44.207967,0.6208669999999999,1461,5121,Bordeaux,Agen
+Arcachon,2023-01-19 13:04:00,2023-01-19 13:55:00,Bordeaux Saint-Jean,44.825873,-0.556697,3060,0,Arcachon,44.658967,-1.165323,501,3561,Bordeaux,Arcachon
+Libourne,2023-01-19 13:01:00,2023-01-19 13:24:00,Bordeaux Saint-Jean,44.825873,-0.556697,1380,0,Libourne,44.915904,-0.236359,321,1701,Bordeaux,Libourne
+Poitiers,2023-01-19 12:56:00,2023-01-19 14:16:00,Bordeaux Saint-Jean,44.825873,-0.556697,4800,0,Poitiers,46.582232,0.333136,21,4821,Bordeaux,Poitiers
+Saintes,2023-01-19 12:56:00,2023-01-19 14:37:30,Bordeaux Saint-Jean,44.825873,-0.556697,6090,0,Saintes,45.74874,-0.6179,21,6111,Bordeaux,Saintes
+Dax,2023-01-19 13:18:00,2023-01-19 14:31:00,Bordeaux Saint-Jean,44.825873,-0.556697,4380,0,Dax,43.720472,-1.050301,1341,5721,Bordeaux,Dax
+Marmande,2023-01-19 13:33:00,2023-01-19 14:18:30,Bordeaux Saint-Jean,44.825873,-0.556697,2730,0,Marmande,44.503071,0.168091,2241,4971,Bordeaux,Marmande

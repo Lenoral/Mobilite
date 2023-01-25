@@ -222,3 +222,5 @@ def affichage_vol_dest(nom_recherche):
     fmap.save(outfile='Cartes/' + nom_fichier)
     return(fmap)
 
+airp = pd.read_csv('Data/ensemble_airports.csv')
+print(airp['name'].loc[airp['code']=='CDG'].iloc[0])

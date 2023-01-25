@@ -1,0 +1,138 @@
+,h_depart,h_arrive,station_orig,station_orig_lat,station_orig_lon,duration,nb_transfers,station_dest,station_dest_lat,station_dest_lon,waiting_time,total_time,depart,arrival
+Nîmes,2023-01-25 09:27:00,2023-01-25 10:35:00,Marseille - Saint-Charles,43.302666,5.380407,4080,0,Nîmes Centre,43.832313,4.365872,1792,4080,Marseille,Nîmes
+Avignon,2023-01-25 09:04:00,2023-01-25 09:38:00,Marseille - Saint-Charles,43.302666,5.380407,2040,0,Avignon TGV,43.92194,4.786136,412,2040,Marseille,Avignon
+Toulon,2023-01-25 09:57:00,2023-01-25 10:40:30,Marseille - Saint-Charles,43.302666,5.380407,2610,0,Toulon,43.128353,5.929404,3592,2610,Marseille,Toulon
+Bourg-en-Bresse,2023-01-25 09:46:00,2023-01-25 13:12:30,Marseille - Saint-Charles,43.302666,5.380407,12390,1,Bourg-en-Bresse,46.200111,5.215011,2932,12390,Marseille,Bourg-en-Bresse
+Chalon-sur-Saône,2023-01-25 09:46:00,2023-01-25 12:41:00,Marseille - Saint-Charles,43.302666,5.380407,10500,0,Chalon-sur-Saône,46.781622,4.843479,2932,10500,Marseille,Chalon-sur-Saône
+Besançon,2023-01-25 09:46:00,2023-01-25 14:45:00,Marseille - Saint-Charles,43.302666,5.380407,17940,1,Besançon-Viotte,47.247049,6.021943,2932,17940,Marseille,Besançon
+Dijon,2023-01-25 09:46:00,2023-01-25 13:25:00,Marseille - Saint-Charles,43.302666,5.380407,13140,0,Dijon Ville,47.323411,5.027256,2932,13140,Marseille,Dijon
+Paris,2023-01-25 09:04:00,2023-01-25 12:23:00,Marseille - Saint-Charles,43.302666,5.380407,11940,0,Paris - Gare de Lyon - Hall 1 & 2,48.844945,2.373481,412,11940,Marseille,Paris
+Tarbes,2023-01-25 09:27:00,2023-01-25 17:15:00,Marseille - Saint-Charles,43.302666,5.380407,28080,2,Tarbes,43.239863,0.069442,1792,28080,Marseille,Tarbes
+Cahors,2023-01-25 11:24:00,2023-01-25 17:43:30,Marseille - Saint-Charles,43.302666,5.380407,22770,1,Cahors,44.449275,1.433325,8812,22770,Marseille,Cahors
+Muret,2023-01-25 09:27:00,2023-01-25 14:00:30,Marseille - Saint-Charles,43.302666,5.380407,16410,1,Muret,43.464824,1.324449,1792,16410,Marseille,Muret
+Angoulême,2023-01-25 09:04:00,2023-01-25 16:34:00,Marseille - Saint-Charles,43.302666,5.380407,27000,4,Angoulême,45.653572,0.164608,412,27000,Marseille,Angoulême
+Angers,2023-01-25 09:04:00,2023-01-25 15:14:00,Marseille - Saint-Charles,43.302666,5.380407,22200,4,Angers-Saint-Laud,47.464649,-0.55677,412,22200,Marseille,Angers
+Saint-Nazaire,2023-01-25 09:04:00,2023-01-25 16:45:00,Marseille - Saint-Charles,43.302666,5.380407,27660,5,Saint-Nazaire,47.286489,-2.211079,412,27660,Marseille,Saint-Nazaire
+Quimper,2023-01-25 09:04:00,2023-01-25 18:40:00,Marseille - Saint-Charles,43.302666,5.380407,34560,4,Quimper,47.994455,-4.092103,412,34560,Marseille,Quimper
+Brest,2023-01-25 14:36:00,2023-01-25 23:38:00,Marseille - Saint-Charles,43.302666,5.380407,32520,1,Brest,48.38762,-4.480306,20332,32520,Marseille,Brest
+Lisieux,2023-01-25 09:46:00,2023-01-25 15:40:00,Marseille - Saint-Charles,43.302666,5.380407,21240,4,Lisieux,49.138299,0.231143,2932,21240,Marseille,Lisieux
+Cambrai,2023-01-25 09:04:00,2023-01-25 15:28:30,Marseille - Saint-Charles,43.302666,5.380407,23070,3,Cambrai,50.176582,3.241197,412,23070,Marseille,Cambrai
+Arras,2023-01-25 10:01:30,2023-01-25 15:17:00,Marseille - Saint-Charles,43.302666,5.380407,18930,2,Arras,50.286971,2.781314,3862,18930,Marseille,Arras
+Aix-en-Provence,2023-01-25 09:09:00,2023-01-25 09:39:00,Saint-Antoine,43.369599,5.35781,1800,0,Aix-en-Provence,43.522903,5.44533,712,1800,Marseille,Aix-en-Provence
+Lille,2023-01-25 10:01:30,2023-01-25 14:30:00,Marseille - Saint-Charles,43.302666,5.380407,16110,0,Lille Flandres,50.636577,3.06987,3862,16110,Marseille,Lille
+Compiègne,2023-01-25 09:04:00,2023-01-25 13:58:00,Marseille - Saint-Charles,43.302666,5.380407,17640,2,Compiègne,49.421977,2.823693,412,17640,Marseille,Compiègne
+Chaumont,2023-01-25 10:01:30,2023-01-25 17:43:00,Marseille - Saint-Charles,43.302666,5.380407,27690,5,Chaumont,48.10976,5.1346,3862,27690,Marseille,Chaumont
+Gap,2023-01-25 13:21:30,2023-01-25 16:22:00,Saint-Antoine,43.369599,5.35781,10830,0,Gap,44.563714,6.085669,15862,10830,Marseille,Gap
+Grenoble,2023-01-25 09:34:30,2023-01-25 12:55:00,Marseille - Saint-Charles,43.302666,5.380407,12030,1,Grenoble - gare Routière,45.192693,5.714366,2242,12030,Marseille,Grenoble
+Clermont-Ferrand,2023-01-25 09:46:00,2023-01-25 14:00:00,Marseille - Saint-Charles,43.302666,5.380407,15240,1,Clermont-Ferrand,45.778945,3.100543,2932,15240,Marseille,Clermont-Ferrand
+Roanne,2023-01-25 09:46:00,2023-01-25 12:42:00,Marseille - Saint-Charles,43.302666,5.380407,10560,1,Roanne,46.039383,4.063207,2932,10560,Marseille,Roanne
+Mâcon,2023-01-25 09:46:00,2023-01-25 12:09:00,Marseille - Saint-Charles,43.302666,5.380407,8580,0,Mâcon,46.302572,4.824887,2932,8580,Marseille,Mâcon
+Lyon,2023-01-25 09:46:00,2023-01-25 11:26:00,Marseille - Saint-Charles,43.302666,5.380407,6000,0,Lyon Part Dieu,45.760596,4.859409,2932,6000,Marseille,Lyon
+Montbard,2023-01-25 09:46:00,2023-01-25 14:14:30,Marseille - Saint-Charles,43.302666,5.380407,16110,1,Montbard,47.618741,4.336212,2932,16110,Marseille,Montbard
+Moulins,2023-01-25 09:46:00,2023-01-25 14:08:30,Marseille - Saint-Charles,43.302666,5.380407,15750,1,Moulins-sur-Allier,46.561394,3.338782,2932,15750,Marseille,Moulins
+Toulouse,2023-01-25 09:27:00,2023-01-25 13:19:00,Marseille - Saint-Charles,43.302666,5.380407,13920,0,Toulouse Matabiau,43.611206,1.453616,1792,13920,Marseille,Toulouse
+Périgueux,2023-01-25 09:34:30,2023-01-25 17:53:00,Marseille - Saint-Charles,43.302666,5.380407,29910,4,Périgueux,45.187408,0.707879,2242,29910,Marseille,Périgueux
+Limoges,2023-01-25 11:24:00,2023-01-25 19:57:00,Marseille - Saint-Charles,43.302666,5.380407,30780,1,Limoges-Bénédictins,45.836207,1.267419,8812,30780,Marseille,Limoges
+Agen,2023-01-25 11:24:00,2023-01-25 16:25:30,Marseille - Saint-Charles,43.302666,5.380407,18090,0,Agen,44.207967,0.6208669999999999,8812,18090,Marseille,Agen
+Arcachon,2023-01-25 09:27:00,2023-01-25 16:55:00,Marseille - Saint-Charles,43.302666,5.380407,26880,1,Arcachon,44.658967,-1.165323,1792,26880,Marseille,Arcachon
+Bourges,2023-01-25 09:46:00,2023-01-25 15:28:00,Marseille - Saint-Charles,43.302666,5.380407,20520,1,Bourges,47.094129,2.394236,2932,20520,Marseille,Bourges
+Châtellerault,2023-01-25 09:04:00,2023-01-25 17:10:00,Marseille - Saint-Charles,43.302666,5.380407,29160,5,Châtellerault,46.818594,0.549279,412,29160,Marseille,Châtellerault
+Tours,2023-01-25 09:04:00,2023-01-25 15:32:00,Marseille - Saint-Charles,43.302666,5.380407,23280,5,Tours,47.389866,0.692831,412,23280,Marseille,Tours
+Laval,2023-01-25 14:36:00,2023-01-25 20:05:00,Marseille - Saint-Charles,43.302666,5.380407,19740,0,Laval,48.076255,-0.760929,20332,19740,Marseille,Laval
+Morlaix,2023-01-25 14:36:00,2023-01-25 23:02:30,Marseille - Saint-Charles,43.302666,5.380407,30390,1,Morlaix,48.57797,-3.832514,20332,30390,Marseille,Morlaix
+Alençon,2023-01-25 14:36:00,2023-01-25 20:44:00,Marseille - Saint-Charles,43.302666,5.380407,22080,1,Alençon,48.433884,0.09853099999999999,20332,22080,Marseille,Alençon
+Bayeux,2023-01-25 09:04:00,2023-01-25 15:17:30,Marseille - Saint-Charles,43.302666,5.380407,22410,2,Bayeux,49.269729,-0.6981000000000001,412,22410,Marseille,Bayeux
+Rouen,2023-01-25 09:34:30,2023-01-25 14:56:00,Marseille - Saint-Charles,43.302666,5.380407,19290,2,Rouen Rive Droite,49.448663,1.094103,2242,19290,Marseille,Rouen
+Dreux,2023-01-25 09:04:00,2023-01-25 15:09:00,Marseille - Saint-Charles,43.302666,5.380407,21900,3,Dreux,48.731492,1.370164,412,21900,Marseille,Dreux
+Douai,2023-01-25 10:01:30,2023-01-25 15:39:00,Marseille - Saint-Charles,43.302666,5.380407,20250,1,Douai,50.371673,3.089958,3862,20250,Marseille,Douai
+Abbeville,2023-01-25 09:34:30,2023-01-25 15:10:30,Marseille - Saint-Charles,43.302666,5.380407,20160,2,Abbeville,50.102175,1.824538,2242,20160,Marseille,Abbeville
+Saverne,2023-01-25 09:46:00,2023-01-25 16:41:30,Marseille - Saint-Charles,43.302666,5.380407,24930,1,Saverne,48.744483,7.362055,2932,24930,Marseille,Saverne
+Belfort,2023-01-25 14:36:00,2023-01-25 20:24:30,Marseille - Saint-Charles,43.302666,5.380407,20910,1,Belfort-Ville,47.633278,6.854053,20332,20910,Marseille,Belfort
+Bar-le-Duc,2023-01-25 10:01:30,2023-01-25 18:46:00,Marseille - Saint-Charles,43.302666,5.380407,31470,3,Bar-le-Duc,48.773598,5.167053,3862,31470,Marseille,Bar-le-Duc
+Sedan,2023-01-25 10:01:30,2023-01-25 17:58:00,Marseille - Saint-Charles,43.302666,5.380407,28590,2,Sedan,49.695024,4.930373,3862,28590,Marseille,Sedan
+Narbonne,2023-01-25 09:27:00,2023-01-25 12:01:00,Marseille - Saint-Charles,43.302666,5.380407,9240,0,Narbonne,43.190618,3.005667,1792,9240,Marseille,Narbonne
+Alès,2023-01-25 09:27:00,2023-01-25 11:52:30,Marseille - Saint-Charles,43.302666,5.380407,8730,1,Alès,44.127825,4.084948,1792,8730,Marseille,Alès
+Lunéville,2023-01-25 09:46:00,2023-01-25 17:23:00,Marseille - Saint-Charles,43.302666,5.380407,27420,1,Lunéville,48.58799,6.496997,2932,27420,Marseille,Lunéville
+Valence,2023-01-25 09:34:30,2023-01-25 11:10:00,Marseille - Saint-Charles,43.302666,5.380407,5730,1,Valence Ville,44.928081,4.893288,2242,5730,Marseille,Valence
+Nancy,2023-01-25 09:46:00,2023-01-25 17:02:00,Marseille - Saint-Charles,43.302666,5.380407,26160,0,Nancy,48.689857,6.174579,2932,26160,Marseille,Nancy
+Château-Thierry,2023-01-25 09:34:30,2023-01-25 14:55:00,Marseille - Saint-Charles,43.302666,5.380407,19230,4,Château-Thierry,49.03814,3.409302,2242,19230,Marseille,Château-Thierry
+Nice,2023-01-25 09:57:00,2023-01-25 12:26:30,Marseille - Saint-Charles,43.302666,5.380407,8970,0,Nice Saint-Augustin,43.670728,7.216199,3592,8970,Marseille,Nice
+Chambéry,2023-01-25 09:46:00,2023-01-25 13:16:30,Marseille - Saint-Charles,43.302666,5.380407,12630,1,Chambéry - Challes-les-Eaux,45.571302,5.919547,2932,12630,Marseille,Chambéry
+Riom,2023-01-25 09:46:00,2023-01-25 13:50:00,Marseille - Saint-Charles,43.302666,5.380407,14640,1,Riom - Châtel-Guyon,45.889965,3.120498,2932,14640,Marseille,Riom
+Vichy,2023-01-25 09:46:00,2023-01-25 13:26:30,Marseille - Saint-Charles,43.302666,5.380407,13230,1,Vichy,46.126991,3.430476,2932,13230,Marseille,Vichy
+Nevers,2023-01-25 09:46:00,2023-01-25 14:38:30,Marseille - Saint-Charles,43.302666,5.380407,17550,1,Nevers,46.987282,3.150743,2932,17550,Marseille,Nevers
+Montargis,2023-01-25 09:34:30,2023-01-25 14:55:00,Marseille - Saint-Charles,43.302666,5.380407,19230,1,Montargis,48.006862,2.742783,2242,19230,Marseille,Montargis
+Carcassonne,2023-01-25 09:27:00,2023-01-25 12:34:00,Marseille - Saint-Charles,43.302666,5.380407,11220,0,Carcassonne,43.218029,2.351824,1792,11220,Marseille,Carcassonne
+Châteauroux,2023-01-25 09:46:00,2023-01-25 17:31:00,Marseille - Saint-Charles,43.302666,5.380407,27900,2,Châteauroux,46.809812,1.699483,2932,27900,Marseille,Châteauroux
+Libourne,2023-01-25 09:27:00,2023-01-25 16:24:30,Marseille - Saint-Charles,43.302666,5.380407,25050,1,Libourne,44.915904,-0.236359,1792,25050,Marseille,Libourne
+Poitiers,2023-01-25 09:04:00,2023-01-25 15:54:00,Marseille - Saint-Charles,43.302666,5.380407,24600,4,Poitiers,46.582232,0.333136,412,24600,Marseille,Poitiers
+Blois,2023-01-25 14:36:00,2023-01-25 20:41:30,Marseille - Saint-Charles,43.302666,5.380407,21930,2,Blois - Chambord,47.585449,1.323759,20332,21930,Marseille,Blois
+Saintes,2023-01-25 11:24:00,2023-01-25 19:23:30,Marseille - Saint-Charles,43.302666,5.380407,28770,1,Saintes,45.74874,-0.6179,8812,28770,Marseille,Saintes
+Roche-sur-Yon,2023-01-25 09:04:00,2023-01-25 17:25:00,Marseille - Saint-Charles,43.302666,5.380407,30060,5,La Roche-sur-Yon,46.672075,-1.43566,412,30060,Marseille,Roche-sur-Yon
+Rochelle,2023-01-25 11:24:00,2023-01-25 20:15:30,Marseille - Saint-Charles,43.302666,5.380407,31890,1,La Rochelle,46.152705,-1.145853,8812,31890,Marseille,Rochelle
+Cholet,2023-01-25 09:04:00,2023-01-25 17:07:00,Marseille - Saint-Charles,43.302666,5.380407,28980,5,Cholet,47.065702,-0.869897,412,28980,Marseille,Cholet
+Saint-Malo,2023-01-25 14:36:00,2023-01-25 21:37:00,Marseille - Saint-Charles,43.302666,5.380407,25260,1,Saint-Malo,48.646859,-2.004158,20332,25260,Marseille,Saint-Malo
+Vannes,2023-01-25 09:04:00,2023-01-25 17:28:00,Marseille - Saint-Charles,43.302666,5.380407,30240,4,Vannes,47.665169,-2.75245,412,30240,Marseille,Vannes
+Lorient,2023-01-25 09:04:00,2023-01-25 17:55:00,Marseille - Saint-Charles,43.302666,5.380407,31860,4,Lorient,47.755597,-3.366221,412,31860,Marseille,Lorient
+Rennes,2023-01-25 09:04:00,2023-01-25 14:48:00,Marseille - Saint-Charles,43.302666,5.380407,20640,3,Rennes,48.103517,-1.672744,412,20640,Marseille,Rennes
+Évreux,2023-01-25 09:04:00,2023-01-25 14:26:00,Marseille - Saint-Charles,43.302666,5.380407,19320,2,Évreux Embranchement,49.018748,1.149629,412,19320,Marseille,Évreux
+Valenciennes,2023-01-25 10:01:30,2023-01-25 15:55:00,Marseille - Saint-Charles,43.302666,5.380407,21210,1,Valenciennes,50.363187,3.517124,3862,21210,Marseille,Valenciennes
+Béthune,2023-01-25 10:01:30,2023-01-25 16:12:30,Marseille - Saint-Charles,43.302666,5.380407,22260,1,Béthune,50.521454,2.640509,3862,22260,Marseille,Béthune
+Amiens,2023-01-25 09:34:30,2023-01-25 14:42:00,Marseille - Saint-Charles,43.302666,5.380407,18450,2,Amiens,49.890584,2.308277,2242,18450,Marseille,Amiens
+Clermont,2023-01-25 09:46:00,2023-01-25 14:47:00,Marseille - Saint-Charles,43.302666,5.380407,18060,3,Clermont de l'Oise,49.385278,2.417663,2932,18060,Marseille,Clermont
+Dunkerque,2023-01-25 12:12:00,2023-01-25 18:20:30,Marseille - Saint-Charles,43.302666,5.380407,22110,1,Dunkerque,51.03041,2.368991,11692,22110,Marseille,Dunkerque
+Soissons,2023-01-25 10:01:30,2023-01-25 15:42:00,Marseille - Saint-Charles,43.302666,5.380407,20430,2,Soissons,49.369226,3.33809,3862,20430,Marseille,Soissons
+Strasbourg,2023-01-25 09:46:00,2023-01-25 15:54:00,Marseille - Saint-Charles,43.302666,5.380407,22080,0,Strasbourg,48.584532,7.734793,2932,22080,Marseille,Strasbourg
+Montbéliard,2023-01-25 14:36:00,2023-01-25 20:09:30,Marseille - Saint-Charles,43.302666,5.380407,20010,1,Montbéliard,47.51055,6.801336,20332,20010,Marseille,Montbéliard
+Vitry-le-François,2023-01-25 10:01:30,2023-01-25 17:39:00,Marseille - Saint-Charles,43.302666,5.380407,27450,3,Vitry-le-François,48.717913,4.587515,3862,27450,Marseille,Vitry-le-François
+Reims,2023-01-25 10:01:30,2023-01-25 16:15:00,Marseille - Saint-Charles,43.302666,5.380407,22410,2,Reims Maison Blanche,49.233406,4.022648,3862,22410,Marseille,Reims
+Saint-Dié-des-Vosges,2023-01-25 09:46:00,2023-01-25 17:27:00,Marseille - Saint-Charles,43.302666,5.380407,27660,2,Saint-Dié Rue d'Alsace,48.280005,6.955555,2932,27660,Marseille,Saint-Dié-des-Vosges
+Troyes,2023-01-25 10:01:30,2023-01-25 16:41:00,Marseille - Saint-Charles,43.302666,5.380407,23970,5,Troyes,48.296069,4.065281,3862,23970,Marseille,Troyes
+Perpignan,2023-01-25 11:24:00,2023-01-25 14:58:30,Marseille - Saint-Charles,43.302666,5.380407,12870,1,Perpignan,42.696096,2.879355,8812,12870,Marseille,Perpignan
+Béziers,2023-01-25 09:27:00,2023-01-25 11:44:00,Marseille - Saint-Charles,43.302666,5.380407,8220,0,Béziers,43.336295,3.218895,1792,8220,Marseille,Béziers
+Arles,2023-01-25 10:49:30,2023-01-25 11:45:30,L'Estaque,43.363646,5.321342,3360,0,Arles,43.684863,4.632105,6742,3360,Marseille,Arles
+Dax,2023-01-25 09:34:30,2023-01-25 17:28:00,Marseille - Saint-Charles,43.302666,5.380407,28410,3,Dax,43.720472,-1.050301,2242,28410,Marseille,Dax
+Montluçon,2023-01-25 09:46:00,2023-01-25 15:24:00,Marseille - Saint-Charles,43.302666,5.380407,20280,2,Montluçon - ville,46.338101,2.596159,2932,20280,Marseille,Montluçon
+Albi,2023-01-25 09:27:00,2023-01-25 15:11:00,Marseille - Saint-Charles,43.302666,5.380407,20640,1,Albi-Ville,43.92238,2.137958,1792,20640,Marseille,Albi
+Marmande,2023-01-25 09:27:00,2023-01-25 14:56:30,Marseille - Saint-Charles,43.302666,5.380407,19770,0,Marmande,44.503071,0.168091,1792,19770,Marseille,Marmande
+Vierzon,2023-01-25 09:46:00,2023-01-25 15:49:00,Marseille - Saint-Charles,43.302666,5.380407,21780,1,Vierzon,47.226474,2.059869,2932,21780,Marseille,Vierzon
+Vendôme,2023-01-25 09:34:30,2023-01-25 16:02:00,Marseille - Saint-Charles,43.302666,5.380407,23250,3,Vendôme,47.801959,1.068219,2242,23250,Marseille,Vendôme
+Orléans,2023-01-25 10:01:30,2023-01-25 16:29:00,Marseille - Saint-Charles,43.302666,5.380407,23250,3,Orléans,47.907891,1.904242,3862,23250,Marseille,Orléans
+Saumur,2023-01-25 09:04:00,2023-01-25 15:51:30,Marseille - Saint-Charles,43.302666,5.380407,24450,5,Saumur,47.268994,-0.07140299999999999,412,24450,Marseille,Saumur
+Sables-d'Olonne,2023-01-25 12:47:00,2023-01-25 21:32:00,Marseille - Saint-Charles,43.302666,5.380407,31500,3,Les Sables-d'Olonne,46.500032,-1.781116,13792,31500,Marseille,Sables-d'Olonne
+Nantes,2023-01-25 09:04:00,2023-01-25 15:54:00,Marseille - Saint-Charles,43.302666,5.380407,24600,4,Nantes,47.217491,-1.542077,412,24600,Marseille,Nantes
+Guingamp,2023-01-25 14:36:00,2023-01-25 22:33:00,Marseille - Saint-Charles,43.302666,5.380407,28620,1,Guingamp,48.555659,-3.143343,20332,28620,Marseille,Guingamp
+Saint-Brieuc,2023-01-25 14:36:00,2023-01-25 21:48:00,Marseille - Saint-Charles,43.302666,5.380407,25920,1,Saint-Brieuc,48.50758,-2.765,20332,25920,Marseille,Saint-Brieuc
+Redon,2023-01-25 09:04:00,2023-01-25 17:03:00,Marseille - Saint-Charles,43.302666,5.380407,28740,4,Redon,47.652004,-2.08777,412,28740,Marseille,Redon
+Saint-Lô,2023-01-25 09:46:00,2023-01-25 17:03:00,Marseille - Saint-Charles,43.302666,5.380407,26220,5,Saint-Lô,49.116975,-1.099525,2932,26220,Marseille,Saint-Lô
+Caen,2023-01-25 09:04:00,2023-01-25 14:59:30,Marseille - Saint-Charles,43.302666,5.380407,21330,2,Caen,49.176354,-0.347613,412,21330,Marseille,Caen
+Havre,2023-01-25 09:34:30,2023-01-25 15:48:00,Marseille - Saint-Charles,43.302666,5.380407,22410,2,Le Havre,49.492624,0.124644,2242,22410,Marseille,Havre
+Boulogne-sur-Mer,2023-01-25 09:34:30,2023-01-25 16:03:00,Marseille - Saint-Charles,43.302666,5.380407,23310,2,Boulogne-Ville,50.715613,1.609714,2242,23310,Marseille,Boulogne-sur-Mer
+Calais,2023-01-25 10:01:30,2023-01-25 17:14:00,Marseille - Saint-Charles,43.302666,5.380407,25950,2,Les Fontinettes,50.941002,1.849858,3862,25950,Marseille,Calais
+Beauvais,2023-01-25 09:04:00,2023-01-25 14:18:00,Marseille - Saint-Charles,43.302666,5.380407,18840,2,Beauvais - Gare SNCF,49.426522,2.088609,412,18840,Marseille,Beauvais
+Mulhouse,2023-01-25 09:46:00,2023-01-25 14:55:00,Marseille - Saint-Charles,43.302666,5.380407,18540,0,Mulhouse-Ville,47.742691,7.34316,2932,18540,Marseille,Mulhouse
+Châlons-en-Champagne,2023-01-25 10:01:30,2023-01-25 17:09:00,Marseille - Saint-Charles,43.302666,5.380407,25650,3,Châlons-en-Champagne,48.955252,4.348656,3862,25650,Marseille,Châlons-en-Champagne
+Charleville-Mézières,2023-01-25 10:01:30,2023-01-25 17:26:00,Marseille - Saint-Charles,43.302666,5.380407,26670,2,Charleville-Mézières,49.76763,4.724344,3862,26670,Marseille,Charleville-Mézières
+Épinal,2023-01-25 09:46:00,2023-01-25 18:18:00,Marseille - Saint-Charles,43.302666,5.380407,30720,1,Épinal,48.178005,6.441787,2932,30720,Marseille,Épinal
+Montpellier,2023-01-25 09:27:00,2023-01-25 11:03:00,Marseille - Saint-Charles,43.302666,5.380407,5760,0,Montpellier Saint-Roch,43.604738,3.880674,1792,5760,Marseille,Montpellier
+Annecy,2023-01-25 09:46:00,2023-01-25 13:50:00,Marseille - Saint-Charles,43.302666,5.380407,14640,1,Annecy - Gare Routière,45.901707,6.120128,2932,14640,Marseille,Annecy
+Saint-Étienne,2023-01-25 09:46:00,2023-01-25 12:40:00,Marseille - Saint-Charles,43.302666,5.380407,10440,1,Saint-Étienne Châteaucreux,45.443366,4.399722,2932,10440,Marseille,Saint-Étienne
+Beaune,2023-01-25 09:46:00,2023-01-25 13:04:00,Marseille - Saint-Charles,43.302666,5.380407,11880,0,Beaune,47.023014,4.848423,2932,11880,Marseille,Beaune
+Dole,2023-01-25 09:46:00,2023-01-25 13:58:00,Marseille - Saint-Charles,43.302666,5.380407,15120,1,Dole-Ville,47.09615,5.48806,2932,15120,Marseille,Dole
+Bayonne,2023-01-25 11:24:00,2023-01-25 20:03:00,Marseille - Saint-Charles,43.302666,5.380407,31140,1,Bayonne,43.496793,-1.470368,8812,31140,Marseille,Bayonne
+Pau,2023-01-25 09:27:00,2023-01-25 16:22:00,Marseille - Saint-Charles,43.302666,5.380407,24900,1,Pau,43.291711,-0.369675,1792,24900,Marseille,Pau
+Montauban,2023-01-25 09:27:00,2023-01-25 13:51:00,Marseille - Saint-Charles,43.302666,5.380407,15840,0,Montauban Ville Bourbon,44.01444,1.341499,1792,15840,Marseille,Montauban
+Brive-la-Gaillarde,2023-01-25 11:53:30,2023-01-25 18:55:00,Marseille - Saint-Charles,43.302666,5.380407,25290,4,Brive-la-Gaillarde,45.152601,1.528634,10582,25290,Marseille,Brive-la-Gaillarde
+Bordeaux,2023-01-25 09:27:00,2023-01-25 15:35:00,Marseille - Saint-Charles,43.302666,5.380407,22080,0,Bordeaux Saint-Jean,44.825873,-0.556697,1792,22080,Marseille,Bordeaux
+Niort,2023-01-25 09:46:00,2023-01-25 17:35:00,Marseille - Saint-Charles,43.302666,5.380407,28140,5,Niort,46.319491,-0.454639,2932,28140,Marseille,Niort
+Lannion,2023-01-25 09:04:00,2023-01-25 18:26:00,Marseille - Saint-Charles,43.302666,5.380407,33720,5,Lannion,48.727638,-3.460353,412,33720,Marseille,Lannion
+Argentan,2023-01-25 12:47:00,2023-01-25 19:45:30,Marseille - Saint-Charles,43.302666,5.380407,25110,3,Argentan,48.738545,-0.025291,13792,25110,Marseille,Argentan
+Bernay,2023-01-25 09:46:00,2023-01-25 15:25:30,Marseille - Saint-Charles,43.302666,5.380407,20370,4,Bernay,49.087116,0.595688,2932,20370,Marseille,Bernay
+Dieppe,2023-01-25 10:01:30,2023-01-25 16:59:00,Marseille - Saint-Charles,43.302666,5.380407,25050,3,Dieppe,49.921788,1.081133,3862,25050,Marseille,Dieppe
+Mans,2023-01-25 14:36:00,2023-01-25 19:29:30,Marseille - Saint-Charles,43.302666,5.380407,17610,0,Le Mans,47.995615,0.192614,20332,17610,Marseille,Mans
+Chartres,2023-01-25 14:36:00,2023-01-25 20:50:00,Marseille - Saint-Charles,43.302666,5.380407,22440,1,Chartres,48.448202,1.481313,20332,22440,Marseille,Chartres
+Lens,2023-01-25 10:01:30,2023-01-25 15:32:30,Marseille - Saint-Charles,43.302666,5.380407,19860,2,Lens,50.426866,2.828301,3862,19860,Marseille,Lens
+Laon,2023-01-25 10:01:30,2023-01-25 16:07:00,Marseille - Saint-Charles,43.302666,5.380407,21930,2,Laon,49.570578,3.62434,3862,21930,Marseille,Laon
+Saint-Quentin,2023-01-25 09:04:00,2023-01-25 14:33:00,Marseille - Saint-Charles,43.302666,5.380407,19740,2,Saint-Quentin,49.840025,3.296958,412,19740,Marseille,Saint-Quentin
+Saint-Omer,2023-01-25 10:01:30,2023-01-25 16:40:00,Marseille - Saint-Charles,43.302666,5.380407,23910,2,Saint-Omer,50.753618,2.266719,3862,23910,Marseille,Saint-Omer
+Metz,2023-01-25 10:01:30,2023-01-25 16:54:00,Marseille - Saint-Charles,43.302666,5.380407,24750,5,Metz Ville,49.109466,6.177052,3862,24750,Marseille,Metz

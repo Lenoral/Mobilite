@@ -84,3 +84,4 @@ if __name__ == '__main__':
         df_city['duration'][i_:len(df_city) - 1] = execute_req(parameters)
 
     df_city.to_csv(origins_name + '_' + 'time_veh.csv')
+print(execute_req(get_params('Paris','Lyon')))
