@@ -104,13 +104,13 @@ def affichage_plotlty(nom_ville, minutes_max):
         
         
     #TRAIN
-    trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=2,minutes_max=1500,etranger=False,niveau_service=2)
-    #trajets_train = pd.read_csv('Outputs/trajets_Bordeaux_20230123T150448.csv')
+    trajets_train= gjn.get_OD_now(nom_ville,nb_trajets=2,minutes_max=5000,etranger=False,niveau_service=2)
+    #trajets_train = pd.read_csv('Outputs/trajets_Paris_20230125T145843.csv')
     trajets_train_copy = trajets_train.copy()
     trajets_train_copy['mode']='Train'
 
     def calcul_tps_trajet(x):
-        return(x['total_time']-x['waiting_time'])
+        return(x['total_time'])
 
     trajets_train_copy['Tps_trajet_sec'] = trajets_train_copy.apply(calcul_tps_trajet,axis=1)
 
@@ -173,21 +173,44 @@ def affichage_plotlty(nom_ville, minutes_max):
     dest_reduit_total['Tps_transit_aller']=0
     dest_reduit_total['Tps_transit_retour']=0
     #Calcul des temps de transit
-    
+    coord_city = pd.read_csv('Data/coord_city.csv',sep=",",index_col='IND')
     iter = 0
     for trajets_avion in range(nbre_dest_avion):
         iter+=1
-        lat_ori = dest_reduit_total['lat_ori'].iloc[trajets_avion]
-        lon_ori = dest_reduit_total['lon_ori'].iloc[trajets_avion]
-        lat = dest_reduit_total['lat'].iloc[trajets_avion]
-        lon = dest_reduit_total['lon'].iloc[trajets_avion]
-        distance = dest_reduit_total['Distance'].iloc[trajets_avion]
+        lat_ori = dest_reduit_total[dest_reduit_total['mode']=='Avion']['lat_ori'].iloc[trajets_avion]
+        lon_ori = dest_reduit_total[dest_reduit_total['mode']=='Avion']['lon_ori'].iloc[trajets_avion]
+        lat = dest_reduit_total[dest_reduit_total['mode']=='Avion']['lat'].iloc[trajets_avion]
+        lon = dest_reduit_total[dest_reduit_total['mode']=='Avion']['lon'].iloc[trajets_avion]
+        distance = dest_reduit_total[dest_reduit_total['mode']=='Avion']['Distance'].iloc[trajets_avion]
         
-        ville_depart = dest_reduit_total['cityFrom'].iloc[trajets_avion]
-        ville_arrivee = dest_reduit_total['cityTo'].iloc[trajets_avion]
+        ville_depart = dest_reduit_total[dest_reduit_total['mode']=='Avion']['cityFrom'].iloc[trajets_avion]
+        ville_arrivee = dest_reduit_total[dest_reduit_total['mode']=='Avion']['cityTo'].iloc[trajets_avion]
             
         station_dest_nom = dest_reduit_total[dest_reduit_total['mode']=='Avion']['station_dest'].iloc[trajets_avion]
         station_orig_nom = dest_reduit_total[dest_reduit_total['mode']=='Avion']['station_orig'].iloc[trajets_avion]
+        #coords villes
+        coord_ori = coord_city.loc[coord_city['city']==ville_depart]
+        if not coord_ori.empty:
+            lon_ville_ori = coord_ori['lon_city'].iloc[0]
+            lat_ville_ori =coord_ori['lat_city'].iloc[0]
+        else:
+            lon_ville_ori = lon_ori
+            lat_ville_ori = lat_ori        
+        dist_transit_aller_theo = round(cdist.get_dist_km_2(lon_ville_ori,lat_ville_ori,lon_ori,lat_ori),1)
+        Tps_transit_aller_theo = dist_transit_aller_theo /30*3600
+        
+        coord_dest = coord_city.loc[coord_city['city']==ville_arrivee]
+        if not coord_dest.empty:
+            lon_ville_dest = coord_dest['lon_city'].iloc[0]
+            lat_ville_dest =coord_dest['lat_city'].iloc[0]
+        else:
+            lon_ville_dest = lon
+            lat_ville_dest = lat    
+        
+        dist_transit_retour_theo = round(cdist.get_dist_km_2(lon,lat,lon_ville_dest,lat_ville_dest),1)
+        Tps_transit_retour_theo = dist_transit_retour_theo /30*3600
+        
+        
        
         Tps_trajet_sec= dest_reduit_total[dest_reduit_total['mode']=='Avion']['Tps_trajet_sec'].iloc[trajets_avion]
         Tps_total_sec= dest_reduit_total[dest_reduit_total['mode']=='Avion']['Tps_total_sec'].iloc[trajets_avion]
@@ -205,7 +228,7 @@ def affichage_plotlty(nom_ville, minutes_max):
         try :
             Tps_transit_aller = execute_req_google(get_params_google(cityFrom,station_orig_nom))
         except(KeyError,IndexError):
-            Tps_transit_aller=-1
+            Tps_transit_aller=Tps_transit_aller_theo
             print("error aller " + str(cityFrom) + " / " + str(station_orig_nom))
             
         else:
@@ -214,7 +237,7 @@ def affichage_plotlty(nom_ville, minutes_max):
         try:
             Tps_transit_retour = execute_req_google(get_params_google(station_dest_nom,cityTo))
         except(KeyError,IndexError):
-            Tps_transit_retour = -1
+            Tps_transit_retour = Tps_transit_retour_theo
             print("error retour " + str(station_dest_nom) + " / " + str(cityTo))
         else:
             a=0
@@ -226,25 +249,48 @@ def affichage_plotlty(nom_ville, minutes_max):
 
         
         iter = 0
+    dest_train = dest_reduit_total.loc[dest_reduit_total['mode']=='Train']
     for trajets_train in range(nbre_dest_train):
         iter+=1
-        lat_ori = dest_reduit_total['lat_ori'].iloc[trajets_train]
-        lon_ori = dest_reduit_total['lon_ori'].iloc[trajets_train]
-        lat = dest_reduit_total['lat'].iloc[trajets_train]
-        lon = dest_reduit_total['lon'].iloc[trajets_train]
-        distance = dest_reduit_total['Distance'].iloc[trajets_train]
+        lat_ori = dest_train['lat_ori'].iloc[trajets_train]
+        lon_ori = dest_train['lon_ori'].iloc[trajets_train]
+        lat = dest_train['lat'].iloc[trajets_train]
+        lon = dest_train['lon'].iloc[trajets_train]
+        distance = dest_train['Distance'].iloc[trajets_train]
         
-        ville_depart = dest_reduit_total['cityFrom'].iloc[trajets_train]
-        ville_arrivee = dest_reduit_total['cityTo'].iloc[trajets_train]
+        ville_depart = dest_train['cityFrom'].iloc[trajets_train]
+        ville_arrivee = dest_train['cityTo'].iloc[trajets_train]
             
-        station_dest_nom = dest_reduit_total[dest_reduit_total['mode']=='Train']['station_dest'].iloc[trajets_train]
-        station_orig_nom = dest_reduit_total[dest_reduit_total['mode']=='Train']['station_orig'].iloc[trajets_train]
-       
-        Tps_trajet_sec= dest_reduit_total[dest_reduit_total['mode']=='Train']['Tps_trajet_sec'].iloc[trajets_train]
-        Tps_total_sec= dest_reduit_total[dest_reduit_total['mode']=='Train']['Tps_total_sec'].iloc[trajets_train]
+        station_dest_nom =dest_train['station_dest'].iloc[trajets_train]
+        station_orig_nom = dest_train['station_orig'].iloc[trajets_train]
+
+        #coords villes
+        coord_ori = coord_city.loc[coord_city['city']==ville_depart]
+        if not coord_ori.empty:
+            lon_ville_ori = coord_ori['lon_city'].iloc[0]
+            lat_ville_ori =coord_ori['lat_city'].iloc[0]
+        else:
+            lon_ville_ori = lon_ori
+            lat_ville_ori = lat_ori        
+        dist_transit_aller_theo = round(cdist.get_dist_km_2(lon_ville_ori,lat_ville_ori,lon_ori,lat_ori),1)
+        Tps_transit_aller_theo = dist_transit_aller_theo /30*3600
         
-        cityFrom= dest_reduit_total[dest_reduit_total['mode']=='Train']['cityFrom'].iloc[trajets_train]
-        cityTo=dest_reduit_total[dest_reduit_total['mode']=='Train']['cityTo'].iloc[trajets_train]
+        coord_dest = coord_city.loc[coord_city['city']==ville_arrivee]
+        if not coord_dest.empty:
+            lon_ville_dest = coord_dest['lon_city'].iloc[0]
+            lat_ville_dest =coord_dest['lat_city'].iloc[0]
+        else:
+            lon_ville_dest = lon
+            lat_ville_dest = lat    
+        
+        dist_transit_retour_theo = round(cdist.get_dist_km_2(lon,lat,lon_ville_dest,lat_ville_dest),1)
+        Tps_transit_retour_theo = dist_transit_retour_theo /30*3600
+        
+        Tps_trajet_sec= dest_train['Tps_trajet_sec'].iloc[trajets_train]
+        Tps_total_sec= dest_train['Tps_total_sec'].iloc[trajets_train]
+        
+        cityFrom= dest_train['cityFrom'].iloc[trajets_train]
+        cityTo=dest_train['cityTo'].iloc[trajets_train]
          
         if station_dest_nom==cityTo:
             station_dest_nom = str(station_dest_nom) + " Train Station"
@@ -256,7 +302,7 @@ def affichage_plotlty(nom_ville, minutes_max):
         try :
             Tps_transit_aller = execute_req_google(get_params_google(cityFrom,station_orig_nom))
         except(KeyError,IndexError):
-            Tps_transit_aller=-1
+            Tps_transit_aller=Tps_transit_aller_theo
             print("error aller " + str(cityFrom) + " / " + str(station_orig_nom))
             
         else:
@@ -265,7 +311,7 @@ def affichage_plotlty(nom_ville, minutes_max):
         try:
             Tps_transit_retour = execute_req_google(get_params_google(station_dest_nom,cityTo))
         except(KeyError,IndexError):
-            Tps_transit_retour = -1
+            Tps_transit_retour = Tps_transit_retour_theo
             print("error retour " + str(station_dest_nom) + " / " + str(cityTo))
         else:
             a=0
@@ -397,8 +443,8 @@ def affichage_classique(data):
     
     fig.update_layout(
     autosize=True,
-    width=1600,
-    height=1200,
+    width=800,
+    height=600,
     margin=dict(
         l=50,
         r=50,

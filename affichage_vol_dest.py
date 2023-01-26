@@ -86,7 +86,8 @@ def vol_dest_api(code):
         return(60*int(min)+3600*int(heure))
     
     dest['Tps_trajet_sec']= dest.apply(temps_vol_sec,axis=1)
-    dest['Tps_total_sec'] = dest.apply(temps_vol_dep_sec,axis=1)
+    dest['Tps_total_sec'] = dest.apply(temps_vol_sec,axis=1)
+    #dest['Tps_total_sec'] = dest.apply(temps_vol_dep_sec,axis=1)
     
     lon_ori = airports[airports['code']==code]['lon']
     lat_ori = airports[airports['code']==code]['lat']    
@@ -101,7 +102,8 @@ def vol_dest_api(code):
 def voldest_dureemax(code,minutes_max):
     dest = vol_dest_api(code)
     dest_dureemax = dest[dest['Tps_total_sec']<60*minutes_max]
-    return(dest_dureemax)
+    return(dest)
+#return(dest_dureemax)
     
     
 def recherche_airport(nom_recherche):
@@ -223,4 +225,3 @@ def affichage_vol_dest(nom_recherche):
     return(fmap)
 
 airp = pd.read_csv('Data/ensemble_airports.csv')
-print(airp['name'].loc[airp['code']=='CDG'].iloc[0])

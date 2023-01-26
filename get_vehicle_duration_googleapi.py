@@ -66,7 +66,7 @@ if __name__ == '__main__':
     origins_coord = [(48.8534951, 2.3483915)]
     origins_name = 'Paris'
 
-    df_city = pd.read_csv('./Data/coord_city.csv')
+    df_city = pd.read_csv('Data/coord_city.csv',sep=',',index_col='IND')
     df_city = df_city.loc[df_city.city != origins_name]
     df_city.reset_index(inplace=True, drop=True)
     df_city['coord'] = list(zip(df_city.lat_city, df_city.lon_city))
@@ -84,4 +84,3 @@ if __name__ == '__main__':
         df_city['duration'][i_:len(df_city) - 1] = execute_req(parameters)
 
     df_city.to_csv(origins_name + '_' + 'time_veh.csv')
-print(execute_req(get_params('Paris','Lyon')))
