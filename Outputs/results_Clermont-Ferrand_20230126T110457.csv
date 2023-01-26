@@ -1,0 +1,135 @@
+,h_depart,h_arrive,station_orig,station_orig_lat,station_orig_lon,duration,nb_transfers,station_dest,station_dest_lat,station_dest_lon,waiting_time,total_time,depart,arrival
+Nîmes,2023-01-26 12:57:30,2023-01-26 18:05:30,Clermont la Pardieu,45.766988,3.134193,18480,0,Nîmes Centre,43.832313,4.365872,6753,18480,Clermont-Ferrand,Nîmes
+Avignon,2023-01-26 12:02:00,2023-01-26 17:12:00,Clermont-Ferrand,45.778945,3.100543,18600,1,Avignon TGV,43.92194,4.786136,3423,18600,Clermont-Ferrand,Avignon
+Toulon,2023-01-26 15:02:00,2023-01-26 20:40:00,Clermont-Ferrand,45.778945,3.100543,20280,1,Toulon,43.128353,5.929404,14223,20280,Clermont-Ferrand,Toulon
+Bourg-en-Bresse,2023-01-26 12:02:00,2023-01-26 16:12:30,Clermont-Ferrand,45.778945,3.100543,15030,1,Bourg-en-Bresse,46.200111,5.215011,3423,15030,Clermont-Ferrand,Bourg-en-Bresse
+Chalon-sur-Saône,2023-01-26 12:02:00,2023-01-26 16:37:00,Clermont-Ferrand,45.778945,3.100543,16500,1,Chalon-sur-Saône,46.781622,4.843479,3423,16500,Clermont-Ferrand,Chalon-sur-Saône
+Besançon,2023-01-26 12:02:00,2023-01-26 18:46:00,Clermont-Ferrand,45.778945,3.100543,24240,2,Besançon-Viotte,47.247049,6.021943,3423,24240,Clermont-Ferrand,Besançon
+Dijon,2023-01-26 17:41:00,2023-01-26 22:04:00,Clermont-Ferrand,45.778945,3.100543,15780,0,Dijon Ville,47.323411,5.027256,23763,15780,Clermont-Ferrand,Dijon
+Paris,2023-01-26 13:23:00,2023-01-26 16:57:00,Clermont-Ferrand,45.778945,3.100543,12840,0,Paris-Bercy Bourgogne - Pays d'Auvergne,48.839215,2.382791,8283,12840,Clermont-Ferrand,Paris
+Tarbes,2023-01-26 12:41:00,2023-01-26 23:19:00,Clermont-Ferrand,45.778945,3.100543,38280,3,Tarbes,43.239863,0.069442,5763,38280,Clermont-Ferrand,Tarbes
+Cahors,2023-01-26 16:42:00,2023-01-27 07:26:00,Clermont-Ferrand,45.778945,3.100543,53040,4,Cahors,44.449275,1.433325,20223,53040,Clermont-Ferrand,Cahors
+Muret,2023-01-26 13:03:00,2023-01-26 22:00:30,Clermont-Ferrand,45.778945,3.100543,32250,2,Muret,43.464824,1.324449,7083,32250,Clermont-Ferrand,Muret
+Angoulême,2023-01-26 12:41:00,2023-01-26 19:22:00,Clermont-Ferrand,45.778945,3.100543,24060,2,Angoulême,45.653572,0.164608,5763,24060,Clermont-Ferrand,Angoulême
+Angers,2023-01-26 12:41:00,2023-01-26 17:52:00,Clermont-Ferrand,45.778945,3.100543,18660,1,Angers-Saint-Laud,47.464649,-0.55677,5763,18660,Clermont-Ferrand,Angers
+Saint-Nazaire,2023-01-26 12:41:00,2023-01-26 19:45:00,Clermont-Ferrand,45.778945,3.100543,25440,2,Saint-Nazaire,47.286489,-2.211079,5763,25440,Clermont-Ferrand,Saint-Nazaire
+Brest,2023-01-26 12:41:00,2023-01-26 22:51:00,Clermont-Ferrand,45.778945,3.100543,36600,3,Brest,48.38762,-4.480306,5763,36600,Clermont-Ferrand,Brest
+Lisieux,2023-01-26 12:02:00,2023-01-26 19:59:30,Clermont-Ferrand,45.778945,3.100543,28650,3,Lisieux,49.138299,0.231143,3423,28650,Clermont-Ferrand,Lisieux
+Cambrai,2023-01-26 12:02:00,2023-01-26 19:28:30,Clermont-Ferrand,45.778945,3.100543,26790,4,Cambrai,50.176582,3.241197,3423,26790,Clermont-Ferrand,Cambrai
+Arras,2023-01-26 12:02:00,2023-01-26 18:40:00,Clermont-Ferrand,45.778945,3.100543,23880,3,Arras,50.286971,2.781314,3423,23880,Clermont-Ferrand,Arras
+Aix-en-Provence,2023-01-26 14:02:00,2023-01-26 18:29:30,Clermont-Ferrand,45.778945,3.100543,16050,1,Aix-en-Provence TGV,43.455237,5.317534,10623,16050,Clermont-Ferrand,Aix-en-Provence
+Lille,2023-01-26 12:02:00,2023-01-26 18:18:00,Clermont-Ferrand,45.778945,3.100543,22560,3,Lille Flandres,50.636577,3.06987,3423,22560,Clermont-Ferrand,Lille
+Compiègne,2023-01-26 12:02:00,2023-01-26 17:58:00,Clermont-Ferrand,45.778945,3.100543,21360,3,Compiègne,49.421977,2.823693,3423,21360,Clermont-Ferrand,Compiègne
+Chaumont,2023-01-26 13:23:00,2023-01-26 19:34:00,Clermont-Ferrand,45.778945,3.100543,22260,2,Chaumont,48.10976,5.1346,8283,22260,Clermont-Ferrand,Chaumont
+Gap,2023-01-26 14:02:00,2023-01-26 20:31:00,Clermont-Ferrand,45.778945,3.100543,23340,2,Gap,44.563714,6.085669,10623,23340,Clermont-Ferrand,Gap
+Marseille,2023-01-26 12:02:00,2023-01-26 17:43:00,Clermont-Ferrand,45.778945,3.100543,20460,1,Marseille - Saint-Charles,43.302666,5.380407,3423,20460,Clermont-Ferrand,Marseille
+Grenoble,2023-01-26 12:02:00,2023-01-26 16:09:30,Clermont-Ferrand,45.778945,3.100543,14850,1,Grenoble,45.191491,5.714548,3423,14850,Clermont-Ferrand,Grenoble
+Roanne,2023-01-26 12:02:00,2023-01-26 13:20:00,Clermont-Ferrand,45.778945,3.100543,4680,0,Roanne,46.039383,4.063207,3423,4680,Clermont-Ferrand,Roanne
+Mâcon,2023-01-26 14:02:00,2023-01-26 17:32:00,Clermont-Ferrand,45.778945,3.100543,12600,1,Mâcon,46.302572,4.824887,10623,12600,Clermont-Ferrand,Mâcon
+Lyon,2023-01-26 12:02:00,2023-01-26 14:26:00,Clermont-Ferrand,45.778945,3.100543,8640,0,Lyon Part Dieu,45.760596,4.859409,3423,8640,Clermont-Ferrand,Lyon
+Montbard,2023-01-26 12:02:00,2023-01-26 18:10:00,Clermont-Ferrand,45.778945,3.100543,22080,1,Montbard,47.618741,4.336212,3423,22080,Clermont-Ferrand,Montbard
+Moulins,2023-01-26 12:41:00,2023-01-26 13:52:00,Clermont-Ferrand,45.778945,3.100543,4260,0,Moulins-sur-Allier,46.561394,3.338782,5763,4260,Clermont-Ferrand,Moulins
+Toulouse,2023-01-26 13:03:00,2023-01-26 20:31:00,Clermont-Ferrand,45.778945,3.100543,26880,3,Toulouse Matabiau,43.611206,1.453616,7083,26880,Clermont-Ferrand,Toulouse
+Périgueux,2023-01-26 12:16:00,2023-01-26 18:41:00,Clermont-Ferrand,45.778945,3.100543,23100,2,Périgueux,45.187408,0.707879,4263,23100,Clermont-Ferrand,Périgueux
+Limoges,2023-01-26 12:16:00,2023-01-26 17:25:00,Clermont-Ferrand,45.778945,3.100543,18540,1,Limoges-Bénédictins,45.836207,1.267419,4263,18540,Clermont-Ferrand,Limoges
+Agen,2023-01-26 13:03:00,2023-01-26 22:26:00,Clermont-Ferrand,45.778945,3.100543,33780,1,Agen,44.207967,0.6208669999999999,7083,33780,Clermont-Ferrand,Agen
+Arcachon,2023-01-26 12:16:00,2023-01-26 20:55:00,Clermont-Ferrand,45.778945,3.100543,31140,3,Arcachon,44.658967,-1.165323,4263,31140,Clermont-Ferrand,Arcachon
+Bourges,2023-01-26 12:41:00,2023-01-26 15:28:00,Clermont-Ferrand,45.778945,3.100543,10020,1,Bourges,47.094129,2.394236,5763,10020,Clermont-Ferrand,Bourges
+Châtellerault,2023-01-26 12:41:00,2023-01-26 18:08:00,Clermont-Ferrand,45.778945,3.100543,19620,3,Châtellerault,46.818594,0.549279,5763,19620,Clermont-Ferrand,Châtellerault
+Tours,2023-01-26 12:41:00,2023-01-26 17:11:00,Clermont-Ferrand,45.778945,3.100543,16200,2,Tours,47.389866,0.692831,5763,16200,Clermont-Ferrand,Tours
+Laval,2023-01-26 12:41:00,2023-01-26 19:20:30,Clermont-Ferrand,45.778945,3.100543,23970,2,Laval,48.076255,-0.760929,5763,23970,Clermont-Ferrand,Laval
+Morlaix,2023-01-26 12:41:00,2023-01-26 22:11:30,Clermont-Ferrand,45.778945,3.100543,34230,3,Morlaix,48.57797,-3.832514,5763,34230,Clermont-Ferrand,Morlaix
+Alençon,2023-01-26 12:41:00,2023-01-26 19:56:00,Clermont-Ferrand,45.778945,3.100543,26100,3,Alençon,48.433884,0.09853099999999999,5763,26100,Clermont-Ferrand,Alençon
+Bayeux,2023-01-26 12:02:00,2023-01-26 20:23:30,Clermont-Ferrand,45.778945,3.100543,30090,3,Bayeux,49.269729,-0.6981000000000001,3423,30090,Clermont-Ferrand,Bayeux
+Rouen,2023-01-26 12:02:00,2023-01-26 19:00:30,Clermont-Ferrand,45.778945,3.100543,25110,3,Rouen Rive Droite,49.448663,1.094103,3423,25110,Clermont-Ferrand,Rouen
+Dreux,2023-01-26 12:02:00,2023-01-26 18:43:00,Clermont-Ferrand,45.778945,3.100543,24060,4,Dreux,48.731492,1.370164,3423,24060,Clermont-Ferrand,Dreux
+Douai,2023-01-26 12:02:00,2023-01-26 18:58:00,Clermont-Ferrand,45.778945,3.100543,24960,3,Douai,50.371673,3.089958,3423,24960,Clermont-Ferrand,Douai
+Abbeville,2023-01-26 14:02:00,2023-01-26 21:05:00,Clermont-Ferrand,45.778945,3.100543,25380,3,Abbeville,50.102175,1.824538,10623,25380,Clermont-Ferrand,Abbeville
+Saverne,2023-01-26 12:02:00,2023-01-26 21:13:30,Clermont-Ferrand,45.778945,3.100543,33090,2,Saverne,48.744483,7.362055,3423,33090,Clermont-Ferrand,Saverne
+Belfort,2023-01-26 12:02:00,2023-01-26 20:10:00,Clermont-Ferrand,45.778945,3.100543,29280,2,Belfort-Ville,47.633278,6.854053,3423,29280,Clermont-Ferrand,Belfort
+Bar-le-Duc,2023-01-26 13:23:00,2023-01-26 21:19:00,Clermont-Ferrand,45.778945,3.100543,28560,3,Bar-le-Duc,48.773598,5.167053,8283,28560,Clermont-Ferrand,Bar-le-Duc
+Sedan,2023-01-26 12:02:00,2023-01-26 20:35:00,Clermont-Ferrand,45.778945,3.100543,30780,5,Sedan,49.695024,4.930373,3423,30780,Clermont-Ferrand,Sedan
+Narbonne,2023-01-26 13:03:00,2023-01-26 19:55:30,Clermont-Ferrand,45.778945,3.100543,24750,1,Narbonne,43.190618,3.005667,7083,24750,Clermont-Ferrand,Narbonne
+Alès,2023-01-26 12:57:30,2023-01-26 17:29:30,Clermont la Pardieu,45.766988,3.134193,16320,0,Alès,44.127825,4.084948,6753,16320,Clermont-Ferrand,Alès
+Lunéville,2023-01-26 12:02:00,2023-01-26 21:43:30,Clermont-Ferrand,45.778945,3.100543,34890,4,Lunéville,48.58799,6.496997,3423,34890,Clermont-Ferrand,Lunéville
+Valence,2023-01-26 12:02:00,2023-01-26 16:31:00,Clermont-Ferrand,45.778945,3.100543,16140,1,Valence Ville,44.928081,4.893288,3423,16140,Clermont-Ferrand,Valence
+Nancy,2023-01-26 15:02:00,2023-01-26 22:39:00,Clermont-Ferrand,45.778945,3.100543,27420,2,Nancy,48.689857,6.174579,14223,27420,Clermont-Ferrand,Nancy
+Château-Thierry,2023-01-26 12:02:00,2023-01-26 19:11:00,Clermont-Ferrand,45.778945,3.100543,25740,5,Château-Thierry,49.03814,3.409302,3423,25740,Clermont-Ferrand,Château-Thierry
+Nice,2023-01-26 15:02:00,2023-01-26 22:30:00,Clermont-Ferrand,45.778945,3.100543,26880,1,Nice,43.704556,7.261904,14223,26880,Clermont-Ferrand,Nice
+Chambéry,2023-01-26 12:02:00,2023-01-26 16:16:30,Clermont-Ferrand,45.778945,3.100543,15270,1,Chambéry - Challes-les-Eaux,45.571302,5.919547,3423,15270,Clermont-Ferrand,Chambéry
+Riom,2023-01-26 12:02:00,2023-01-26 12:10:30,Clermont-Ferrand,45.778945,3.100543,510,0,Riom - Châtel-Guyon,45.889965,3.120498,3423,510,Clermont-Ferrand,Riom
+Vichy,2023-01-26 12:02:00,2023-01-26 12:33:00,Clermont-Ferrand,45.778945,3.100543,1860,0,Vichy,46.126991,3.430476,3423,1860,Clermont-Ferrand,Vichy
+Nevers,2023-01-26 13:23:00,2023-01-26 14:53:30,Clermont-Ferrand,45.778945,3.100543,5430,0,Nevers,46.987282,3.150743,8283,5430,Clermont-Ferrand,Nevers
+Montargis,2023-01-26 13:23:00,2023-01-26 18:08:30,Clermont-Ferrand,45.778945,3.100543,17130,1,Montargis,48.006862,2.742783,8283,17130,Clermont-Ferrand,Montargis
+Carcassonne,2023-01-26 13:03:00,2023-01-26 20:34:00,Clermont-Ferrand,45.778945,3.100543,27060,1,Carcassonne,43.218029,2.351824,7083,27060,Clermont-Ferrand,Carcassonne
+Châteauroux,2023-01-26 12:41:00,2023-01-26 17:31:00,Clermont-Ferrand,45.778945,3.100543,17400,2,Châteauroux,46.809812,1.699483,5763,17400,Clermont-Ferrand,Châteauroux
+Libourne,2023-01-26 12:16:00,2023-01-26 19:33:00,Clermont-Ferrand,45.778945,3.100543,26220,2,Libourne,44.915904,-0.236359,4263,26220,Clermont-Ferrand,Libourne
+Poitiers,2023-01-26 12:41:00,2023-01-26 18:30:00,Clermont-Ferrand,45.778945,3.100543,20940,3,Poitiers,46.582232,0.333136,5763,20940,Clermont-Ferrand,Poitiers
+Blois,2023-01-26 12:41:00,2023-01-26 17:41:00,Clermont-Ferrand,45.778945,3.100543,18000,2,Blois - Chambord,47.585449,1.323759,5763,18000,Clermont-Ferrand,Blois
+Saintes,2023-01-26 12:41:00,2023-01-26 20:45:00,Clermont-Ferrand,45.778945,3.100543,29040,3,Saintes,45.74874,-0.6179,5763,29040,Clermont-Ferrand,Saintes
+Roche-sur-Yon,2023-01-26 12:41:00,2023-01-26 20:25:30,Clermont-Ferrand,45.778945,3.100543,27870,2,La Roche-sur-Yon,46.672075,-1.43566,5763,27870,Clermont-Ferrand,Roche-sur-Yon
+Rochelle,2023-01-26 13:23:00,2023-01-26 21:08:00,Clermont-Ferrand,45.778945,3.100543,27900,3,La Rochelle,46.152705,-1.145853,8283,27900,Clermont-Ferrand,Rochelle
+Cholet,2023-01-26 12:41:00,2023-01-26 19:07:00,Clermont-Ferrand,45.778945,3.100543,23160,2,Cholet,47.065702,-0.869897,5763,23160,Clermont-Ferrand,Cholet
+Saint-Malo,2023-01-26 12:41:00,2023-01-26 21:01:00,Clermont-Ferrand,45.778945,3.100543,30000,3,Saint-Malo,48.646859,-2.004158,5763,30000,Clermont-Ferrand,Saint-Malo
+Vannes,2023-01-26 12:41:00,2023-01-26 20:55:00,Clermont-Ferrand,45.778945,3.100543,29640,3,Vannes,47.665169,-2.75245,5763,29640,Clermont-Ferrand,Vannes
+Rennes,2023-01-26 12:41:00,2023-01-26 20:05:00,Clermont-Ferrand,45.778945,3.100543,26640,2,Rennes,48.103517,-1.672744,5763,26640,Clermont-Ferrand,Rennes
+Évreux,2023-01-26 12:02:00,2023-01-26 18:49:30,Clermont-Ferrand,45.778945,3.100543,24450,3,Évreux Embranchement,49.018748,1.149629,3423,24450,Clermont-Ferrand,Évreux
+Valenciennes,2023-01-26 12:02:00,2023-01-26 19:10:00,Clermont-Ferrand,45.778945,3.100543,25680,4,Valenciennes,50.363187,3.517124,3423,25680,Clermont-Ferrand,Valenciennes
+Béthune,2023-01-26 12:02:00,2023-01-26 19:15:00,Clermont-Ferrand,45.778945,3.100543,25980,4,Béthune,50.521454,2.640509,3423,25980,Clermont-Ferrand,Béthune
+Amiens,2023-01-26 12:02:00,2023-01-26 18:38:00,Clermont-Ferrand,45.778945,3.100543,23760,3,Amiens,49.890584,2.308277,3423,23760,Clermont-Ferrand,Amiens
+Clermont,2023-01-26 12:02:00,2023-01-26 18:24:00,Clermont-Ferrand,45.778945,3.100543,22920,4,Clermont de l'Oise,49.385278,2.417663,3423,22920,Clermont-Ferrand,Clermont
+Dunkerque,2023-01-26 12:02:00,2023-01-26 19:48:00,Clermont-Ferrand,45.778945,3.100543,27960,4,Dunkerque,51.03041,2.368991,3423,27960,Clermont-Ferrand,Dunkerque
+Soissons,2023-01-26 12:02:00,2023-01-26 18:40:00,Clermont-Ferrand,45.778945,3.100543,23880,3,Soissons,49.369226,3.33809,3423,23880,Clermont-Ferrand,Soissons
+Strasbourg,2023-01-26 12:02:00,2023-01-26 20:18:00,Clermont-Ferrand,45.778945,3.100543,29760,1,Strasbourg,48.584532,7.734793,3423,29760,Clermont-Ferrand,Strasbourg
+Montbéliard,2023-01-26 13:23:00,2023-01-26 20:09:30,Clermont-Ferrand,45.778945,3.100543,24390,3,Montbéliard,47.51055,6.801336,8283,24390,Clermont-Ferrand,Montbéliard
+Vitry-le-François,2023-01-26 13:23:00,2023-01-26 20:42:00,Clermont-Ferrand,45.778945,3.100543,26340,2,Vitry-le-François,48.717913,4.587515,8283,26340,Clermont-Ferrand,Vitry-le-François
+Reims,2023-01-26 12:02:00,2023-01-26 19:14:00,Clermont-Ferrand,45.778945,3.100543,25920,5,Reims,49.258934,4.021994,3423,25920,Clermont-Ferrand,Reims
+Saint-Dié-des-Vosges,2023-01-26 12:02:00,2023-01-26 22:58:00,Clermont-Ferrand,45.778945,3.100543,39360,4,Saint-Dié-des-Vosges,48.282043,6.948516,3423,39360,Clermont-Ferrand,Saint-Dié-des-Vosges
+Troyes,2023-01-26 13:23:00,2023-01-26 20:44:00,Clermont-Ferrand,45.778945,3.100543,26460,3,Troyes,48.296069,4.065281,8283,26460,Clermont-Ferrand,Troyes
+Perpignan,2023-01-26 13:03:00,2023-01-26 20:48:30,Clermont-Ferrand,45.778945,3.100543,27930,1,Perpignan,42.696096,2.879355,7083,27930,Clermont-Ferrand,Perpignan
+Béziers,2023-01-26 13:03:00,2023-01-26 19:32:00,Clermont-Ferrand,45.778945,3.100543,23340,0,Béziers,43.336295,3.218895,7083,23340,Clermont-Ferrand,Béziers
+Arles,2023-01-26 12:57:30,2023-01-26 18:44:30,Clermont la Pardieu,45.766988,3.134193,20820,1,Arles,43.684863,4.632105,6753,20820,Clermont-Ferrand,Arles
+Dax,2023-01-26 12:41:00,2023-01-26 21:28:00,Clermont-Ferrand,45.778945,3.100543,31620,3,Dax,43.720472,-1.050301,5763,31620,Clermont-Ferrand,Dax
+Montluçon,2023-01-26 12:16:00,2023-01-26 13:53:30,Clermont-Ferrand,45.778945,3.100543,5850,0,Montluçon - ville,46.338101,2.596159,4263,5850,Clermont-Ferrand,Montluçon
+Albi,2023-01-26 13:03:00,2023-01-26 20:07:30,Clermont-Ferrand,45.778945,3.100543,25470,2,Albi Madeleine,43.938137,2.141209,7083,25470,Clermont-Ferrand,Albi
+Marmande,2023-01-26 12:41:00,2023-01-26 21:32:30,Clermont-Ferrand,45.778945,3.100543,31890,3,Marmande,44.503071,0.168091,5763,31890,Clermont-Ferrand,Marmande
+Vierzon,2023-01-26 12:41:00,2023-01-26 15:49:00,Clermont-Ferrand,45.778945,3.100543,11280,1,Vierzon,47.226474,2.059869,5763,11280,Clermont-Ferrand,Vierzon
+Vendôme,2023-01-26 12:41:00,2023-01-26 18:33:00,Clermont-Ferrand,45.778945,3.100543,21120,3,Vendôme,47.801959,1.068219,5763,21120,Clermont-Ferrand,Vendôme
+Orléans,2023-01-26 12:41:00,2023-01-26 17:49:00,Clermont-Ferrand,45.778945,3.100543,18480,2,Orléans,47.907891,1.904242,5763,18480,Clermont-Ferrand,Orléans
+Saumur,2023-01-26 12:41:00,2023-01-26 17:29:30,Clermont-Ferrand,45.778945,3.100543,17310,1,Saumur,47.268994,-0.07140299999999999,5763,17310,Clermont-Ferrand,Saumur
+Sables-d'Olonne,2023-01-26 12:41:00,2023-01-26 21:32:00,Clermont-Ferrand,45.778945,3.100543,31860,2,Les Sables-d'Olonne,46.500032,-1.781116,5763,31860,Clermont-Ferrand,Sables-d'Olonne
+Nantes,2023-01-26 12:41:00,2023-01-26 18:46:00,Clermont-Ferrand,45.778945,3.100543,21900,1,Nantes,47.217491,-1.542077,5763,21900,Clermont-Ferrand,Nantes
+Guingamp,2023-01-26 12:41:00,2023-01-26 21:38:00,Clermont-Ferrand,45.778945,3.100543,32220,3,Guingamp,48.555659,-3.143343,5763,32220,Clermont-Ferrand,Guingamp
+Saint-Brieuc,2023-01-26 12:41:00,2023-01-26 21:21:00,Clermont-Ferrand,45.778945,3.100543,31200,3,Saint-Brieuc,48.50758,-2.765,5763,31200,Clermont-Ferrand,Saint-Brieuc
+Redon,2023-01-26 12:41:00,2023-01-26 20:11:00,Clermont-Ferrand,45.778945,3.100543,27000,2,Redon,47.652004,-2.08777,5763,27000,Clermont-Ferrand,Redon
+Saint-Lô,2023-01-26 12:02:00,2023-01-26 21:11:00,Clermont-Ferrand,45.778945,3.100543,32940,4,Saint-Lô,49.116975,-1.099525,3423,32940,Clermont-Ferrand,Saint-Lô
+Caen,2023-01-26 12:02:00,2023-01-26 20:05:30,Clermont-Ferrand,45.778945,3.100543,29010,3,Caen,49.176354,-0.347613,3423,29010,Clermont-Ferrand,Caen
+Havre,2023-01-26 12:02:00,2023-01-26 19:52:00,Clermont-Ferrand,45.778945,3.100543,28200,3,Le Havre,49.492624,0.124644,3423,28200,Clermont-Ferrand,Havre
+Boulogne-sur-Mer,2023-01-26 14:02:00,2023-01-26 21:28:00,Clermont-Ferrand,45.778945,3.100543,26760,3,Boulogne-Ville,50.715613,1.609714,10623,26760,Clermont-Ferrand,Boulogne-sur-Mer
+Calais,2023-01-26 14:02:00,2023-01-26 21:02:00,Clermont-Ferrand,45.778945,3.100543,25200,2,Calais Ville,50.953466,1.850885,10623,25200,Clermont-Ferrand,Calais
+Beauvais,2023-01-26 12:02:00,2023-01-26 18:47:30,Clermont-Ferrand,45.778945,3.100543,24330,3,Beauvais - Gare SNCF,49.426522,2.088609,3423,24330,Clermont-Ferrand,Beauvais
+Mulhouse,2023-01-26 12:02:00,2023-01-26 19:09:00,Clermont-Ferrand,45.778945,3.100543,25620,1,Mulhouse-Ville,47.742691,7.34316,3423,25620,Clermont-Ferrand,Mulhouse
+Châlons-en-Champagne,2023-01-26 13:23:00,2023-01-26 21:04:00,Clermont-Ferrand,45.778945,3.100543,27660,2,Châlons-en-Champagne,48.955252,4.348656,8283,27660,Clermont-Ferrand,Châlons-en-Champagne
+Charleville-Mézières,2023-01-26 12:02:00,2023-01-26 20:11:00,Clermont-Ferrand,45.778945,3.100543,29340,5,Charleville-Mézières,49.76763,4.724344,3423,29340,Clermont-Ferrand,Charleville-Mézières
+Épinal,2023-01-26 13:23:00,2023-01-26 21:34:00,Clermont-Ferrand,45.778945,3.100543,29460,4,Épinal,48.178005,6.441787,8283,29460,Clermont-Ferrand,Épinal
+Montpellier,2023-01-26 14:02:00,2023-01-26 18:50:00,Clermont-Ferrand,45.778945,3.100543,17280,1,Montpellier Sud de France,43.595146,3.924009,10623,17280,Clermont-Ferrand,Montpellier
+Annecy,2023-01-26 12:02:00,2023-01-26 16:59:00,Clermont-Ferrand,45.778945,3.100543,17820,1,Annecy,45.902047,6.121826,3423,17820,Clermont-Ferrand,Annecy
+Saint-Étienne,2023-01-26 14:40:00,2023-01-26 16:25:00,Clermont-Ferrand,45.778945,3.100543,6300,0,Saint-Etienne-Châteaucreux Gare Routière,45.442658,4.401156,12903,6300,Clermont-Ferrand,Saint-Étienne
+Beaune,2023-01-26 17:41:00,2023-01-26 21:42:30,Clermont-Ferrand,45.778945,3.100543,14490,0,Beaune,47.023014,4.848423,23763,14490,Clermont-Ferrand,Beaune
+Dole,2023-01-26 12:02:00,2023-01-26 18:00:00,Clermont-Ferrand,45.778945,3.100543,21480,2,Dole-Ville,47.09615,5.48806,3423,21480,Clermont-Ferrand,Dole
+Bayonne,2023-01-26 12:41:00,2023-01-26 22:03:00,Clermont-Ferrand,45.778945,3.100543,33720,3,Bayonne,43.496793,-1.470368,5763,33720,Clermont-Ferrand,Bayonne
+Pau,2023-01-26 12:41:00,2023-01-26 22:25:00,Clermont-Ferrand,45.778945,3.100543,35040,3,Pau,43.291711,-0.369675,5763,35040,Clermont-Ferrand,Pau
+Montauban,2023-01-26 13:03:00,2023-01-26 21:48:30,Clermont-Ferrand,45.778945,3.100543,31530,1,Montauban Ville Bourbon,44.01444,1.341499,7083,31530,Clermont-Ferrand,Montauban
+Brive-la-Gaillarde,2023-01-26 13:03:00,2023-01-26 18:49:00,Clermont-Ferrand,45.778945,3.100543,20760,1,Brive-la-Gaillarde,45.152601,1.528634,7083,20760,Clermont-Ferrand,Brive-la-Gaillarde
+Bordeaux,2023-01-26 12:16:00,2023-01-26 19:58:00,Clermont-Ferrand,45.778945,3.100543,27720,2,Bordeaux Saint-Jean,44.825873,-0.556697,4263,27720,Clermont-Ferrand,Bordeaux
+Niort,2023-01-26 13:23:00,2023-01-26 20:23:00,Clermont-Ferrand,45.778945,3.100543,25200,3,Niort,46.319491,-0.454639,8283,25200,Clermont-Ferrand,Niort
+Argentan,2023-01-26 12:02:00,2023-01-26 20:24:00,Clermont-Ferrand,45.778945,3.100543,30120,4,Argentan,48.738545,-0.025291,3423,30120,Clermont-Ferrand,Argentan
+Bernay,2023-01-26 12:02:00,2023-01-26 19:45:00,Clermont-Ferrand,45.778945,3.100543,27780,3,Bernay,49.087116,0.595688,3423,27780,Clermont-Ferrand,Bernay
+Dieppe,2023-01-26 12:02:00,2023-01-26 20:00:00,Clermont-Ferrand,45.778945,3.100543,28680,4,Dieppe,49.921788,1.081133,3423,28680,Clermont-Ferrand,Dieppe
+Mans,2023-01-26 12:41:00,2023-01-26 18:53:00,Clermont-Ferrand,45.778945,3.100543,22320,3,Le Mans,47.995615,0.192614,5763,22320,Clermont-Ferrand,Mans
+Chartres,2023-01-26 12:41:00,2023-01-26 19:34:00,Clermont-Ferrand,45.778945,3.100543,24780,3,Chartres Gare Rue Nicole,48.447281,1.480992,5763,24780,Clermont-Ferrand,Chartres
+Lens,2023-01-26 12:02:00,2023-01-26 19:07:00,Clermont-Ferrand,45.778945,3.100543,25500,4,Lens,50.426866,2.828301,3423,25500,Clermont-Ferrand,Lens
+Laon,2023-01-26 12:02:00,2023-01-26 19:05:30,Clermont-Ferrand,45.778945,3.100543,25410,3,Laon,49.570578,3.62434,3423,25410,Clermont-Ferrand,Laon
+Saint-Quentin,2023-01-26 12:02:00,2023-01-26 18:33:00,Clermont-Ferrand,45.778945,3.100543,23460,3,Saint-Quentin,49.840025,3.296958,3423,23460,Clermont-Ferrand,Saint-Quentin
+Saint-Omer,2023-01-26 12:02:00,2023-01-26 19:24:00,Clermont-Ferrand,45.778945,3.100543,26520,4,Saint-Omer,50.753618,2.266719,3423,26520,Clermont-Ferrand,Saint-Omer
+Metz,2023-01-26 12:02:00,2023-01-26 20:14:00,Clermont-Ferrand,45.778945,3.100543,29520,5,Metz Ville,49.109466,6.177052,3423,29520,Clermont-Ferrand,Metz
